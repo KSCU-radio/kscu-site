@@ -16,13 +16,13 @@
   weight = 10
 
 [[main]]
-  name = "Categories"
-  pageRef = "categories"
+  name = "Schedule"
+  pageRef = "schedule"
   weight = 20
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
+  name = "About"
+  pageRef = "about"
   weight = 30
 
 
