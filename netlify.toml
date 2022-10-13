@@ -1,0 +1,13 @@
+[build]
+command = "hugo --gc --minify -b $URL"
+publish = "public"
+functions = "netlify/functions/"
+
+[functions]
+directory = "netlify/functions/"
+node_bundler = "esbuild"
+
+[dev]
+framework = "hugo"
+publish = "public"
+functions = "netlify/functions/"
