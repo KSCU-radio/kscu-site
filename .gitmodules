@@ -1,4 +1,4 @@
 [submodule "kscu-theme"]
-	path = kscu-theme
+	path = themes/kscu-theme
 	url = https://github.com/KSCU-radio/kscu-theme
 	branch = main
