@@ -34,7 +34,7 @@ async function fetchShow() {
             // console.log("Starting animation.")
             // document.getElementById('live-now-circle').style.animationPlayState = "running";
             // document.getElementById('live-now-circle').style.display = "inline-block";
-            document.getElementById('title').innerHTML = data['title'] + '-' + data['DJ_name'] + " at " + formatAMPM(new Date(data['start_time']))
+            document.getElementById('title').innerHTML = data['title'] + '-' + data['DJ_name'] + " till " + formatAMPM(new Date(data['end_time']))
         }
     }
 
