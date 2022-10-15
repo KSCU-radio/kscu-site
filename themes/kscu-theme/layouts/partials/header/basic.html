@@ -29,6 +29,7 @@
         <div class="flex px-3 py-1 items-center">
           <span id="live-now-circle"></span>
           <p class="px-3">LIVE</p>
+          <p class="px-3" id="title"></p>
         </div>
         <div style="padding-right: 2rem;">
           <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
@@ -115,3 +116,7 @@
   }
 </style>
 
+{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}" integrity="{{ $jsStore.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
