@@ -10,10 +10,10 @@
   color: white;
 ">
 <div class="flex flex-col">
-  <div class="flex justify-between items-center px-2 py-3">
-    <div style="margin-left: 1.5rem;">
-      <p class="text-xl font-medium"> KSCU 103.3FM </p>
-      <p class=""> Santa Clara University Radio</p>
+  <div id="flex_container" class="flex justify-between items-center px-2 py-3">
+    <div id="title_footer">
+      <p id="title_text" class="text-xl font-medium"> KSCU 103.3FM </p>
+      <p id="title_text"> Santa Clara University Radio</p>
     </div>
     <div style="text-align: center;">
       <p>
@@ -23,7 +23,7 @@
         Submit Music: music@kscu.org
       </p>
     </div>
-    <div style="text-align: right; margin-right: 1.5rem;">
+    <div id="address">
       <p> Santa Clara University </p>
       <p> 500 El Camino Real, Santa Clara </p>
       <p> CA, 95035 </p>
@@ -33,9 +33,9 @@
     background-color: white;
     height: 0.1rem;
   "></div>
-  <div class="flex justify-between items-center px-3">
-    <div class="flex py-2" style="margin-left: 1rem;">
-      <div class="flex" style="padding-right: 1.5rem">
+  <div id="bottom_footer" class="flex justify-between items-center px-3">
+    <div id="social_icons" class="flex py-2">
+      <div class="flex">
         <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
           <i class="fa fa-instagram px-2" style="font-size: 24px; color: white;"></i>
         </a>
@@ -47,9 +47,63 @@
         </a>
       </div>
     </div>
-    <p style="margin-right: 1.5rem;"> Copyright &#169 2022 </p>
+    <p id="copyright"> Copyright &#169 2022 </p>
   </div>
 
 </div>
+<style>
+  @media (min-width: 751px) {
+    #address {
+      text-align: right;
+    }
 
+    #title_footer {
+      margin-left: 1.5rem;
+    }
+
+    #address {
+      margin-right: 1.5rem;
+    }
+
+    #social_icons {
+      margin-left: 1.5rem;
+    }
+
+    #copyright {
+      margin-right: 1.5rem;
+    }
+  }
+
+  @media (max-width: 750px) {
+      #flex_container {
+        flex-direction: column;
+      }
+      #title_footer {
+        display: flex;
+        align-items: center;
+      }
+      #title_text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      #address {
+        text-align: center;
+      }
+    }
+
+  @media (max-width: 450px) {
+    #title_footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    #flex_container {
+      text-align: center;
+    }
+    
+    #bottom_footer {
+      flex-direction: column;
+    }
+  }
+</style>
 </footer>
