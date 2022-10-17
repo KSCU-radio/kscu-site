@@ -16,19 +16,19 @@
 [[main]]
   name = "Blog"
   pageRef = "blog"
-  url = "blog/"
+  # url = "blog/"
   weight = 10
 
 [[main]]
   name = "Schedule"
   pageRef = "schedule"
-  url = 'schedule/'
+  # url = 'schedule/'
   weight = 20
 
 [[main]]
   name = "About"
   pageRef = "about"
-  url = 'about/'
+  # url = 'about/'
   weight = 30
 
 
