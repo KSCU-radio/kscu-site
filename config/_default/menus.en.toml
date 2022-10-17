@@ -10,19 +10,25 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+# url parameter is needed to link pages correctly on Netlify deploy.
+# Not sure why but set url equal to a page's relative url
+
 [[main]]
   name = "Blog"
   pageRef = "blog"
+  url = "blog/"
   weight = 10
 
 [[main]]
   name = "Schedule"
   pageRef = "schedule"
+  url = 'schedule/'
   weight = 20
 
 [[main]]
   name = "About"
   pageRef = "about"
+  url = 'about/'
   weight = 30
 
 
