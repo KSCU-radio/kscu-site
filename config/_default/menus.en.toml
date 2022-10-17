@@ -16,13 +16,13 @@
 [[main]]
   name = "Blog"
   pageRef = "blog"
-  url = "//www.kscu-staging.netlify.app/blog/"
+  url = "//blog/"
   weight = 10
 
 [[main]]
   name = "Schedule"
   pageRef = "schedule"
-  url = "//www.kscu-staging.netlify.app/schedule/"
+  url = "//schedule/"
   weight = 20
 
 [[main]]
