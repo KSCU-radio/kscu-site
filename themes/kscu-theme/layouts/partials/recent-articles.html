@@ -11,7 +11,9 @@
     </span>
   </div>
 </div>
-{{ range first 5 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
-{{ partial "article-link.html" . }}
+<div class="flex justify-between content-evenly">
+{{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
+{{ partial "article-links-horizontal.html" . }}
 {{ end }}
 {{ end }}
+</div>

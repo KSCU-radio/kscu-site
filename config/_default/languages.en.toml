@@ -10,7 +10,8 @@ title = "KSCU Staging"
 description = "A staging site for KSCU."
 copyright = "CC 2022"
 
-dateFormat = "2 January 2006"
+# dateFormat = "2 January 2006"
+dateFormat = "1/2/2006"
 
 [author]
   # name = "Your name here"

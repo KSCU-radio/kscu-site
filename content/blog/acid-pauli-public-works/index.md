@@ -3,7 +3,7 @@ title: "Acid Pauli at Public Works"
 date: 2020-08-14
 draft: false
 description: "A concert review of Acid Pauli at Public Works SF"
-showDate: false
+showDate: true
 showAuthor: true
 showReadingTime: false
 showEdit: false
