@@ -2,8 +2,8 @@ module.exports = {
   content: [
     "./layouts/**/*.html",
     "./content/**/*.{html,md}",
-    "./themes/congo/layouts/**/*.html",
-    "./themes/congo/content/**/*.{html,md}",
+    "./themes/kscu-theme/layouts/**/*.html",
+    "./themes/kscu-theme/content/**/*.{html,md}",
   ],
   darkMode: "class",
   theme: {
