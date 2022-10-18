@@ -1901,6 +1901,10 @@ body:has(#menu-controller:checked) {
   top: 0px;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -2313,9 +2317,9 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral), 0.5);
 }
 
-.bg-neutral-200 {
+.bg-neutral-900 {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-neutral-200), var(--tw-bg-opacity));
+  background-color: rgba(var(--color-neutral-900), var(--tw-bg-opacity));
 }
 
 .bg-neutral-500\/50 {
