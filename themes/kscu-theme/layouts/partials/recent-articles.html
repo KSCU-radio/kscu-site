@@ -1,5 +1,5 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
-<div class="font-semibold text-4xl" style="color: black">
+<div class="font-semibold text-4xl py-3" style="color: black">
   <div style="
         line-height: 0.1em;
         border-bottom: 1px solid black;
@@ -11,9 +11,17 @@
     </span>
   </div>
 </div>
-<div class="flex justify-between content-evenly">
+<div id="articles" class="flex justify-between content-evenly" style="padding-bottom: 4rem;">
 {{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
 {{ partial "article-links-horizontal.html" . }}
 {{ end }}
 {{ end }}
 </div>
+
+<style>
+  @media (max-width: 900px) {
+    #articles {
+      flex-direction: column;
+    }
+  }
+</style>
