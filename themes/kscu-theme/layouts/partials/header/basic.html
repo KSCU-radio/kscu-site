@@ -1,78 +1,97 @@
 <!-- Reference for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 
 <!-- Currently coded in mix of Tailwind and standard CSS -->
-<div class="font-medium text-sm shadow-lg z-10 bg-neutral-900"
-  style="
-  position: fixed; 
-  left: 0; 
-  right: 0; 
-  top: 0;
-  color: white;">
-  <div class="flex justify-between items-center max-w-[1124px] m-auto">
-    <div class="flex px-3 items-center" style="
-      height: 4rem;
-      border-style: none solid none none;
-      border-color: white;
-      border-width: 0.2rem;">
+<!-- style="position: fixed; left: 0; right: 0; top: 0; color: white;"-->
+<div
+  class="z-10 bg-neutral-900 text-sm font-medium shadow-lg fixed inset-x-0 top-0 bg-[#ffffff]"
+>
+  <div class="m-auto flex max-w-[1124px] items-center justify-between">
+    <!-- style="height: 4rem; border-style: none solid none none; border-color: white; border-width: 0.2rem;"-->
+    <div
+      class="flex items-center px-3 h-16 border-r-1 border=[#ffffff]"
+    >
       <!-- TODO change to logo instead of text -->
-      <p class="font-bold" style="
-        font-size: 3rem;
-        padding-bottom: 0.5rem; 
-        ">
+      <!-- style="font-size: 3rem; padding-bottom: 0.5rem" -->
+      <p class="font-bold text-5xl pb-2">
         <!-- Padding to help center, could not center otherwise -->
-         KSCU</p>
+        KSCU
+      </p>
     </div>
-    <div class="flex flex-col w-screen">
-      <div class="flex justify-between items-center">
-        <div class="flex px-3 py-1 items-center">
+    <div class="flex w-screen flex-col">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center px-3 py-1">
           <span id="live-now-circle"></span>
           <p class="px-3">LIVE</p>
           <p class="px-3" id="title"></p>
         </div>
-        <div style="padding-right: 2rem;">
-          <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
-            {{ if .Site.Menus.main }}
-            {{ range .Site.Menus.main }}
-            <li class="mb-1 sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-              <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2" href="{{ .URL }}"
-                title="{{ .Title }}">{{ .Name | markdownify | emojify }}</a>
+        <!-- style="padding-right: 2rem" -->
+        <div class="pr-8">
+          <ul
+            class="flex list-none flex-col ltr:text-right rtl:text-left sm:flex-row"
+          >
+            {{ if .Site.Menus.main }} {{ range .Site.Menus.main }}
+            <li
+              class="mb-1 sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+            >
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                href="{{ .URL }}"
+                title="{{ .Title }}"
+                >{{ .Name | markdownify | emojify }}</a
+              >
             </li>
-            {{ end }}
-            {{ end }}
+            {{ end }} {{ end }}
           </ul>
         </div>
       </div>
       <!-- White divider line -->
-      <div style="
-        width: screen;
-        height: 0.1rem;
-        background-color: white;">
-      </div>
+      <!-- style="width: screen; height: 0.1rem; background-color: white" -->
+      <div class="w-screen h-[0.1rem] bg-[#ffffff]"></div>
       <!-- TODO connect API to this playing -->
       <div class="flex items-center justify-between">
         <div class="flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke="black" style="
-            background-color: white;
-            color: black;
-            height: 1.75rem;
-            margin-top: 0.1rem;
-            margin-left: 0.1rem;
-             ">
-             <!-- Margin-top to even out the gap at the bottom -->
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-          </svg>   
-          <p class="px-3 py-1">PLAYING: Ruckus (feat. Richard Judge) - Club Edit, Mixed</p>
+          <!-- style="background-color: white; color: black; height: 1.75rem; margin-top: 0.1rem; margin-left: 0.1rem;" -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="black"
+            viewBox="0 0 24 24"
+            stroke="black"
+            class="bg-[#ffffff] fill-[#000000] h-[1.75rem] mt-[0.1rem] ml-[0.1rem]"
+          >
+            <!-- Margin-top to even out the gap at the bottom -->
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+            />
+          </svg>
+          <p class="px-3 py-1">
+            PLAYING: Ruckus (feat. Richard Judge) - Club Edit, Mixed
+          </p>
         </div>
-        <div class="flex" style="padding-right: 1.5rem">
+        <!-- style="padding-right: 1.5rem" -->
+        <div class="flex pr-6">
           <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-            <i class="fa fa-instagram px-2" style="font-size: 24px; color: white;"></i>
+            <!-- style="font-size: 24px; color: white" -->
+            <i
+              class="fa fa-instagram px-2 text-2xl text-[#ffffff]"
+            ></i>
           </a>
           <a href="https://twitter.com/kscu" target="_blank">
-            <i class="fa fa-twitter px-2" style="font-size: 24px; color: white;"></i>
+            <!-- style="font-size: 24px; color: white" -->
+            <i
+              class="fa fa-twitter px-2 text-2xl text-[#ffffff]"
+            ></i>
           </a>
           <a href="https://open.spotify.com/user/kscu" target="_blank">
-            <i class="fa fa-spotify px-2" style="font-size: 24px; color: white;"></i>
+            <!-- style="font-size: 24px; color: white" -->
+            <i
+              class="fa fa-spotify px-2 text-2xl text-[#ffffff]"
+            ></i>
           </a>
         </div>
       </div>
@@ -81,41 +100,52 @@
 </div>
 <style>
   @keyframes pulse-red {
-      0% {
-          transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
-      }
-  
-      70% {
-          transform: scale(1);
-          box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
-      }
-  
-      100% {
-          transform: scale(0.95);
-          box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
-      }
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
   }
   #live-now-circle {
+    /* display: flex; */
+    width: 12px;
+    height: 12px;
+    background-color: #b11010;
 
-      /* display: flex; */
-      width: 12px;
-      height: 12px;
-      background-color: #b11010;
+    border-radius: 6px;
+    opacity: 100;
+    display: inline-block;
 
-      border-radius: 6px;
-      opacity: 100;
-      display: inline-block;
-
-      box-shadow: 0 0 0 0 rgb(48, 27, 27);
-      transform: scale(1);
-      animation: pulse-red 2s infinite;
-      animation-play-state: running;
-      margin-right: 1px
+    box-shadow: 0 0 0 0 rgb(48, 27, 27);
+    transform: scale(1);
+    animation: pulse-red 2s infinite;
+    animation-play-state: running;
+    margin-right: 1px;
   }
 </style>
 
-{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}" integrity="{{ $jsStore.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+{{ $jsStore := resources.Get "js/store2.js" | resources.Minify |
+resources.Fingerprint "sha512" }}
+<script
+  defer
+  type="text/javascript"
+  src="{{ $jsStore.RelPermalink }}"
+  integrity="{{ $jsStore.Data.Integrity }}"
+></script>
+{{ $jsShow := resources.Get "js/show.js" | resources.Minify |
+resources.Fingerprint "sha512" }}
+<script
+  defer
+  type="text/javascript"
+  src="{{ $jsShow.RelPermalink }}"
+  integrity="{{ $jsShow.Data.Integrity }}"
+></script>
