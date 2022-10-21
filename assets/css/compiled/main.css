@@ -1874,11 +1874,23 @@ body:has(#menu-controller:checked) {
   position: sticky;
 }
 
+.inset-1\/2 {
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
 }
 
 .top-\[100vh\] {
@@ -1948,14 +1960,14 @@ body:has(#menu-controller:checked) {
   margin-bottom: 0.25rem;
 }
 
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .my-0 {
@@ -2035,6 +2047,10 @@ body:has(#menu-controller:checked) {
   margin-bottom: 0.25rem;
 }
 
+.ml-\[0\.1rem\] {
+  margin-left: 0.1rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -2077,6 +2093,18 @@ body:has(#menu-controller:checked) {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-\[0\.1rem\] {
+  height: 0.1rem;
+}
+
+.h-\[1\.75rem\] {
+  height: 1.75rem;
 }
 
 .h-full {
@@ -2326,6 +2354,11 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral-900), var(--tw-bg-opacity));
 }
 
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-neutral-500\/50 {
   background-color: rgba(var(--color-neutral-500), 0.5);
 }
@@ -2356,6 +2389,10 @@ body:has(#menu-controller:checked) {
 
 .bg-neutral-100\/50 {
   background-color: rgba(var(--color-neutral-100), 0.5);
+}
+
+.fill-\[\#000000\] {
+  fill: #000000;
 }
 
 .object-scale-down {
@@ -2436,12 +2473,12 @@ body:has(#menu-controller:checked) {
   padding-bottom: 1.5rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pl-2 {
@@ -2450,6 +2487,18 @@ body:has(#menu-controller:checked) {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -2505,6 +2554,11 @@ body:has(#menu-controller:checked) {
 
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-semibold {
@@ -2585,6 +2639,11 @@ body:has(#menu-controller:checked) {
 .text-primary-700 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-primary-700), var(--tw-text-opacity));
+}
+
+.text-\[\#ffffff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-primary-400 {
