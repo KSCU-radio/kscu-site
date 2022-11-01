@@ -2,32 +2,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Currently coded in mix of Tailwind and standard CSS -->
-<div class="font-medium text-sm shadow-lg z-10 bg-neutral-900"
+<div class="font-medium text-sm shadow-lg z-10 bg-neutral-100"
   style="
   position: fixed; 
   left: 0; 
   right: 0; 
   top: 0;
-  color: white;">
-  <div class="flex justify-between items-center max-w-[1124px] m-auto">
+  color: black;">
+  <div class="flex justify-between items-center max-w-[1124px] m-auto" style="
+    border-right: 0.15rem solid black;
+    border-left: 0.15rem solid black;">
     <div class="flex px-3 items-center" style="
-      height: 4rem;
-      border-style: none solid none none;
-      border-color: white;
-      border-width: 0.2rem;">
-      <!-- TODO change to logo instead of text -->
-      <p class="font-bold" style="
-        font-size: 3rem;
-        padding-bottom: 0.5rem; 
-        ">
-        <!-- Padding to help center, could not center otherwise -->
-         KSCU</p>
+      border-right: 0.15rem solid black;
+      height: 100%">
+      <a href="#">
+        <img src="kscu_logo.svg" alt="kscu logo">
+      </a>
     </div>
     <div class="flex flex-col w-screen">
       <div class="flex justify-between items-center">
-        <div class="flex px-3 py-1 items-center">
+        <div class="flex px-2 py-1 items-center" style="
+          border-right: 0.15rem solid black;">
+          <p class="px-2">LIVE</p>
           <span id="live-now-circle"></span>
-          <p class="px-3">LIVE</p>
           <p class="px-3" id="title"></p>
         </div>
         <div style="padding-right: 2rem;">
@@ -47,7 +44,7 @@
       <div style="
         width: screen;
         height: 0.1rem;
-        background-color: white;">
+        background-color: black;">
       </div>
       <!-- TODO connect API to this playing -->
       <div class="flex items-center justify-between">
