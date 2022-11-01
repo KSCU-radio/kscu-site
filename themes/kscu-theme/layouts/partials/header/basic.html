@@ -19,13 +19,31 @@
         <img src="kscu_logo.svg" alt="kscu logo">
       </a>
     </div>
+    <!-- Vertical Flexbox -->
     <div class="flex flex-col w-screen">
+      <!-- Top Row Flexbox -->
       <div class="flex justify-between items-center">
-        <div class="flex px-2 py-1 items-center" style="
+        <div class="flex px-1 items-center" style="
           border-right: 0.15rem solid black;">
-          <p class="px-2">LIVE</p>
-          <span id="live-now-circle"></span>
-          <p class="px-3" id="title"></p>
+          <div class="flex items-center py-1" style="
+            border-right: 0.15rem solid black;">
+            <p class="px-2">LIVE</p>
+          <span style="margin-right: 0.5rem;" id="live-now-circle"></span>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke="black" style="
+              color: black;
+              height: 1.5rem;
+              margin-top: 0.1rem;
+              margin-left: 0.2rem;
+               ">
+               <!-- Margin-top to even out the gap at the bottom -->
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+            </svg>
+          </div>
+          <div>
+            <i class="fa-solid fa-volume"></i>
+          </div>
         </div>
         <div style="padding-right: 2rem;">
           <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
@@ -43,22 +61,12 @@
       <!-- White divider line -->
       <div style="
         width: screen;
-        height: 0.1rem;
+        height: 0.15rem;
         background-color: black;">
       </div>
       <!-- TODO connect API to this playing -->
       <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke="black" style="
-            background-color: white;
-            color: black;
-            height: 1.75rem;
-            margin-top: 0.1rem;
-            margin-left: 0.1rem;
-             ">
-             <!-- Margin-top to even out the gap at the bottom -->
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-          </svg>   
+        <div class="flex items-center">   
           <p class="px-3 py-1">PLAYING: Ruckus (feat. Richard Judge) - Club Edit, Mixed</p>
         </div>
         <div class="flex" style="padding-right: 1.5rem">
