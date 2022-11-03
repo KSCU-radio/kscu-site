@@ -8,42 +8,45 @@
   left: 0; 
   right: 0; 
   top: 0;
-  color: black;">
-  <div class="flex justify-between items-center max-w-[1124px] m-auto" style="
-    border-right: 0.15rem solid black;
-    border-left: 0.15rem solid black;">
-    <div class="flex px-3 items-center" style="
-      border-right: 0.15rem solid black;
-      height: 100%">
-        <img src="kscu_logo.svg" alt="KSCU Logo" width="150" height="65"></img>
+  color: black;
+  height: 60px;">
+  <div class="flex justify-between items-center" style="height: 60px; border: 0.1rem solid;">
+    <div class="flex px-3 py-3 items-center" style="
+      border-right: 1px solid black;
+      height: 100%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;">
+      <a href="#">
+        <img src="kscu_logo.svg" alt="KSCU Logo" width="150" height="60"></img>
+      </a>
     </div>
     <!-- Vertical Flexbox -->
     <div class="flex flex-col w-screen">
       <!-- Top Row Flexbox -->
       <div class="flex justify-between items-center">
-        <div class="flex px-1 items-center" style="
-          border-right: 0.15rem solid black;">
-          <div class="flex items-center py-1" style="
-            border-right: 0.15rem solid black;">
-            <p class="px-2">LIVE</p>
-          <span style="margin-right: 0.5rem;" id="live-now-circle"></span>
+        <div class="flex px-1 items-center">
+          <div class="flex items-center py-1">
+            <p class="px-2 font-bold">LIVE</p>
+            <span style="margin-right: 0.5rem;" id="live-now-circle"></span>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke="black" style="
-              color: black;
-              height: 1.5rem;
-              margin-top: 0.1rem;
-              margin-left: 0.2rem;
-               ">
-               <!-- Margin-top to even out the gap at the bottom -->
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-            </svg>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
+          <div style="
+            background-color: black;
+            width: 0.15rem;
+            height: 100%;"></div>
+          <div class="px-1">
+            <img src="play_button.svg" alt="Click to Play" height="12" width="12" style="margin-left: 0.3rem; margin-right: 0.3rem;">
           </div>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
+          <div class="px-1">
+            <img src="volume.svg" alt="Volume Icon" width="20" height="20" style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+          </div>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
           <div>
-            <i class="fa-solid fa-volume"></i>
+            <p class="px-3"><b>The Redwood Rewind</b> with <b>DJ Mist</b></p>
           </div>
         </div>
-        <div style="padding-right: 2rem;">
+        <div style="padding-right: 1.5rem;">
           <ul class="flex flex-col list-none ltr:text-right rtl:text-left sm:flex-row">
             {{ if .Site.Menus.main }}
             {{ range .Site.Menus.main }}
@@ -59,23 +62,29 @@
       <!-- White divider line -->
       <div style="
         width: screen;
-        height: 0.15rem;
+        height: 1px;
         background-color: black;">
       </div>
       <!-- TODO connect API to this playing -->
       <div class="flex items-center justify-between">
-        <div class="flex items-center">   
-          <p class="px-3 py-1">PLAYING: Ruckus (feat. Richard Judge) - Club Edit, Mixed</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <p class="px-3 py-1 font-bold">PLAYING</p>
+          </div>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
+          <div>
+            <p class="px-3 py-1">Ruckus (feat. Richard Judge) - Club Edit, Mixed</p>
+          </div>
         </div>
         <div class="flex" style="padding-right: 1.5rem">
           <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-            <i class="fa fa-instagram px-2" style="font-size: 24px; color: white;"></i>
+            <i class="fa fa-instagram px-2" style="font-size: 24px; color: black;"></i>
           </a>
           <a href="https://twitter.com/kscu" target="_blank">
-            <i class="fa fa-twitter px-2" style="font-size: 24px; color: white;"></i>
+            <i class="fa fa-twitter px-2" style="font-size: 24px; color: black;"></i>
           </a>
           <a href="https://open.spotify.com/user/kscu" target="_blank">
-            <i class="fa fa-spotify px-2" style="font-size: 24px; color: white;"></i>
+            <i class="fa fa-spotify px-2" style="font-size: 24px; color: black;"></i>
           </a>
         </div>
       </div>
