@@ -12,12 +12,12 @@
   </div>
 </div>  */}}
 <div>
-  <div class="font-semibold text-4xl py-3 border">
+  <div class="font-semibold text-4xl py-3 px-3 border">
     Recent Posts
   </div>
 </div>
-<div id="articles" class="flex justify-between content-evenly" 
-style="padding-bottom: 4rem; border-style: solid; border-width: 0px 1px 1px 1px;">
+<div id="articles" class="flex justify-between content-evenly px-3" 
+style="padding-bottom: 2rem; margin-bottom: 2rem; border-style: solid; border-width: 0px 1px 1px 1px;">
 {{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
 {{ partial "article-links-horizontal.html" . }}
 {{ end }}
@@ -25,7 +25,7 @@ style="padding-bottom: 4rem; border-style: solid; border-width: 0px 1px 1px 1px;
 </div>
 
 <style>
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     #articles {
       flex-direction: column;
     }
