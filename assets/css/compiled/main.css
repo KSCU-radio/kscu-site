@@ -2303,9 +2303,9 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
 }
 
-.bg-neutral {
+.bg-\[\#F5F5F5\] {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-neutral), var(--tw-bg-opacity));
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-primary-200 {
@@ -2317,17 +2317,22 @@ body:has(#menu-controller:checked) {
   background-color: rgba(var(--color-neutral), 0.5);
 }
 
-.bg-neutral-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-neutral-100), var(--tw-bg-opacity));
-}
-
 .bg-neutral-500\/50 {
   background-color: rgba(var(--color-neutral-500), 0.5);
 }
 
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-neutral), var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-neutral-100), var(--tw-bg-opacity));
 }
 
 .bg-neutral-300 {
