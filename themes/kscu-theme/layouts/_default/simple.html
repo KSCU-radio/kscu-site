@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <article class="max-w-full">
+  <article class="max-w-prose">
     <header>
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
       {{ end }}
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        {{ .Title | emojify }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 text-right">
+        {{ .Title | emojify upper }}
       </h1>
     </header>
     <section class="max-w-full mt-6 prose dark:prose-invert">
