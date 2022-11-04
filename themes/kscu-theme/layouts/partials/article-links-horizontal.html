@@ -1,5 +1,5 @@
 <article class="px-3">
-  <h3 class="flex items-center justify mt-6 text-xl font-semibold">
+  <h3 class="flex items-center justify mt-6 text-lg font-semibold">
     {{ with .Params.externalUrl }}
     <div>
       <a class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
@@ -10,7 +10,7 @@
       </span>
     </div>
     {{ else }}
-    <a class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+    <a class="text-neutral-800 decoration-primary-500 dark:text-neutral"
       href="{{ .RelPermalink }}">{{ .Title | emojify }}</a>
     {{ end }}
     {{ if and .Draft .Site.Params.article.showDraftLabel }}
@@ -25,7 +25,7 @@
   <div class="text-sm text-neutral-500 dark:text-neutral-400">
     {{ partial "article-meta.html" . }}
   </div>
-  <div class="py-1 prose dark:prose-invert">
+  <div class="py-1 text-md prose dark:prose-invert">
     {{ .Summary | emojify }}
     
   </div>
