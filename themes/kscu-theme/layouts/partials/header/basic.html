@@ -7,6 +7,7 @@
   width: 100vw;
   left: 50%;
   right: 50%;
+  height: 58px;
   margin-left: -50vw;
   margin-right: -50vw;
   color: black;">
@@ -16,9 +17,7 @@
       height: 58px;">
       <div class="flex px-3 py-6 items-center" style="
       border-right: 1px solid black;
-      height: 100%;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;">
+      height: 100%;">
         <a href="/">
           <img src="/kscu_logo.svg" alt="KSCU Logo" width="120"></img>
         </a>
@@ -44,21 +43,21 @@
               <img src="/play_button.svg" alt="Click to Play" height="12" width="12"
                 style="margin-left: 0.3rem; margin-right: 0.3rem;">
             </div>
-            <div id="play-volume" style="height: 29px; width: 1px; background-color: black;"></div>
+            <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
             <div id="play-volume" class="px-1">
               <!-- Need to connect volume adjustor to this svg -->
               <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
                 style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="play-volume" style="height: 29px; width: 1px; background-color: black;"></div>
+            <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
             <div>
-              <p class="px-3"><b>The Redwood Rewind</b><span style="font-family: 'IBM Plex Mono', monospace;"> with
+              <p class="px-3"><b>The Redwood Rewind</b><span style="font-family: 'IBM Plex Mono', monospace; height: 28px;"> with
                 </span><b>DJ Mist</b></p>
             </div>
           </div>
           <div id="page-links" class="flex items-center" style="padding-right: 1.5rem;">
-            <div style="height: 29px; width: 1px; background-color: black; margin-right: 1rem;"></div>
+            <div style="height: 28px; width: 1px; background-color: black; margin-right: 1rem;"></div>
             <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
               {{ if .Site.Menus.main }}
               {{ range .Site.Menus.main }}
@@ -85,14 +84,14 @@
               <p class="px-3 py-1 font-bold">PLAYING</p>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="playing-text" style="height: 29px; width: 1px; background-color: black;"></div>
+            <div id="playing-text" style="height: 28px; width: 1px; background-color: black;"></div>
             <div>
               <p class="px-3 py-1" style="height: 30px; font-family: 'IBM Plex Mono', monospace;">Ruckus (feat. Richard
                 Judge) - Club Edit, Mixed</p>
             </div>
           </div>
           <div id="social-media" class="flex items-center" style="padding-right: 1rem">
-            <div style="height: 29px; width: 1px; background-color: black; margin-right: 1rem;"></div>
+            <div style="height: 28px; width: 1px; background-color: black; margin-right: 1rem;"></div>
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
               <i class="fa fa-instagram px-2" style="font-size: 24px; color: black;"></i>
             </a>
@@ -111,56 +110,59 @@
 
 <!-- create a third row when screen width is too small-->
 <div id="third-row">
-  <div id="third-row" class="font-medium text-sm shadow-lg z-10 bg-neutral-100" style="
-  position: fixed; 
-  left: 0; 
-  right: 0; 
-  top: 60px;
-  height: 30px;
-  color: black;
-  border-bottom: 0.1rem solid;
-  border-right: 0.1rem solid;
-  border-left: 0.1rem solid;">
-    <div class="flex justify-between items-center">
-      <div class="flex justify-left items-center">
-        <div id="new-social-media" class="flex items-center" style="padding-left: 1rem">
-          <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-            <i class="fa fa-instagram px-2" style="font-size: 24px; color: black;"></i>
-          </a>
-          <a href="https://twitter.com/kscu" target="_blank">
-            <i class="fa fa-twitter px-2" style="font-size: 24px; color: black;"></i>
-          </a>
-          <a href="https://open.spotify.com/user/kscu" target="_blank">
-            <i class="fa fa-spotify px-2" style="font-size: 24px; color: black;"></i>
-          </a>
-          <div style="height: 29px; width: 1px; background-color: black; margin-left: 1rem;"></div>
+  <div id="third-row" class="font-medium text-sm z-10" style="
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  top: 8px;
+  margin-left: -50vw;
+  margin-right: -50vw;">
+    <div class="px-10">
+      <div class="flex justify-between items-center" style="
+      border-bottom: 0.1rem solid;
+      border-left: 0.1rem solid;
+      border-right: 0.1rem solid">
+        <div class="flex justify-left items-center">
+          <div id="new-social-media" class="flex items-center" style="padding-left: 0.5rem">
+            <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
+              <i class="fa fa-instagram px-2" style="font-size: 24px; color: black;"></i>
+            </a>
+            <a href="https://twitter.com/kscu" target="_blank">
+              <i class="fa fa-twitter px-2" style="font-size: 24px; color: black;"></i>
+            </a>
+            <a href="https://open.spotify.com/user/kscu" target="_blank">
+              <i class="fa fa-spotify px-2" style="font-size: 24px; color: black;"></i>
+            </a>
+            <div style="height: 29px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
+          </div>
+          <div class="px-1">
+            <!-- Need to connect web player api to this svg -->
+            <img src="/play_button.svg" alt="Click to Play" height="12" width="12"
+              style="margin-left: 0.5rem; margin-right: 0.3rem;">
+          </div>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
+          <div class="px-1">
+            <!-- Need to connect volume adjustor to this svg -->
+            <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
+              style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+          </div>
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
         </div>
-        <div class="px-1">
-          <!-- Need to connect web player api to this svg -->
-          <img src="/play_button.svg" alt="Click to Play" height="12" width="12"
-            style="margin-left: 0.3rem; margin-right: 0.3rem;">
-        </div>
-        <div style="height: 29px; width: 1px; background-color: black;"></div>
-        <div class="px-1">
-          <!-- Need to connect volume adjustor to this svg -->
-          <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
-            style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
-        </div>
-        <div style="height: 29px; width: 1px; background-color: black;"></div>
-      </div>
 
-      <div id="new-page-links" class="flex items-center" style="padding-right: 1.5rem; height: 30px;">
-        <div style="height: 29px; width: 1px; background-color: black; margin-right: 1rem;"></div>
-        <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
-          {{ if .Site.Menus.main }}
-          {{ range .Site.Menus.main }}
-          <li style="margin-left: 1rem;">
-            <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-              href="{{ .URL }}" title="{{ .Title }}">{{ .Name | markdownify | emojify }}</a>
-          </li>
-          {{ end }}
-          {{ end }}
-        </ul>
+        <div id="new-page-links" class="flex items-center" style="padding-right: 1rem; height: 30px;">
+          <div style="height: 29px; width: 1px; background-color: black;"></div>
+          <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
+            {{ if .Site.Menus.main }}
+            {{ range .Site.Menus.main }}
+            <li style="margin-left: 1rem;">
+              <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                href="{{ .URL }}" title="{{ .Title }}">{{ .Name | markdownify | emojify }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
