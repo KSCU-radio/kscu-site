@@ -13,13 +13,19 @@
 </div>  */}}
 <div>
   <div class="font-semibold text-2xl py-3 px-3 border">
-    Recent Blogposts
+    <a href="https://www.google.com/">
+      <p class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400">
+        Recent Blogposts
+      </p>
+    </a>
   </div>
 </div>
 <div id="articles" class="flex justify-between content-evenly px-3" 
 style="padding-bottom: 2rem; margin-bottom: 2rem; border-style: solid; border-width: 0px 1px 1px 1px;">
 {{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
-{{ partial "article-links-horizontal.html" . }}
+<div class="hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-500">
+  {{ partial "article-links-horizontal.html" . }}
+</div>
 {{ end }}
 {{ end }}
 </div>
