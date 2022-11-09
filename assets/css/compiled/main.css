@@ -2315,9 +2315,9 @@ body:has(#menu-controller:checked) {
   border-color: rgba(var(--color-primary-400), var(--tw-border-opacity));
 }
 
-.bg-\[\#F2F2E4\] {
+.bg-\[\#ede8e0\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 242 228 / var(--tw-bg-opacity));
+  background-color: rgb(237 232 224 / var(--tw-bg-opacity));
 }
 
 .bg-primary-200 {
