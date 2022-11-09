@@ -26,15 +26,14 @@ async function fetchShow() {
         if (new Date(data['start_time']) > Date.now()) {
             // if show is in the future
             // document.getElementById('isLive').innerHTML = "Up Next on KSCU:"
-            document.getElementById('title').innerHTML = data['title'] + ' with ' + data['DJ_name'] + " at " + formatAMPM(new Date(data['start_time']))
-
+            document.getElementById('show_title').innerHTML = '<b>' + data['title'] + '</b>'  + " with " + data['DJ_name']
         } else {
             // if show is live
             // document.getElementById('isLive').innerHTML = "Live Now:  ";
             // console.log("Starting animation.")
             // document.getElementById('live-now-circle').style.animationPlayState = "running";
             // document.getElementById('live-now-circle').style.display = "inline-block";
-            document.getElementById('title').innerHTML = data['title'] + ' with ' + data['DJ_name'] + " till " + formatAMPM(new Date(data['end_time']))
+            document.getElementById('show_title').innerHTML = '<b>' + data['title'] + '</b>' + " with " + data['DJ_name']
         }
     }
 
@@ -43,7 +42,7 @@ async function fetchShow() {
         end_time = new Date(data['end_time'])
         if (end_time > new Date()) {
             // Show is currently on
-            if ((data['title']) != document.getElementById("title").innerHTML) {
+            if ((data['title']) != document.getElementById("show_title").innerHTML) {
                 console.log("Old show is still on air, placing data...")
                 placeData(data)
             } else {

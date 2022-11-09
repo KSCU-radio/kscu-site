@@ -2254,6 +2254,10 @@ body:has(#menu-controller:checked) {
   scroll-behavior: smooth;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2467,6 +2471,10 @@ body:has(#menu-controller:checked) {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-center {
