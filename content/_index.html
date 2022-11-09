@@ -14,27 +14,38 @@ showBreadcrumbs: true
 lastmod: 2022-08-18
 ---
 
+<!--breakpoint 1167 and up: text aligns w/ what's in the figma-->
+<!-- THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
+<!-- STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp; -->
+<!-- AT -->
+<!-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CLARA UNIVERSITY &nbsp; -->
+<!-- width = 550; height = 257; (this is the max height)-->
 <div class="flex h-full">
-  <img class="ml-3" src="/kscuwebsitepic.jpeg" alt="KSCU" width="550" height="257" 
-  style="
-  max-height: 257px;
-  border-radius: 15px;
-  opacity: 1;
-  z-index: 1;">
-  <div style="margin: auto; margin-left: -65px; margin-top: 150px; z-index: 2;">
-    <div style="font-size: 36px;">
-      <span class="font-light">
-        THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      </span>
+  <div id="img_width">
+    <img
+      class="ml-3"
+      src="/kscuwebsitepic.jpeg"
+      alt="KSCU"
+      width=""
+      height=""
+      style="max-height: 257px; border-radius: 15px; opacity: 1; z-index: 1"
+    />
+  </div>
+
+  <div id="header_text" style="z-index: 2; flex-basis: 50%">
+    <div class="">
+      <span class="font-light"> THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
       <span class="font-semibold">
-        STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp; </span>
-        <span>AT </span><span class="font-semibold">SANTA 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CLARA UNIVERSITY &nbsp;
+        STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp;
+      </span>
+      <span>AT </span
+      ><span class="font-semibold"
+        >SANTA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        CLARA UNIVERSITY &nbsp;
       </span>
     </div>
   </div>
 </div>
-
 
 <div class="text-justify pt-3">
   <div class="text-lg font-light">
@@ -56,3 +67,104 @@ lastmod: 2022-08-18
   </div>
 </div>
 <br /><br />
+<!-- -240px -->
+<!-- @media (max-width: 1280px){
+    #header_text {
+      margin-left: -20%;
+      font-size: 36px;
+    }
+    #img_width{
+      width: 50vw;
+    }
+  }-->
+<style>
+  @media (min-width: 1536px){
+    #header_text{
+      margin-left: -35%;
+      margin-top: 144px;
+      font-size: 36px;
+    }
+
+    #img_width{
+      width: 50vw;
+    }
+    
+  }
+  @media (max-width: 1536px){
+    #header_text{
+      margin-left: -30%;
+      margin-top: 144px;
+      font-size: 36px;
+    }
+    #img_width{
+      width: 50vw;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    #header_text {
+      margin-left: -25%;
+    }
+  }
+
+  @media (max-width: 1088px){
+    #header_text {
+      font-size: 32px;
+    }
+    #img_width{
+      width: 450px;
+    }
+  }
+
+  @media (max-width: 931px){
+    #header_text{
+      font-size: 28px;
+      margin-left: -20%;
+      margin-top: 112px;
+    }
+    #img_width{
+      width: 350px;
+    }
+  }
+
+  @media (max-width: 839px){
+    #header_text{
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 666px){
+    #header_text{
+      font-size: 20px;
+      margin-top: 96px;
+    }
+
+    #img_width{
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 510px){
+    #header_text{
+      font-size: 16px;
+    }
+
+    #img_width{
+      width:250px;
+    }
+  }
+
+  @media (max-width: 418px){
+    #header_text{
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 384px){
+    #header_text{
+      margin-left: -70%;
+      font-size: 14px;
+    }
+  }
+
+</style>
