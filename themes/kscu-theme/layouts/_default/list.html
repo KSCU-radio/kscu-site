@@ -5,7 +5,7 @@
   {{ partial "breadcrumbs.html" . }}
   {{ end }}
   <article class="max-w-prose">
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 text-right">{{ .Title | upper }}</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900">{{ .Title | upper }}</h1>
   </article>
   </header>
   <section class="{{ if $toc -}}
@@ -20,7 +20,7 @@
       </div>
     </div>
     {{ end }}
-    <div class="min-w-0 min-h-0 max-w-prose">
+    <div class="min-w-0 min-h-0">
       {{ .Content | emojify }}
     </div>
   </section>

@@ -1,5 +1,6 @@
 <!-- Ignores default margins on the template -->
-<footer class="font-sm text-sm relative" style="
+<!-- 
+
   width: 100vw;
   left: 50%;
   right: 50%;
@@ -7,69 +8,45 @@
   margin-right: -50vw;
   margin-top: 0px;
   color: black;
-">
-  <div class="px-10 py-2">
-  <div class="flex flex-col justify-between border">
-  <div id="flex_container" class="flex justify-between items-center px-2" style="font-family: 'IBM Plex Mono', monospace;">
-    <div id="title_footer">
-      <p id="title_text" class="text-2xl font-bold"> KSCU 103.3 FM </p>
-      <p id="title_text" class="text-base"> Santa Clara University's Student Run Radio</p>
-    </div>
-    <div id="address" class="text-md py-3 font-medium">
-      <p> 500 El Camino Real </p>
-      <p> Santa Clara </p>
-      <p> CA, 95050 </p>
-    </div>
-  </div>
-  <div style="
+
+ -->
+<footer class="font-sm text-sm relative">
+  <div class="px-10 py-2 max-w-7xl m-auto">
+    <div class="flex flex-col justify-between border">
+      <div id="flex_container" class="flex justify-between items-center px-2"
+        style="font-family: 'IBM Plex Mono', monospace;">
+        <div id="title_footer">
+          <p id="title_text" class="text-2xl font-bold"> KSCU 103.3 FM </p>
+          <p id="title_text" class="text-base"> Santa Clara University's Student Run Radio</p>
+        </div>
+        <div id="address" class="text-md py-3 font-medium">
+          <p> 500 El Camino Real </p>
+          <p> Santa Clara </p>
+          <p> CA, 95050 </p>
+        </div>
+      </div>
+      <div style="
     background-color: white;
     height: 0.1rem;"></div>
+    </div>
+
   </div>
-
-</div>
-<style>
-  @media (min-width: 751px) {
-    #address {
-      text-align: right;
-    }
-
-    #title_footer {
-      margin-left: 1.5rem;
-    }
-
-    #address {
-      margin-right: 1.5rem;
-    }
-
-    #social_icons {
-      margin-left: 1.5rem;
-    }
-
-    #copyright {
-      margin-right: 1.5rem;
-    }
-  }
-
-  @media (max-width: 750px) {
-      #flex_container {
-        flex-direction: column;
-      }
-      #title_footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1rem;
-      }
-      #title_text {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
+  <style>
+    @media (min-width: 751px) {
       #address {
-        text-align: center;
+        text-align: right;
+      }
+
+      #title_footer {
+        margin-left: 1.5rem;
+      }
+
+      #address {
+        margin-right: 1.5rem;
       }
 
       #social_icons {
-      margin-left: 1.5rem;
+        margin-left: 1.5rem;
       }
 
       #copyright {
@@ -77,19 +54,49 @@
       }
     }
 
-  @media (max-width: 450px) {
-    #title_footer {
-      flex-direction: column;
-      text-align: center;
+    @media (max-width: 750px) {
+      #flex_container {
+        flex-direction: column;
+      }
+
+      #title_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+      }
+
+      #title_text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      #address {
+        text-align: center;
+      }
+
+      #social_icons {
+        margin-left: 1.5rem;
+      }
+
+      #copyright {
+        margin-right: 1.5rem;
+      }
     }
-    
-    #flex_container {
-      text-align: center;
+
+    @media (max-width: 450px) {
+      #title_footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #flex_container {
+        text-align: center;
+      }
+
+      #bottom_footer {
+        flex-direction: column;
+      }
     }
-    
-    #bottom_footer {
-      flex-direction: column;
-    }
-  }
-</style>
+  </style>
 </footer>
