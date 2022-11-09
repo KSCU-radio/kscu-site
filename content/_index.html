@@ -32,7 +32,7 @@ lastmod: 2022-08-18
     />
   </div>
 
-  <div id="header_text" style="z-index: 2; flex-basis: 50%">
+  <div id="header_text" style="z-index: 2;">
     <div class="">
       <span class="font-light"> THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
       <span class="font-semibold">
@@ -83,6 +83,7 @@ lastmod: 2022-08-18
       margin-left: -35%;
       margin-top: 144px;
       font-size: 36px;
+      flex-basis: 50%;
     }
 
     #img_width{
@@ -95,6 +96,7 @@ lastmod: 2022-08-18
       margin-left: -30%;
       margin-top: 144px;
       font-size: 36px;
+      flex-basis: 50%;
     }
     #img_width{
       width: 50vw;
@@ -137,6 +139,7 @@ lastmod: 2022-08-18
     #header_text{
       font-size: 20px;
       margin-top: 96px;
+      margin-left: -25%;
     }
 
     #img_width{
@@ -147,6 +150,7 @@ lastmod: 2022-08-18
   @media (max-width: 510px){
     #header_text{
       font-size: 16px;
+      margin-left: -30%;
     }
 
     #img_width{
@@ -162,8 +166,21 @@ lastmod: 2022-08-18
 
   @media (max-width: 384px){
     #header_text{
-      margin-left: -70%;
-      font-size: 14px;
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 369px){
+    #header_text{
+      margin-left: -50%;
+      font-size: 12px;
+      flex-basis: 50%
+    }
+  }
+
+  @media (max-width: 325px){
+    #header_text{
+      flex-basis: 60%;
     }
   }
 
