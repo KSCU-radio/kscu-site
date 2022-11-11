@@ -2737,12 +2737,12 @@ body:has(#menu-controller:checked) {
           text-decoration-style: wavy;
 }
 
-.hover\:decoration-2:hover {
-  text-decoration-thickness: 2px;
-}
-
 .hover\:decoration-1:hover {
   text-decoration-thickness: 1px;
+}
+
+.hover\:decoration-2:hover {
+  text-decoration-thickness: 2px;
 }
 
 .hover\:underline-offset-2:hover {
