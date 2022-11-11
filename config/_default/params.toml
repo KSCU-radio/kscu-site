@@ -22,7 +22,7 @@ enableCodeCopy = false
   showCopyright = true
   showThemeAttribution = true
   showAppearanceSwitcher = false
-  showScrollToTop = true
+  showScrollToTop = false
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
