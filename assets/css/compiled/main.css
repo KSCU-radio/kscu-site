@@ -2419,6 +2419,11 @@ body:has(#menu-controller:checked) {
   padding-right: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2432,11 +2437,6 @@ body:has(#menu-controller:checked) {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .px-4 {
@@ -2732,8 +2732,17 @@ body:has(#menu-controller:checked) {
           text-decoration-line: underline;
 }
 
+.hover\:decoration-wavy:hover {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
 .hover\:decoration-2:hover {
   text-decoration-thickness: 2px;
+}
+
+.hover\:decoration-1:hover {
+  text-decoration-thickness: 1px;
 }
 
 .hover\:underline-offset-2:hover {
