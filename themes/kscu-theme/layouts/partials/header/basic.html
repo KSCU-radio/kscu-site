@@ -1,3 +1,18 @@
+<!-- Import JS -->
+{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
+  integrity="{{ $jsStore.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+
+{{ $jsHowl := resources.Get "js/howler.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsHowl.RelPermalink }}" integrity="{{ $jsHowl.Data.Integrity }}"></script>
+{{ $jsStream := resources.Get "js/stream.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsStream.RelPermalink }}"
+  integrity="{{ $jsStream.Data.Integrity }}"></script>
+
 <!-- Reference for Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -42,11 +57,14 @@
             width: 0.15rem;
             height: 100%;"></div>
             <!-- play-volume for play and volume icons -->
-            <div id="play-volume" class="px-1">
-              <!-- Need to connect web player api to this svg -->
-              <img src="/play_button.svg" alt="Click to Play" height="12" width="12"
-                style="margin-left: 0.3rem; margin-right: 0.3rem;">
-            </div>
+            <button id="play-pause" class="">
+              <img id="play" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
+                style="margin-left: 1rem; margin-right: 1rem;">
+              <img id="pause" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
+                style="margin-left: 1rem; margin-right: 1rem; display: none;">
+              <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
+                style="margin-left: 1rem; margin-right: 1rem; display: none;">
+            </button>
             <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
             <div id="play-volume" class="px-1">
               <!-- Need to connect volume adjustor to this svg -->
@@ -67,7 +85,8 @@
               {{ if .Site.Menus.main }}
               {{ range .Site.Menus.main }}
               <li style="margin-left: 1rem;">
-                <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" href="{{ .URL }}" title="{{ .Title }}">{{
+                <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+                  href="{{ .URL }}" title="{{ .Title }}">{{
                   .Name
                   | markdownify | emojify }}</a>
               </li>
@@ -92,7 +111,8 @@
             <!-- contain to row by setting height to 29px -->
             <div id="playing-text" style="height: 28px; width: 1px; background-color: black;"></div>
             <div class="flex flex-row overflow-hidden">
-              <p id="playing-song" class="pl-2 pr-3 py-1 overflow-hidden whitespace-nowrap" style="height: 30px; font-family: 'IBM Plex Mono', monospace;">
+              <p id="playing-song" class="pl-2 pr-3 py-1 overflow-hidden whitespace-nowrap"
+                style="height: 30px; font-family: 'IBM Plex Mono', monospace;">
               </p>
             </div>
           </div>
@@ -245,10 +265,3 @@
     }
   }
 </style>
-{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
-  integrity="{{ $jsStore.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
