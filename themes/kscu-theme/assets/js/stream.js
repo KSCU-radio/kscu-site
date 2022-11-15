@@ -78,3 +78,8 @@ playPauseBtnMobile.addEventListener('click', () => {
         // playPauseBtn.innerHTML = 'Pause';
     }
 });
+
+function showValue(newValue) {
+    document.getElementById('volume').innerHTML=newValue;
+    sound.volume(newValue/100);
+}
