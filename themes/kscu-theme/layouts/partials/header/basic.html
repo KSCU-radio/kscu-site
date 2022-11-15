@@ -56,7 +56,7 @@
             background-color: black;
             width: 0.15rem;
             height: 100%;"></div>
-            <!-- play-volume for play and volume icons -->
+            <!-- play for play button, volume for volume button -->
             <button id="play-pause" class="">
               <img id="play" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
                 style="margin-left: 1rem; margin-right: 1rem;">
@@ -65,8 +65,8 @@
               <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
                 style="margin-left: 1rem; margin-right: 1rem; display: none;">
             </button>
-            <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
-            <div id="play-volume" class="px-1">
+            <div id="volume-icon" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="volume-icon" class="px-1">
               <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
                 <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
                   style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
@@ -79,7 +79,7 @@
               <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 11px; margin-bottom: 4px;"></i>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="play-volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
             <div class="flex flex-row overflow-hidden">
               <div class="pl-2 overflow-hidden">
                 <p class="overflow-hidden whitespace-nowrap" id="show_title"></p>
@@ -162,11 +162,14 @@
             </a>
             <div style="height: 30px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
           </div>
-          <div class="px-1">
-            <!-- Need to connect web player api to this svg -->
-            <img src="/play_button.svg" alt="Click to Play" height="12" width="12"
-              style="margin-left: 0.5rem; margin-right: 0.3rem;">
-          </div>
+          <button id="play-pause-mobile" class="">
+            <img id="play-mobile" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
+              style="margin-left: 1rem; margin-right: 1rem;">
+            <img id="pause-mobile" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
+              style="margin-left: 1rem; margin-right: 1rem; display: none;">
+            <img id="loader-mobile" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
+              style="margin-left: 1rem; margin-right: 1rem; display: none;">
+          </button>
           <div style="height: 30px; width: 1px; background-color: black;"></div>
           <div class="px-1">
             <!-- Need to connect volume adjustor to this svg -->
@@ -256,11 +259,15 @@
       display: none;
     }
 
-    #play-volume {
+    #volume-icon {
       display: none;
     }
 
-    #play-volume-line {
+    #play-pause {
+      display: none;
+    }
+
+    #volume-line {
       display: none;
     }
 
