@@ -67,12 +67,19 @@
             </button>
             <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
             <div id="play-volume" class="px-1">
-              <!-- Need to connect volume adjustor to this svg -->
-              <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+              <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
+                <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
+                  style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+              </button>
+            </div>
+            <!-- Need to connect volume adjustor to this slider -->
+            <div id="player">
+              <i class="fa fa-volume-up absolute" style="top:0; margin-left: 9px; margin-top: 4px;"></i>
+              <input type="range" min="1" max="100" value="50" class="slider" id="volume">
+              <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 11px; margin-bottom: 4px;"></i>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="play-volume" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="play-volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
             <div class="flex flex-row overflow-hidden">
               <div class="pl-2 overflow-hidden">
                 <p class="overflow-hidden whitespace-nowrap" id="show_title"></p>
@@ -101,7 +108,6 @@
         height: 1px;
         background-color: black;">
         </div>
-        <!-- TODO connect API to this playing -->
         <div id="bottom-row" class="flex items-center justify-between">
           <div class="flex items-center justify-between">
             <!-- remove playing text when screen adjusting -->
@@ -164,8 +170,10 @@
           <div style="height: 30px; width: 1px; background-color: black;"></div>
           <div class="px-1">
             <!-- Need to connect volume adjustor to this svg -->
-            <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
-              style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+            <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
+              <img src="/volume.svg" alt="Volume Icon" width="20" height="20"
+                style="margin-left: 0.3rem; margin-right: 0.3rem;"></img>
+            </button>
           </div>
           <div style="height: 30px; width: 1px; background-color: black;"></div>
         </div>
@@ -230,6 +238,12 @@
     #third-row {
       display: none;
     }
+
+    #player {
+      position: relative;
+      top: 90px;
+      left: -35px;
+    }
   }
 
   /* move social media, page links, play button, and volume button to third row */
@@ -244,6 +258,16 @@
 
     #play-volume {
       display: none;
+    }
+
+    #play-volume-line {
+      display: none;
+    }
+
+    #player {
+      position: absolute;
+      top: 107px;
+      left: 190px;
     }
   }
 
@@ -264,4 +288,60 @@
       margin-left: 0.5rem;
     }
   }
+
+   /* Location and visual appearance of volume slider */
+  #player {
+    width: 30px;
+    height: 145px;
+    background-color: lightgray;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 1px 1px 5px #94949466;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    -webkit-transform:rotate(90deg);
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: rgb(158, 157, 157);
+    outline: none;
+    left: -35px;
+    top: 71px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #555;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
 </style>
+{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
+  integrity="{{ $jsStore.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+
+<script>
+  /* Function to display and hide volume slider when pressing button */
+  function toggleVolume() {
+    const volumeSlider = document.getElementById("player")
+    const gap = document.getElementById("play-volume-line")
+
+    if (volumeSlider.style.display === "none") {
+      volumeSlider.style.display = "block";
+      gap.style.marginLeft = "-30px";
+    } else {
+      volumeSlider.style.display = "none";
+      gap.style.marginLeft = "0px";
+    }
+  }
+</script>
