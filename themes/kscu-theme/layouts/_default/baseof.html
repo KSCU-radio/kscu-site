@@ -39,10 +39,14 @@
       {{ end }}
     </main>
   </div>
-  {{- partial "footer.html" . -}}
-  {{ if .Site.Params.enableSearch | default false }}
-  {{- partial "search.html" . -}}
-  {{ end }}
+
+  <canvas id="canvas" style="z-index: 1;"></canvas>
+  {{ $jsGsap := resources.Get "js/gsap.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+  <script defer type="text/javascript" src="{{ $jsGsap.RelPermalink }}" integrity="{{ $jsGsap.Data.Integrity }}"></script>
+  {{ $jsCrowd := resources.Get "js/crowd.js" | resources.Minify | resources.Fingerprint "sha512" }}
+  <script defer type="text/javascript" src="{{ $jsCrowd.RelPermalink }}" integrity="{{ $jsCrowd.Data.Integrity }}"></script>
+
+
 </body>
 
 </html>
