@@ -80,9 +80,9 @@
             </div>
             <!-- contain to row by setting height to 29px -->
             <div id="volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
-            <div class="flex flex-row overflow-hidden">
-              <div class="pl-2 overflow-hidden">
-                <p class="overflow-hidden whitespace-nowrap" id="show_title"></p>
+            <div class="flex flex-row display">
+              <div class="pl-2 overflow-hidden" style="text-overflow: ellipsis; display: block; flex-basis: 50vw;">
+                <p class="whitespace-nowrap" id="show_title"></p>
               </div>
             </div>
           </div>
@@ -116,8 +116,8 @@
             </div>
             <!-- contain to row by setting height to 29px -->
             <div id="playing-text" style="height: 28px; width: 1px; background-color: black;"></div>
-            <div class="flex flex-row overflow-hidden">
-              <p id="playing-song" class="pl-2 pr-3 py-1 overflow-hidden whitespace-nowrap"
+            <div class="flex flex-row overflow-hidden whitespace-nowrap" style="text-overflow: ellipsis; display: block; flex-basis: 50vw;">
+              <p id="playing-song" class="pl-2 pr-3 py-1"
                 style="height: 30px; font-family: 'IBM Plex Mono', monospace;">
               </p>
             </div>
