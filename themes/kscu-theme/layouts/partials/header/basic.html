@@ -31,7 +31,9 @@
   <div class="px-6 pt-4 max-w-7xl m-auto">
     <div class="flex justify-between items-center overflow-hidden" style="
       border: 1px solid black;
-      height: 58px;">
+      height: 58px;
+      overflow: hidden;
+      ">
       <div class="flex px-3 py-6 items-center" style="
       border-right: 1px solid black;
       height: 100%;
@@ -51,7 +53,7 @@
               <p id="live-play" class="px-2 font-bold">LIVE</p>
               <span id="live-now-circle"></span>
             </div>
-            <div id="live-play" style="height: 28px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
+            <div id="live-play" style="height: 30px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
             <div style="
             background-color: black;
             width: 0.15rem;
@@ -65,7 +67,7 @@
               <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
                 style="margin-left: 1rem; margin-right: 1rem; display: none;">
             </button>
-            <div id="volume-icon" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="volume-icon" style="height: 30px; width: 1px; background-color: black;"></div>
             <div id="volume-icon" class="px-1">
               <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
                 <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
@@ -81,7 +83,7 @@
               </div>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="volume-line" style="height: 30px; width: 1px; background-color: black;"></div>
             <div class="flex flex-row display">
               <div class="pl-2" style="display: block; flex-basis: 50vw;">
                 <p class="whitespace-nowrap" id="show_title"></p>
@@ -89,7 +91,7 @@
             </div>
           </div>
           <div id="page-links" class="flex items-center" style="padding-right: 1rem;">
-            <div style="height: 28px; width: 1px; background-color: black;"></div>
+            <div style="height: 30px; width: 1px; background-color: black;"></div>
             <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
               {{ if .Site.Menus.main }}
               {{ range .Site.Menus.main }}
@@ -118,7 +120,7 @@
               <p class="px-3 py-1 font-bold">PLAYING</p>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="playing-text" style="height: 28px; width: 1px; background-color: black;"></div>
+            <div id="playing-text" style="height: 30px; width: 3px; background-color: black;"></div>
             <div class="flex flex-row whitespace-nowrap" style="display: block; flex-basis: 55vw;">
               <p id="playing-song" class="pl-2 pr-3 py-1"
                 style="height: 30px; font-family: 'IBM Plex Mono', monospace;">
@@ -126,7 +128,7 @@
             </div>
           </div>
           <div id="social-media" class="flex items-center" style="padding-right: 1rem">
-            <div style="height: 28px; width: 1px; background-color: black; margin-right: 1rem;"></div>
+            <div style="height: 30px; width: 1px; background-color: black; margin-right: 1rem;"></div>
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
               <i class="fa fa-instagram px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
             </a>
