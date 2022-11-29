@@ -69,14 +69,16 @@
             <div id="volume-icon" class="px-1">
               <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
                 <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                  style="margin-left: 0.3rem; margin-right: 0.3rem; transition: filter 0.1s;"></img>
+                  style="margin-left: 0.5rem; margin-right: 0.45rem; transition: filter 0.1s;"></img>
               </button>
             </div>
             <!-- Need to connect volume adjustor to this slider -->
-            <div id="player">
-              <i class="fa fa-volume-up absolute" style="top:0; margin-left: 9px; margin-top: 4px;"></i>
-              <input type="range" min="1" max="100" value="50" class="slider" id="volume" onchange="showValue(this.value)" oninput="showValue(this.value)">
-              <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 11px; margin-bottom: 4px;"></i>
+            <div class="absolute">
+              <div id="player">
+                <i class="fa fa-volume-up absolute" style="top:0; margin-left: 15px; margin-top: 4px;"></i>
+                <input type="range" min="1" max="100" value="50" class="slider" id="volume" onchange="showValue(this.value)" oninput="showValue(this.value)">
+                <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 15px; margin-bottom: 4px;"></i>
+              </div>
             </div>
             <!-- contain to row by setting height to 29px -->
             <div id="volume-line" style="height: 28px; width: 1px; background-color: black;"></div>
@@ -117,7 +119,7 @@
             </div>
             <!-- contain to row by setting height to 29px -->
             <div id="playing-text" style="height: 28px; width: 1px; background-color: black;"></div>
-            <div class="flex flex-rowwhitespace-nowrap" style="display: block; flex-basis: 55vw;">
+            <div class="flex flex-row whitespace-nowrap" style="display: block; flex-basis: 55vw;">
               <p id="playing-song" class="pl-2 pr-3 py-1"
                 style="height: 30px; font-family: 'IBM Plex Mono', monospace;">
               </p>
@@ -176,7 +178,7 @@
             <!-- Need to connect volume adjustor to this svg -->
             <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
               <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                style="margin-left: 0.3rem; margin-right: 0.3rem; transition: filter 0.1s;"></img>
+                style="margin-left: 0.5rem; margin-right: 0.45rem; transition: filter 0.1s;"></img>
             </button>
           </div>
           <div style="height: 30px; width: 1px; background-color: black;"></div>
@@ -246,7 +248,7 @@
     #player {
       position: relative;
       top: 90px;
-      left: -35px;
+      left: 115px;
     }
   }
 
@@ -274,8 +276,8 @@
 
     #player {
       position: absolute;
-      top: 107px;
-      left: 200px;
+      top: 75px;
+      left: 55px;
     }
   }
 
@@ -306,14 +308,14 @@
 
     #player {
       position: absolute;
-      top: 107px;
-      left: 72px;
+      top: 75px;
+      left: -58px;
     }
   }
 
    /* Location and visual appearance of volume slider */
   #player {
-    width: 30px;
+    width: 40px;
     height: 145px;
     background-color: rgb(237 232 224);
     border-radius: 5px;
@@ -329,7 +331,7 @@
     height: 4px;
     background: rgb(187, 183, 177);
     outline: none;
-    left: -35px;
+    left: -30px;
     top: 71px;
   }
 
@@ -380,7 +382,7 @@
 
     if (volumeSlider.style.display === "none") {
       volumeSlider.style.display = "block";
-      gap.style.marginLeft = "-30px";
+      //gap.style.marginLeft = "-40px";
     } else {
       volumeSlider.style.display = "none";
       gap.style.marginLeft = "0px";
