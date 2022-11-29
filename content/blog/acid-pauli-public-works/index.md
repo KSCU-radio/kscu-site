@@ -9,8 +9,9 @@ showReadingTime: false
 showEdit: false
 showPagination: false
 ---
-
-_Disclaimer: KSCU was provided with media tickets to this event in exchange for a review. This exchange had no stipulations about content of the review itself, and this is our honest and unbiased experience._
+{{< alert >}}
+Disclaimer: KSCU was provided with media tickets to this event in exchange for a review. This exchange had no stipulations about content of the review itself, and this is our honest and unbiased experience.
+{{< /alert >}}
 
 Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration. The last set I had been to was James Ruskin, also at Public Works, so I knew the venue, but did not know Acid Pauli himself well, with most of my exposure to him being his legendary [Tulum Boiler Room](https://youtu.be/EfZu4BCi644).
 
