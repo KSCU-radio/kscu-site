@@ -300,3 +300,32 @@ body:has(#menu-controller:checked) {
 }
 
 @tailwind utilities;
+
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  -webkit-text-decoration-color: rgba(var(--color-primary-400), 1);
+  text-decoration-color: rgba(var(--color-primary-400), 1);
+}
+
+.prose :where(h2):not(:where([class~="not-prose"] *)) {
+  margin-top: 1em;
+}
+
+
+
+/* Firefox */
+html {
+  scrollbar-color: #a2a2a2 transparent;
+  scrollbar-width: thin;
+}
+
+/* WebKit and Chromiums */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #ede8e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCCCCC;
+  border-radius: 5px;
+}

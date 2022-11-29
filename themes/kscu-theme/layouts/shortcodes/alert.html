@@ -1,8 +1,14 @@
-<div class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900">
+<div class="alert flex px-4 py-3 rounded-md bg-primary-600">
   <span class="text-primary-400 ltr:pr-3 rtl:pl-3">
     {{ partial "icon.html" (.Get 0 | default "triangle-exclamation") }}
   </span>
-  <span class="dark:text-neutral-300">
+  <span class="text-neutral-300">
     {{- .Inner | markdownify -}}
   </span>
+  <style>
+      .alert > span > a {
+          color: rgba(var(--color-neutral-300),var(--tw-text-opacity));
+          text-decoration-color: rgba(var(--color-primary-300),1);
+      }
+  </style>
 </div>

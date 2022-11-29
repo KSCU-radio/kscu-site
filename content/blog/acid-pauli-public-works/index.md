@@ -1,6 +1,6 @@
 ---
 title: "Acid Pauli at Public Works"
-date: 2020-08-14
+date: 2022-08-29
 draft: false
 description: "A concert review of Acid Pauli at Public Works SF"
 showDate: true

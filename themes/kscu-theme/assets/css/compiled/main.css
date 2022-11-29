@@ -568,8 +568,8 @@ video {
   color: var(--tw-prose-links);
   text-decoration: underline;
   font-weight: 500;
-  -webkit-text-decoration-color: rgba(var(--color-primary-300), 1);
-          text-decoration-color: rgba(var(--color-primary-300), 1);
+  -webkit-text-decoration-color: rgba(var(--color-primary-500), 1);
+          text-decoration-color: rgba(var(--color-primary-500), 1);
 }
 
 .prose :where(a):not(:where([class~="not-prose"] *)):hover {
