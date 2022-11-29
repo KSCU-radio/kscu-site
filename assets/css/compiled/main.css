@@ -2710,7 +2710,7 @@ body:has(#menu-controller:checked) {
 /* Firefox */
 
 html {
-  scrollbar-color: #a2a2a2 #ede8e0;
+  scrollbar-color: #a2a2a2 transparent;
   scrollbar-width: thin;
 }
 

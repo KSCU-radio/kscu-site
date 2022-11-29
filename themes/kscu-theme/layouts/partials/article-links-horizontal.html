@@ -11,7 +11,7 @@
         </span>
       </div>
       {{ else }}
-      <a class="text-neutral-800 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" href="{{ .RelPermalink }}">{{ .Title |
+      <a class="text-neutral-800 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;" href="{{ .RelPermalink }}">{{ .Title |
         emojify }}</a>
       {{ end }}
       {{ if and .Draft .Site.Params.article.showDraftLabel }}
