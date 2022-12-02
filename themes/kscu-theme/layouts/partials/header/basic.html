@@ -370,13 +370,13 @@
   }
 
 </style>
-{{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<!-- {{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
-  integrity="{{ $jsStore.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
+  integrity="{{ $jsStore.Data.Integrity }}"></script> -->
+<!-- {{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
 {{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script> -->
 
 <script>
   /* Function to display and hide volume slider when pressing button */
