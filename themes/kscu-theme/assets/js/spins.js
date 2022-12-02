@@ -120,7 +120,7 @@ async function updateTracks() {
 
     if (new Date(songEnd) > Date.now()) {
         progressiveTimer = 10000
-        seshotTimeout(updateTracks, (new Date(songEnd) - Date.now()) + 25000)
+        setTimeout(updateTracks, (new Date(songEnd) - Date.now()) + 20000 + Math.floor(Math.random() * 10000))
     } else {
         progressiveTimer = progressiveTimer + 10000
         setTimeout(updateTracks, progressiveTimer)
@@ -133,7 +133,7 @@ async function startTracks() {
         songEnd = store.get("recentTracks")[0]["end"]
         if (new Date(songEnd) > Date.now()) {
             console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
-            setTimeout(updateTracks, (new Date(songEnd) - Date.now())+25000)
+            setTimeout(updateTracks, (new Date(songEnd) - Date.now())+ 20000 + Math.floor(Math.random() * 10000))
         } else {
             updateTracks()
         }

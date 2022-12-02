@@ -104,7 +104,7 @@ async function updateShow() {
 
     if (new Date(showEnd) > Date.now()) {
         showTimer = 60000
-        setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000)
+        setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000 + Math.floor(Math.random() * 3000))
     } else {
         showTimer = showTimer + 60000
         setTimeout(updateShow, showTimer)
@@ -117,7 +117,7 @@ async function startShow() {
         showEnd = new Date(store.get("showData")["end_time"])
         if (new Date(showEnd) > Date.now()) {
             console.log("Show is currently on, waiting for it to end in " + ((new Date(showEnd) - Date.now())/1000/60).toFixed(2) + " mins")
-            setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000)
+            setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000 + Math.floor(Math.random() * 3000))
         } else {
             updateShow()
         }
