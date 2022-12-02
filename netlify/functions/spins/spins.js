@@ -11,24 +11,25 @@ const handler = async (event) => {
         spins_url = url + `spins/` + access_string + _key + `&count=5`
         let response = await fetch(spins_url);
         let data = await response.json();
-        console.log(data)
-        console.log("Recieved data...");
-        spins = data["items"]
-        var toReturn = [{}, {}, {}, {}, {}]
-        var i = 0
-        for (const song in spins) {
-            toReturn[i]["song"] = spins[song]["song"];
-            toReturn[i]["artist"] = spins[song]["artist"];
-            toReturn[i]["image"] = spins[song]["image"];
-            toReturn[i]["duration"] = spins[song]["duration"];
-            toReturn[i]["released"] = spins[song]["released"];
-            toReturn[i]["end"] = spins[song]["end"];
-            i++;
-        }
+        // let data = await response.json();
+        // console.log(data)
+        // console.log("Recieved data...");
+        // spins = data["items"]
+        // var toReturn = [{}, {}, {}, {}, {}]
+        // var i = 0
+        // for (const song in spins) {
+        //     toReturn[i]["song"] = spins[song]["song"];
+        //     toReturn[i]["artist"] = spins[song]["artist"];
+        //     toReturn[i]["image"] = spins[song]["image"];
+        //     toReturn[i]["duration"] = spins[song]["duration"];
+        //     toReturn[i]["released"] = spins[song]["released"];
+        //     toReturn[i]["end"] = spins[song]["end"];
+        //     i++;
+        // }
         // console.log(toReturn)
         return {
             statusCode: 200,
-            body: JSON.stringify(toReturn)
+            body: JSON.stringify(data)
         }
 
     } catch (error) {
