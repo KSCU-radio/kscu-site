@@ -57,8 +57,6 @@ An icon. Remi Wolf is a 26 year old singer songwriter who early on decided that 
 
 Now, shifting gears, I'd like to focus on the concert itself. We saw Remi live at her September 15th concert in San Francisco at the Warfield Theater. She opened with Quiet on Set, one of her more grunge type songs and a song that really got the attention of the entire audience. After that she played many of her popular songs from Juno as well as some of her most celebrated songs from her EP We love Dogs! Such as Photo ID and Disco Man. One thing that is amazing about Remi Wolf and what showed in her performance that day was her amazing ability to sing live just as well or even better than she sounds on her produced tracks. Her natural talent and stage presence shone throughout the entire concert as it became difficult to NOT get completely enveloped in the performance. The experience was so visceral that I ended up not taking a single video or photo of the concert simply because I didn’t want to miss one second of it with my eyes. She ended the concert with Disco Man while spraying the GA section with an insane amount of bubbles. It was an overall amazing experience and one that only cost $35 for GA tickets!
 
-{{< twitter_simple user="remiwolf" id="1578297522681835520" >}}
-
 #### Check Out Remi Wolf:
 - [Street You Live On](https://open.spotify.com/track/0Rg7gsv3kLviC7jW6Jemv3?si=4902e13520c9444b)
 - [Down The Line](https://open.spotify.com/track/2ZDRA0S22sue6jpghf2qol?si=6d677eeb2c1642c3)
