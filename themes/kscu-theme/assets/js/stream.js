@@ -5,7 +5,7 @@ var playPauseBtnMobile = document.getElementById('play-pause-mobile');
 
 
 var sound = new Howl({
-    src: 'http://kscu.streamguys1.com:80/live',
+    src: 'https://kscu.streamguys1.com/live',
     format: ['aac', 'mp3'],
     autoplay: false,
     pool: 0,
