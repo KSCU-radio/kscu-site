@@ -1,10 +1,9 @@
 
-selector = '_::-webkit-:-webkit-full-screen:host:not(:root:root), .selector { property:value; }'
-try {
-    var isSafari = document.querySelector(selector); // Will throw an error if not Safari
-    console.log("Safari detected"); 
-} catch (e) {
-    // Get element with id=canvas from Dom and set displayt to block
+// safariSelector = '_::-webkit-:-webkit-full-screen:host:not(:root:root), .selector { property:value; }'
+// firefoxSelector = "display"
+if ((navigator.userAgent.toLowerCase().indexOf('firefox') !== -1) || (navigator.userAgent.toLowerCase().indexOf('safari') !== -1)) {
+    console.log("Firefox or Safari detected.")
+} else {
     const canvasEl = document.getElementById('canvas')
     canvasEl.style.display = 'block'
 
@@ -13,8 +12,6 @@ try {
         rows: 15,
         cols: 7
     }
-
-    // UTILS
 
     const randomRange = (min, max) => min + Math.random() * (max - min)
 

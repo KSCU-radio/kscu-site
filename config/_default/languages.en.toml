@@ -13,6 +13,8 @@ copyright = "CC 2022"
 # dateFormat = "2 January 2006"
 dateFormat = "1/2/2006"
 
+# Access Spinitron API request data: https://api.countapi.xyz/get/kscu.org/spinitronRequests
+
 [author]
   # name = "Your name here"
   # image = "img/author.jpg"
