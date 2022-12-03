@@ -111,6 +111,16 @@ async function updateTracks() {
     // Then place the new data
     placeTracks()
 
+    // Log using CountAPI that data has been fetched from Spinitron API
+    fetch("https://api.countapi.xyz/hit/kscu.org/spinitronRequests")
+        .then(async response => {
+            // let data = await response.json()
+            // console.log("Spinitron API requests since API's creation on 12/2/2022: " + data.value)
+        })
+        .catch(error => {
+            console.error('There was an error fetching the API hitcounter!', error);
+        });
+
     // Then grab the end time of the first track
     let songEnd = store.get("recentTracks")[0]["end"]
     console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")

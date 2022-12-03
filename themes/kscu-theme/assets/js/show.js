@@ -98,6 +98,16 @@ async function updateShow() {
     // Then place the new data
     placeShow()
 
+    // Log using the CountAPI API that a request to the Spinitron API has been made
+    fetch("https://api.countapi.xyz/hit/kscu.org/spinitronRequests")
+        .then(async response => {
+            // let data = await response.json()
+            // console.log("Spinitron API requests since API's creation on 12/2/2022: " + data.value)
+        })
+        .catch(error => {
+            console.error('There was an error fetching the API hitcounter!', error);
+        });
+
     // Then grab the end time of the show
     let showEnd = new Date(store.get("showData")["end_time"])
 
