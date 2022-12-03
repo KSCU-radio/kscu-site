@@ -97,6 +97,7 @@ async function fetchTracks() {
     let response = await fetch(request);
     let res = await response.json();
     let data = res["items"]
+    console.log(data)
     store.remove("recentTracks")
     store("recentTracks", data)
 }

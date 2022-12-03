@@ -38,6 +38,56 @@ lastmod: 2022-08-18
   </div>
 </div>
 <br>
+
+<div class="flex flex-row justify-around" id="left-and-right">
+  <div class="flex flex-col w-[450px]	justify-end">
+
+  </div>
+
+
+  <div class="flex flex-col border w-[450px]	justify-end">
+    <div class="flex flex-row items-center border-b">
+      <span class="font-semibold text-xl m-2">
+        Recent Tracks
+      </span>
+    </div>
+    <div class="flex flex-row items-center border-b">
+      <!-- Img for profile picture with tailwind CSS -->
+      <img class="rounded-sm m-2" id="playing-image-2"
+        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
+        width="45px">
+      <div class="track flex flex-row items-center whitespace-nowrap overflow-scroll">
+        <p id="playing-song-1" class="pr-2 m-0 whitespace-nowrap">
+          Chinese Translation this is a test and yes
+        </p>
+        <p>
+          -
+        </p>
+        <p id="playing-artist-1" class="pl-2 pr-2 m-0 italic">
+          Twin Peaks
+        </p>
+      </div>
+    </div>
+    <div class="track flex flex-row items-center whitespace-nowrap overflow-scroll">
+      <!-- Img for profile picture with tailwind CSS -->
+      <img class="rounded-sm m-2" id="playing-image-2"
+        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
+        width="45px">
+      <p id="playing-song-1" class="pl-2 pr-2 m-0 whitespace-nowrap">
+        Chinese Translation this is a test and yes
+      </p>
+      <p>
+        -
+      </p>
+      <p id="playing-artist-1" class="pl-2 pr-2 m-0 italic">
+        Twin Peaks
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<br>
 <br>
 <!-- // Import script crowd.js and defer -->
 <script src="/crowd.js" defer></script>
@@ -62,7 +112,8 @@ lastmod: 2022-08-18
     font-family: 'Special Elite', cursive;
     text-align: center;
     user-select: none;
-    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
     -webkit-user-select: none;
   }
 
@@ -77,7 +128,8 @@ lastmod: 2022-08-18
     opacity: 1;
     z-index: 1;
     user-select: none;
-    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
     -webkit-user-select: none;
   }
 
@@ -196,5 +248,14 @@ lastmod: 2022-08-18
     #header_text {
       flex-basis: 60%;
     }
+  }
+
+  .track {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .track::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
   }
 </style>
