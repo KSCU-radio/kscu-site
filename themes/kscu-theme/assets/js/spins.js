@@ -87,7 +87,17 @@ function trimToLength(string, length) {
 
 function placeTracks() {
     data = store.get("recentTracks")
-    document.getElementById("playing-song").innerHTML = trimToLength(data[0]["song"], 40) + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
+    document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
+
+    // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
+    for (let i = 0; i < 5; i++) {
+        document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
+        document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
+        if (data[i]["image"] != null) {
+            document.getElementById("playing-image-" + i).src = data[i]["image"]
+        }
+        
+    }
 }
 
 async function fetchTracks() {
