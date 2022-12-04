@@ -1925,6 +1925,14 @@ body:has(#menu-controller:checked) {
   order: -9999;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -2103,6 +2111,10 @@ body:has(#menu-controller:checked) {
   min-height: 0px;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -2226,12 +2238,20 @@ body:has(#menu-controller:checked) {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .place-self-center {
@@ -2254,12 +2274,20 @@ body:has(#menu-controller:checked) {
   overflow: visible;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .rounded-full {
@@ -2289,6 +2317,10 @@ body:has(#menu-controller:checked) {
 
 .border {
   border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-t {
@@ -2448,16 +2480,20 @@ body:has(#menu-controller:checked) {
   padding-bottom: 1.5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .pb-8 {
@@ -2496,13 +2532,8 @@ body:has(#menu-controller:checked) {
   vertical-align: text-bottom;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -2511,8 +2542,13 @@ body:has(#menu-controller:checked) {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
