@@ -87,6 +87,7 @@ function trimToLength(string, length) {
 
 function placeTracks() {
     data = store.get("recentTracks")
+
     document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
 
     // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
@@ -97,6 +98,9 @@ function placeTracks() {
             document.getElementById("playing-image-" + i).src = data[i]["image"]
         }
         
+    }
+    if (typeof variable !== 'undefined' && sound.playing()) {
+        document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
     }
 }
 

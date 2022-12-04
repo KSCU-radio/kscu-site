@@ -5,9 +5,9 @@ isoCode = "en"
 weight = 1
 rtl = false
 
-title = "KSCU Staging"
+title = "KSCU 103.3 FM"
 # logo = "img/logo.jpg"
-description = "A staging site for KSCU."
+description = "Tune in to the Underground Sound."
 copyright = "CC 2022"
 
 # dateFormat = "2 January 2006"
