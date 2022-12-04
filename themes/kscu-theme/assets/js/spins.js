@@ -87,6 +87,9 @@ function trimToLength(string, length) {
 
 function placeTracks() {
     data = store.get("recentTracks")
+    if (typeof variable !== 'undefined' && sound.playing()) {
+        document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
+    }
     document.getElementById("playing-song").innerHTML = trimToLength(data[0]["song"], 40) + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
 }
 

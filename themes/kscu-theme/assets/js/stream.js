@@ -14,7 +14,6 @@ var sound = new Howl({
 
 playPauseBtn.addEventListener('click', () =>{
     if (sound.state() === 'loading') {
-
         return
     }
     if (sound.playing()) {
@@ -26,6 +25,8 @@ playPauseBtn.addEventListener('click', () =>{
     } else {
         if (sound.state() === 'loaded') {
             sound.play();
+            data = store.get("recentTracks")
+            document.title = data[0]["artist"] + ' - ' + data[0]["song"]
             document.getElementById('play').style.display = 'none';
             document.getElementById('loader').style.display = 'none';
             document.getElementById('pause').style.display = 'block';
