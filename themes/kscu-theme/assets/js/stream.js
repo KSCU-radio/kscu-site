@@ -10,6 +10,8 @@ const onMetadata = (metadata) => {
 const player =
     new IcecastMetadataPlayer(
         "https://kscu.streamguys1.com/live",
+        // metadataTypes = [],
+        // enableLogging = true,
         { onMetadata }
     );
 
