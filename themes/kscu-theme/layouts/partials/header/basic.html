@@ -10,7 +10,7 @@
 <!-- {{ $jsHowl := resources.Get "js/howler.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsHowl.RelPermalink }}" integrity="{{ $jsHowl.Data.Integrity }}"></script> -->
 <!-- {{ $jsIce := resources.Get "js/icecast-metadata-player-1.13.1.min.js" | resources.Minify | resources.Fingerprint "sha512" }} -->
-<script type="text/javascript" src="icecast-metadata-player-1.13.1.min.js"></script>
+
 {{ $jsStream := resources.Get "js/stream.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStream.RelPermalink }}"
   integrity="{{ $jsStream.Data.Integrity }}"></script>
