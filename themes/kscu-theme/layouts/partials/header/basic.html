@@ -7,7 +7,7 @@
 {{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
 
-{{ $jsHowl := resources.Get "js/howler.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $jsHowl := resources.Get "js/loudest.core.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsHowl.RelPermalink }}" integrity="{{ $jsHowl.Data.Integrity }}"></script>
 {{ $jsStream := resources.Get "js/stream.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStream.RelPermalink }}"
