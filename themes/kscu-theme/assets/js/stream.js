@@ -10,8 +10,6 @@ const onMetadata = (metadata) => {
 const player =
     new IcecastMetadataPlayer(
         "https://kscu.streamguys1.com/live",
-        // metadataTypes = [],
-        // enableLogging = true,
         { onMetadata }
     );
 
@@ -119,7 +117,7 @@ async function playPause() {
 
 
 
-function showValue(newValue) {
-    document.getElementById('volume').innerHTML=newValue;
-    sound.volume(newValue/100);
-}
+// function showValue(newValue) {
+//     document.getElementById('volume').innerHTML=newValue;
+//     sound.volume(newValue/100);
+// }
