@@ -9,7 +9,7 @@ const onMetadata = (metadata) => {
 
 const player =
     new IcecastMetadataPlayer(
-        "https://dsmrad.io/stream/isics-all",
+        "https://kscu.streamguys1.com/live",
         { onMetadata }
     );
 
