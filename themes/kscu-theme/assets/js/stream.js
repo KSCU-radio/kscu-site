@@ -56,19 +56,25 @@ playPauseBtn.addEventListener('click', () =>{
 // Add second play button event listener for mobile
 playPauseBtnMobile.addEventListener('click', () => {
     if (sound.playing()) {
+        console.log(sound.state)
         sound.pause();
+        document.title = 'KSCU 103.3 FM'
         document.getElementById('play-mobile').style.display = 'block';
         document.getElementById('pause-mobile').style.display = 'none';
         // playPauseBtn.innerHTML = 'Play';
     } else {
+        console.log(sound.state)
         if (sound.state() === 'loaded') {
             sound.play();
             document.getElementById('play-mobile').style.display = 'none';
             document.getElementById('pause-mobile').style.display = 'block';
             return
         }
-
+        sound.stop();
+        sound.unload();
+        console.log(sound.state())
         sound.load();
+        console.log(sound.state())
         if (sound.state() === 'loading') {
             document.getElementById('play-mobile').style.display = 'none';
             document.getElementById('loader-mobile').style.display = 'block';
