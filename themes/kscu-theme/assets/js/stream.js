@@ -9,7 +9,7 @@ var sound = new Howl({
     format: ['aac', 'mp3'],
     autoplay: false,
     pool: 0,
-    html5: false
+    html5: true
 });
 
 playPauseBtn.addEventListener('click', () =>{
