@@ -1,9 +1,8 @@
 
 // safariSelector = '_::-webkit-:-webkit-full-screen:host:not(:root:root), .selector { property:value; }'
 // firefoxSelector = "display"
-if ((navigator.userAgent.toLowerCase().indexOf('firefox') !== -1) || (navigator.userAgent.toLowerCase().indexOf('safari') !== -1)) {
-    console.log("Firefox or Safari detected.")
-} else {
+
+if (navigator.userAgent.match(/chrome|chromium|crios/i)) {
     const canvasEl = document.getElementById('canvas')
     canvasEl.style.display = 'block'
 
