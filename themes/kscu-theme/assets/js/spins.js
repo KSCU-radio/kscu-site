@@ -102,15 +102,18 @@ function placeTracks() {
 
     document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
 
-    // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
-    for (let i = 0; i < 5; i++) {
-        document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
-        document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
-        if (data[i]["image"] != null) {
-            loadIMG(i, data[i]["image"])
-        } else {
-            document.getElementById("playing-image-" + i).src = "/brett-jordan-unsplash.jpeg"
-        }   
+    if (window.location.pathname == '/') {
+        console.log("Placing tracks on homepage")
+        // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
+        for (let i = 0; i < 5; i++) {
+            document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
+            document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
+            if (data[i]["image"] != null) {
+                loadIMG(i, data[i]["image"])
+            } else {
+                document.getElementById("playing-image-" + i).src = "/brett-jordan-unsplash.jpeg"
+            }   
+        }
     }
     if (typeof sound !== 'undefined' && sound.playing()) {
         document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]

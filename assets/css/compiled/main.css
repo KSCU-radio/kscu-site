@@ -1976,10 +1976,6 @@ body:has(#menu-controller:checked) {
   margin-right: 0px;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -2014,6 +2010,10 @@ body:has(#menu-controller:checked) {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .mt-\[0\.1rem\] {
@@ -2116,8 +2116,12 @@ body:has(#menu-controller:checked) {
   min-height: 0px;
 }
 
-.w-\[450px\] {
-  width: 450px;
+.w-\[525px\] {
+  width: 525px;
+}
+
+.w-2\/5 {
+  width: 40%;
 }
 
 .w-12 {
@@ -2629,14 +2633,14 @@ body:has(#menu-controller:checked) {
   line-height: .75rem;
 }
 
-.text-neutral-400 {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-400), var(--tw-text-opacity));
-}
-
 .text-neutral-900 {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-900), var(--tw-text-opacity));
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-400), var(--tw-text-opacity));
 }
 
 .text-primary-600 {

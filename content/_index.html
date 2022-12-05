@@ -22,7 +22,7 @@ lastmod: 2022-08-18
 <!-- width = 550; height = 257; (this is the max height)-->
 <div class="flex h-full">
   <div id="img_width">
-    <img class="ml-3" src="/kscuwebsitepic.jpeg" alt="KSCU" id="stylized-image" />
+    <img src="/kscuwebsitepic.jpeg" alt="KSCU" id="stylized-image" />
   </div>
 
   <div id="header_text" style="z-index: 0;">
@@ -32,20 +32,170 @@ lastmod: 2022-08-18
         STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp;
       </span>
       <span>AT </span><span class="font-semibold">SANTA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        CLARA UNIVERSITY &nbsp;
+        CLARA UNIVERSITY
       </span>
     </div>
   </div>
 </div>
+
+<style>
+  /* All image and text styling */
+  #stylized-image {
+    max-height: 250px;
+    border-radius: 15px;
+    opacity: 1;
+    z-index: 1;
+    user-select: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+  }
+
+  #header_text {
+    color: white;
+    mix-blend-mode: difference;
+    /* font: 900 35vmin/35vh; */
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    user-select: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+  }
+
+  /* Breakpoints */
+  @media (min-width: 1536px) {
+    #header_text {
+      margin-left: -40%;
+      margin-top: 144px;
+      font-size: 36px;
+      flex-basis: 50%;
+    }
+
+    #img_width {
+      margin-left: 130px;
+      width: 50vw;
+    }
+
+  }
+
+  @media (max-width: 1536px) {
+    #header_text {
+      margin-left: -20%;
+      margin-top: 144px;
+      font-size: 36px;
+      flex-basis: 50%;
+    }
+
+    #img_width {
+      margin-left: 110px;
+      width: 50vw;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    #header_text {
+      margin-left: -10%;
+    }
+  }
+
+  @media (max-width: 1088px) {
+    #header_text {
+      font-size: 32px;
+      margin-left: -5%;
+    }
+
+    #img_width {
+      margin-left: 40px;
+      width: 450px;
+    }
+  }
+
+  @media (max-width: 931px) {
+    #header_text {
+      font-size: 28px;
+      margin-left: -2%;
+      margin-top: 112px;
+    }
+
+    #img_width {
+      margin-left: 30px;
+      width: 350px;
+    }
+  }
+
+  @media (max-width: 839px) {
+    #header_text {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 666px) {
+    #header_text {
+      margin-left: 20px;
+      margin-top: 20px;
+      font-size: 24px;
+      /* margin-left: 20%; */
+      flex-basis: 80%;
+    }
+
+    #img_width {
+      display: none;
+    }
+  }
+
+  @media (max-width: 510px) {
+    #header_text {
+      margin-left: 20px;
+      margin-top: 20px;
+      font-size: 24px;
+      margin-left: 20%;
+    }
+
+    #img_width {
+      display: none;
+    }
+  }
+
+  @media (max-width: 418px) {
+    #header_text {
+      /* font-size: 14px; */
+    }
+  }
+
+  @media (max-width: 384px) {
+    #header_text {
+      /* font-size: 13px; */
+    }
+  }
+
+  @media (max-width: 369px) {
+    #header_text {
+      /* margin-left: -50%;
+      /* font-size: 12px; */
+      /* flex-basis: 50%  */
+    }
+  }
+
+  @media (max-width: 325px) {
+    #header_text {
+      /* flex-basis: 60%; */
+    }
+  }
+
+
+
+</style>
+
 <br>
 
 <div class="flex flex-row justify-between" id="left-and-right">
-  <div class="flex flex-col w-[450px]	justify-end">
+  <div class="flex flex-col w-[525px] justify-end">
 
   </div>
 
 
-  <div class="flex flex-col border w-[450px] mr-3">
+  <div id="recent-tracks-div" class="flex flex-col border w-2/5 mr-3 text-neutral-900">
     <div class="flex flex-row items-center border-b">
       <span class="font-semibold text-xl m-2">
         Recently Played Tracks
@@ -69,7 +219,7 @@ lastmod: 2022-08-18
     <div class="flex flex-row items-center border-b">
       <!-- Img for profile picture with tailwind CSS -->
       <img class="rounded-sm m-2" id="playing-image-1"
-        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
+        src="/brett-jordan-unsplash.jpeg"
         width="45px">
       <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
         <p id="playing-song-1" class="pr-2 m-0 whitespace-nowrap">
@@ -83,7 +233,7 @@ lastmod: 2022-08-18
     <div class="flex flex-row items-center border-b">
       <!-- Img for profile picture with tailwind CSS -->
       <img class="rounded-sm m-2" id="playing-image-2"
-        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
+        src="/brett-jordan-unsplash.jpeg"
         width="45px">
       <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
         <p id="playing-song-2" class="pr-2 m-0 whitespace-nowrap">
@@ -97,7 +247,7 @@ lastmod: 2022-08-18
     <div class="flex flex-row items-center border-b">
       <!-- Img for profile picture with tailwind CSS -->
       <img class="rounded-sm m-2" id="playing-image-3"
-        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
+        src="/brett-jordan-unsplash.jpeg"
         width="45px">
       <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
         <p id="playing-song-3" class="pr-2 m-0 whitespace-nowrap">
@@ -132,164 +282,8 @@ lastmod: 2022-08-18
 <!-- // Import script crowd.js and defer -->
 <script src="/crowd.js" defer></script>
 
-<!-- -240px -->
-<!-- @media (max-width: 1280px){
-    #header_text {
-      margin-left: -20%;
-      font-size: 36px;
-    }
-    #img_width{
-      width: 50vw;
-    }
-  }-->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
-  #header_text {
-    color: white;
-    mix-blend-mode: difference;
-    /* font: 900 35vmin/35vh; */
-    font-family: 'Special Elite', cursive;
-    text-align: center;
-    user-select: none;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-  }
-
-  /* For moving canvas up on homepage */
-  #canvas {
-    margin-top: -130px;
-  }
-
-  #stylized-image {
-    max-height: 257px;
-    border-radius: 15px;
-    opacity: 1;
-    z-index: 1;
-    user-select: none;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-  }
-
-  /* Breakpoints */
-  @media (min-width: 1536px) {
-    #header_text {
-      margin-left: -48%;
-      margin-top: 144px;
-      font-size: 36px;
-      flex-basis: 50%;
-    }
-
-    #img_width {
-      margin-left: 120px;
-      width: 50vw;
-    }
-
-  }
-
-  @media (max-width: 1536px) {
-    #header_text {
-      margin-left: -30%;
-      margin-top: 144px;
-      font-size: 36px;
-      flex-basis: 50%;
-    }
-
-    #img_width {
-      margin-left: 80px;
-      width: 50vw;
-    }
-  }
-
-  @media (max-width: 1280px) {
-    #header_text {
-      margin-left: -25%;
-    }
-  }
-
-  @media (max-width: 1088px) {
-    #header_text {
-      font-size: 32px;
-    }
-
-    #img_width {
-      margin-left: 40px;
-      width: 450px;
-    }
-  }
-
-  @media (max-width: 931px) {
-    #header_text {
-      font-size: 28px;
-      margin-left: -20%;
-      margin-top: 112px;
-    }
-
-    #img_width {
-      margin-left: 30px;
-      width: 350px;
-    }
-  }
-
-  @media (max-width: 839px) {
-    #header_text {
-      font-size: 24px;
-    }
-  }
-
-  @media (max-width: 666px) {
-    #header_text {
-      font-size: 20px;
-      margin-top: 96px;
-      margin-left: -25%;
-    }
-
-    #img_width {
-      margin-left: 20px;
-      width: 300px;
-    }
-  }
-
-  @media (max-width: 510px) {
-    #header_text {
-      font-size: 16px;
-      margin-left: -30%;
-    }
-
-    #img_width {
-      margin-left: 10px;
-      width: 250px;
-    }
-  }
-
-  @media (max-width: 418px) {
-    #header_text {
-      font-size: 14px;
-    }
-  }
-
-  @media (max-width: 384px) {
-    #header_text {
-      font-size: 13px;
-    }
-  }
-
-  @media (max-width: 369px) {
-    #header_text {
-      margin-left: -50%;
-      font-size: 12px;
-      flex-basis: 50%
-    }
-  }
-
-  @media (max-width: 325px) {
-    #header_text {
-      flex-basis: 60%;
-    }
-  }
-
   .track {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -297,5 +291,22 @@ lastmod: 2022-08-18
 
   .track::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
+  }
+
+   /* For moving canvas up on homepage */
+  #canvas {
+    margin-top: -130px;
+  }
+
+  /* At 776 px of screen width, switch #left-and-right to flex-col */
+  /* Greater than 776px */
+  @media (max-width: 875px) {
+    #recent-tracks-div {
+      width: 85vw;
+    }
+    #left-and-right {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>
