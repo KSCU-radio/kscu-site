@@ -34,13 +34,15 @@
       height: 58px;
       overflow: hidden;
       ">
-      <div class="flex px-1 items-center" style="
+      <div class="flex px-0 items-center" style="
       border-right: 1px solid black;
       height: 100%;
       min-width: 100px;
       ">
-        <a href="/">
-          <img src="/kscu_logo.svg" alt="KSCU Logo" width="120"></img>
+        <a class="p-0 flex items-center justify-center" href="/" style="width: 100%; height: 100%;">
+          <div class="px-1">
+            <img id="kscu-logo" class="mx-0" src="/kscu_logo.svg" alt="KSCU Logo" width="120"></img>
+          </div>
         </a>
       </div>
       <!-- Vertical Flexbox -->
@@ -48,7 +50,7 @@
         <!-- Top Row Flexbox -->
         <div id="top-row" class="flex justify-between items-center" style="height: 29px;">
           <div class="flex px-1 items-center">
-            <div class="flex items-center py-1">
+            <div class="flex items-center">
               <!-- id live-play for text live and divisor -->
               <p id="live-play" class="px-2 font-bold">LIVE</p>
               <span id="live-now-circle"></span>
@@ -56,30 +58,32 @@
             <div id="live-play" style="height: 30px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
             <div style="
             background-color: black;
-            width: 0.15rem;
             height: 100%;"></div>
             <!-- play for play button, volume for volume button -->
-            <button id="play-pause" class="">
-              <img id="play" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
-                style="margin-left: 1rem; margin-right: 1rem; transition: filter 0.1s;">
-              <img id="pause" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
-                style="margin-left: 1rem; margin-right: 1rem; transition: filter 0.1s; display: none;">
-              <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
-                style="margin-left: 1rem; margin-right: 1rem; display: none;">
-            </button>
+            <div id="play-pause" class="flex-grow m-0 px-0 py-0">
+              <button>
+                <img id="play" src="/play-solid.svg" alt="Click to Play" width="12"
+                  style="margin-top: 12px; margin-bottom: 6px; margin-left: 14px; margin-right: 14px; transition: filter 0.1s;">
+                <img id="pause" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
+                  style="margin-top: 12px; margin-bottom: 6px; margin-left: 14px; margin-right: 14px; transition: filter 0.1s; display:none;">
+                <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
+                  style="margin-top: 12px; margin-bottom: 6x; margin-left: 14px; margin-right: 14px; transition: filter 0.1s;display:none;">
+              </button>
+            </div>
             <div id="volume-icon" style="height: 30px; width: 1px; background-color: black;"></div>
-            <div id="volume-icon" class="px-1">
-              <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
+            <div id="desktop-volume-div" class="flex-grow m-0 px-0 py-0">
+              <button onclick="toggleVolume()">
                 <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                  style="margin-left: 0.5rem; margin-right: 0.45rem; transition: filter 0.1s;"></img>
+                  style="margin-top: 10px; margin-bottom: 4px; margin-left: 0.60rem; margin-right: 0.60rem; transition: filter 0.1s;"></img>
               </button>
             </div>
             <!-- Need to connect volume adjustor to this slider -->
             <div class="absolute">
               <div id="player" style="display: none;">
-                <i class="fa fa-volume-up absolute" style="top:0; margin-left: 15px; margin-top: 4px;"></i>
-                <input type="range" min="1" max="100" value="100" class="slider" id="volume" onchange="showValue(this.value)" oninput="showValue(this.value)">
-                <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 15px; margin-bottom: 4px;"></i>
+                <i class="fa fa-volume-up absolute" style="top:0; margin-left: 14px; margin-top: 4px;"></i>
+                <input type="range" min="1" max="100" value="100" class="slider" id="volume"
+                  onchange="showValue(this.value)" oninput="showValue(this.value)">
+                <i class="fa fa-volume-down absolute" style="bottom:0; margin-left: 16px; margin-bottom: 4px;"></i>
               </div>
             </div>
             <!-- contain to row by setting height to 29px -->
@@ -97,8 +101,7 @@
               {{ range .Site.Menus.main }}
               <li style="margin-left: 1rem;">
                 <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
-                  style="text-decoration-skip-ink: none;"
-                  href="{{ .URL }}" title="{{ .Title }}">{{
+                  style="text-decoration-skip-ink: none;" href="{{ .URL }}" title="{{ .Title }}">{{
                   .Name
                   | markdownify | emojify }}</a>
               </li>
@@ -131,13 +134,14 @@
           <div id="social-media" class="flex items-center" style="padding-right: 1rem">
             <div style="height: 30px; width: 1px; background-color: black; margin-right: 1rem;"></div>
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
+              <i class="fa fa-instagram px-2 hover:text-neutral-400"
+                style="font-size: 24px; transition: color 0.1s;"></i>
             </a>
             <a href="https://twitter.com/kscu" target="_blank">
-              <i class="fa fa-twitter px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
+              <i class="fa fa-twitter px-2 hover:text-neutral-400" style="font-size: 24px; transition: color 0.1s;"></i>
             </a>
             <a href="https://open.spotify.com/user/kscu" target="_blank">
-              <i class="fa fa-spotify px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
+              <i class="fa fa-spotify px-2 hover:text-neutral-400" style="font-size: 24px; transition: color 0.1s;"></i>
             </a>
           </div>
         </div>
@@ -158,7 +162,8 @@
         <div class="flex justify-left items-center">
           <div id="new-social-media" class="flex items-center" style="padding-left: 0.5rem; padding-top: 0.1rem">
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
+              <i class="fa fa-instagram px-2 hover:text-neutral-500"
+                style="font-size: 24px; transition: color 0.1s;"></i>
             </a>
             <a href="https://twitter.com/kscu" target="_blank">
               <i class="fa fa-twitter px-2 hover:text-neutral-500" style="font-size: 24px; transition: color 0.1s;"></i>
@@ -168,23 +173,25 @@
             </a>
             <div style="height: 30px; width: 1px; background-color: black; margin-left: 0.5rem;"></div>
           </div>
-          <button id="play-pause-mobile" class="">
-            <img id="play-mobile" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
-              style="margin-left: 1rem; margin-right: 1rem; transition: filter 0.1s;">
-            <img id="pause-mobile" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
-              style="margin-left: 1rem; margin-right: 1rem; transition: filter 0.1s; display: none;">
-            <img id="loader-mobile" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
-              style="margin-left: 1rem; margin-right: 1rem; display: none;">
-          </button>
-          <div style="height: 30px; width: 1px; background-color: black;"></div>
-          <div class="px-1">
-            <!-- Need to connect volume adjustor to this svg -->
-            <button onclick="toggleVolume()" style="margin-top: 0.4rem;">
-              <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                style="margin-left: 0.5rem; margin-right: 0.45rem; transition: filter 0.1s;"></img>
+          <div class="flex-grow m-0 px-0 py-0">
+            <button id="play-pause-mobile" class="">
+              <img id="play-mobile" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
+                style="margin-top: 12px; margin-bottom: 6px; margin-left: 14px; margin-right: 14px; transition: filter 0.1s;">
+              <img id="pause-mobile" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
+                style="margin-top: 12px; margin-bottom: 6px; margin-left: 14px; margin-right: 14px; transition: filter 0.1s; display: none;">
+              <img id="loader-mobile" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
+                style="margin-top: 12px; margin-bottom: 6px; margin-left: 14px; margin-right: 14px; transition: filter 0.1s; display: none;">
             </button>
           </div>
           <div style="height: 30px; width: 1px; background-color: black;"></div>
+          <div id="mobile-volume" class="flex-grow m-0 px-0 py-0">
+            <!-- Need to connect volume adjustor to this svg -->
+            <button onclick="toggleVolume()">
+              <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
+                style="margin-top: 10px; margin-bottom: 4px; margin-left: 0.60rem; margin-right: 0.60rem; transition: filter 0.1s;"></img>
+            </button>
+          </div>
+          <div id="mobile-volume-bar" style="height: 30px; width: 1px; background-color: black;"></div>
         </div>
 
         <div id="new-page-links" class="flex items-center" style="padding-right: 1rem; height: 30px;">
@@ -194,8 +201,7 @@
             {{ range .Site.Menus.main }}
             <li style="margin-left: 1rem;">
               <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
-                style="text-decoration-skip-ink: none;"
-                href="{{ .URL }}" title="{{ .Title }}">{{
+                style="text-decoration-skip-ink: none;" href="{{ .URL }}" title="{{ .Title }}">{{
                 .Name
                 | markdownify | emojify }}</a>
             </li>
@@ -251,8 +257,8 @@
 
     #player {
       position: relative;
-      top: 90px;
-      left: 115px;
+      top: 88px;
+      left: 110px;
     }
   }
 
@@ -270,6 +276,10 @@
       display: none;
     }
 
+    #desktop-volume-div {
+      display: none;
+    }
+
     #play-pause {
       display: none;
     }
@@ -281,7 +291,7 @@
     #player {
       position: absolute;
       top: 75px;
-      left: 55px;
+      left: 65px;
     }
   }
 
@@ -305,7 +315,7 @@
 
   /* remove social media icons to make room in mobile */
 
-  @media (max-width: 450px) {
+  @media (max-width: 460px) {
     #new-social-media {
       display: none;
     }
@@ -313,11 +323,21 @@
     #player {
       position: absolute;
       top: 75px;
-      left: -58px;
+      left: -63px;
     }
   }
 
-   /* Location and visual appearance of volume slider */
+  @media (max-width: 330px) {
+    #mobile-volume {
+      display: none;
+    }
+
+    #mobile-volume-bar {
+      display: none;
+    }
+  }
+
+  /* Location and visual appearance of volume slider */
   #player {
     width: 40px;
     height: 145px;
@@ -329,7 +349,7 @@
 
   .slider {
     -webkit-appearance: none;
-    -webkit-transform:rotate(270deg);
+    -webkit-transform: rotate(270deg);
     position: absolute;
     width: 100px;
     height: 4px;
@@ -349,26 +369,29 @@
     cursor: pointer;
   }
 
-  #volume-i:hover {
-    filter: invert(30%);
+  a:hover > div > #kscu-logo {
+    filter: invert(50%);
   }
 
-  #play:hover {
-    filter: invert(30%);
+  button:hover>#volume-i {
+    filter: invert(50%);
   }
 
-  #play-mobile:hover {
-    filter: invert(30%);
+  button:hover>#play {
+    filter: invert(50%);
   }
 
-  #pause:hover {
-    filter: invert(30%);
+  button:hover>#play-mobile {
+    filter: invert(50%);
   }
 
-  #pause-mobile:hover {
-    filter: invert(30%);
+  button:hover>#pause {
+    filter: invert(50%);
   }
 
+  button:hover>#pause-mobile {
+    filter: invert(50%);
+  }
 </style>
 <!-- {{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
@@ -393,5 +416,5 @@
     }
   }
 
-  
+
 </script>

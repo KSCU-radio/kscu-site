@@ -1971,8 +1971,17 @@ body:has(#menu-controller:checked) {
   margin-bottom: 0px;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mb-3 {
@@ -2005,10 +2014,6 @@ body:has(#menu-controller:checked) {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
 }
 
 .mt-\[0\.1rem\] {
@@ -2187,6 +2192,10 @@ body:has(#menu-controller:checked) {
   flex: 1 1 auto;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -2248,10 +2257,6 @@ body:has(#menu-controller:checked) {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .place-self-center {
@@ -2415,6 +2420,10 @@ body:has(#menu-controller:checked) {
   padding: 0.25rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2475,6 +2484,11 @@ body:has(#menu-controller:checked) {
   padding-right: 1rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2484,16 +2498,16 @@ body:has(#menu-controller:checked) {
   padding-right: 0.5rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pb-8 {
@@ -2810,6 +2824,11 @@ html {
 .hover\:text-neutral-500:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-500), var(--tw-text-opacity));
+}
+
+.hover\:text-neutral-400:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-neutral-400), var(--tw-text-opacity));
 }
 
 .hover\:text-primary-500:hover {

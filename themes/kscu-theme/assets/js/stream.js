@@ -11,6 +11,9 @@ function playUpdate() {
     document.getElementById('loader').style.display = 'none';
     document.getElementById('pause').style.display = 'block';
     document.getElementById('play').style.display = 'none';
+    document.getElementById('play-mobile').style.display = 'none';
+    document.getElementById('pause-mobile').style.display = 'block';
+    document.getElementById('loader-mobile').style.display = 'none';
     data = store.get("recentTracks")
     document.title = data[0]["artist"] + ' - ' + data[0]["song"]
 }
@@ -20,6 +23,9 @@ function pauseUpdate() {
     document.getElementById('loader').style.display = 'none';
     document.getElementById('pause').style.display = 'none';
     document.getElementById('play').style.display = 'block';
+    document.getElementById('play-mobile').style.display = 'block';
+    document.getElementById('pause-mobile').style.display = 'none';
+    document.getElementById('loader-mobile').style.display = 'none';
     document.title = 'KSCU 103.3 FM'
 }
 
@@ -54,6 +60,9 @@ function playPauseOnClick() {
             document.getElementById('play').style.display = 'none';
             document.getElementById('pause').style.display = 'none';
             document.getElementById('loader').style.display = 'block';
+            document.getElementById('play-mobile').style.display = 'none';
+            document.getElementById('pause-mobile').style.display = 'none';
+            document.getElementById('loader-mobile').style.display = 'block';
         }
         // Wait until sound is loaded
         sound.once('load', function () {

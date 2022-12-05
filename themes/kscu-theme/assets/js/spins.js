@@ -112,7 +112,7 @@ function placeTracks() {
             document.getElementById("playing-image-" + i).src = "/brett-jordan-unsplash.jpeg"
         }   
     }
-    if (typeof variable !== 'undefined' && sound.playing()) {
+    if (typeof sound !== 'undefined' && sound.playing()) {
         document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
     }
 }
