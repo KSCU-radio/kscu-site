@@ -103,7 +103,6 @@ function placeTracks() {
     document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
 
     if (window.location.pathname == '/') {
-        console.log("Placing tracks on homepage")
         // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
         for (let i = 0; i < 5; i++) {
             document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
