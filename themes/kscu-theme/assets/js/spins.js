@@ -85,7 +85,19 @@ function trimToLength(string, length) {
 
 // startTracks
 
+
+
 function placeTracks() {
+    function noimg(e) {
+        this.src = '/brett-jordan-unsplash.jpeg';
+    }
+
+    function loadIMG(num, url) {
+        var img = document.getElementById("playing-image-" + num)
+        img.onerror = noimg;
+        img.src = url
+    }
+
     data = store.get("recentTracks")
 
     document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
@@ -95,9 +107,10 @@ function placeTracks() {
         document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
         document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
         if (data[i]["image"] != null) {
-            document.getElementById("playing-image-" + i).src = data[i]["image"]
-        }
-        
+            loadIMG(i, data[i]["image"])
+        } else {
+            document.getElementById("playing-image-" + i).src = "/brett-jordan-unsplash.jpeg"
+        }   
     }
     if (typeof variable !== 'undefined' && sound.playing()) {
         document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
