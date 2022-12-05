@@ -278,7 +278,7 @@ lastmod: 2022-08-18
 </div>
 
 <br>
-<br>
+<br id="post-break">
 <!-- // Import script crowd.js and defer -->
 <script src="/crowd.js" defer></script>
 
@@ -307,6 +307,15 @@ lastmod: 2022-08-18
     #left-and-right {
       flex-direction: column;
       align-items: center;
+    }
+  }
+
+  @media (max-width: 454px) {
+    #recent-tracks-div {
+      width: 73vw;
+    }
+    #post-break {
+      display: none;
     }
   }
 </style>
