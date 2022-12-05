@@ -42,6 +42,8 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 
 **Music Director:** Abby Grimm
 
+**Data Analysis Director:** Esteban Samayoa Mayora
+
 **Business Director:** Anabelle Oldham
 
 **Production Director:** Kyle Kinard
