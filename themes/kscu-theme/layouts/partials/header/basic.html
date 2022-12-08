@@ -228,13 +228,13 @@
                 transition: color 0.1s;
                 "></i>
             </a>
-            <a href="https://twitter.com/kscu" target="_blank">
+            <!-- <a href="https://twitter.com/kscu" target="_blank">
               <i class="fa fa-twitter px-2 hover:text-neutral-400" 
                 style="
                 font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
-            </a>
+            </a> -->
             <a href="https://open.spotify.com/user/kscu" target="_blank">
               <i class="fa fa-spotify px-2 hover:text-neutral-400" 
                 style="font-size: 24px; 
@@ -262,25 +262,24 @@
           <!-- Disappears when screen width gets too small -->
           <div id="new-social-media" class="flex items-center" 
             style="
-            padding-left: 0.5rem; 
             padding-top: 0.1rem;
             ">
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-2 hover:text-neutral-500"
+              <i class="fa fa-instagram px-3  hover:text-neutral-500"
                 style="
                 font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
             </a>
-            <a href="https://twitter.com/kscu" target="_blank">
+            <!-- <a href="https://twitter.com/kscu" target="_blank">
               <i class="fa fa-twitter px-2 hover:text-neutral-500" 
                 style="
                 font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
-            </a>
+            </a> -->
             <a href="https://open.spotify.com/user/kscu" target="_blank">
-              <i class="fa fa-spotify px-2 hover:text-neutral-500" 
+              <i class="fa fa-spotify pr-3 hover:text-neutral-500" id="new-spotify"
                 style="
                 font-size: 24px; 
                 transition: color 0.1s;
@@ -290,8 +289,7 @@
               style="
               height: 30px; 
               width: 1px; 
-              background-color: black; 
-              margin-left: 0.5rem;
+              background-color: black;
               "></div>
           </div>
           <!-- Play pause buttons in third row -->
@@ -492,9 +490,23 @@
   }
 
   /* remove social media icons to make room in mobile */
-
-  @media (max-width: 460px) {
+  
+  @media (max-width: 376px) {
+    #mobile-volume-bar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 373px) {
     #new-social-media {
+      display: none;
+    }
+    #mobile-volume-bar {
+      display: block;
+    }
+  }
+  @media (max-width: 460px) {
+    #new-spotify {
       display: none;
     }
 
