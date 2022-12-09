@@ -260,38 +260,6 @@
         <div class="flex justify-left items-center">
           <!-- Social media icons in third row -->
           <!-- Disappears when screen width gets too small -->
-          <div id="new-social-media" class="flex items-center" 
-            style="
-            padding-top: 0.1rem;
-            ">
-            <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-3  hover:text-neutral-500"
-                style="
-                font-size: 24px; 
-                transition: color 0.1s;
-                "></i>
-            </a>
-            <!-- <a href="https://twitter.com/kscu" target="_blank">
-              <i class="fa fa-twitter px-2 hover:text-neutral-500" 
-                style="
-                font-size: 24px; 
-                transition: color 0.1s;
-                "></i>
-            </a> -->
-            <a href="https://open.spotify.com/user/kscu" target="_blank">
-              <i class="fa fa-spotify pr-3 hover:text-neutral-500" id="new-spotify"
-                style="
-                font-size: 24px; 
-                transition: color 0.1s;
-                "></i>
-            </a>
-            <div 
-              style="
-              height: 30px; 
-              width: 1px; 
-              background-color: black;
-              "></div>
-          </div>
           <!-- Play pause buttons in third row -->
           <div class="flex-grow m-0 px-0 py-0">
             <button id="play-pause-mobile" class="">
@@ -348,7 +316,36 @@
             width: 1px; 
             background-color: black;
             "></div>
+          <div id="new-social-media" class="flex items-center" style="
+                      padding-top: 0.1rem;
+                      ">
+            <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
+              <i class="fa fa-instagram px-3  hover:text-neutral-500" style="
+                          font-size: 24px; 
+                          transition: color 0.1s;
+                          "></i>
+            </a>
+            <!-- <a href="https://twitter.com/kscu" target="_blank">
+                        <i class="fa fa-twitter px-2 hover:text-neutral-500" 
+                          style="
+                          font-size: 24px; 
+                          transition: color 0.1s;
+                          "></i>
+                      </a> -->
+            <a href="https://open.spotify.com/user/kscu" target="_blank">
+              <i class="fa fa-spotify pr-3 hover:text-neutral-500" id="new-spotify" style="
+                          font-size: 24px; 
+                          transition: color 0.1s;
+                          "></i>
+            </a>
+            <div style="
+                        height: 30px; 
+                        width: 1px; 
+                        background-color: black;
+                        "></div>
+          </div>
         </div>
+
         <!-- Page links in third row -->
         <div id="new-page-links" class="flex items-center" 
           style="
@@ -467,7 +464,13 @@
     #player {
       position: absolute;
       top: 75px;
-      left: 65px;
+      left: -66px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    #player {
+      left: -63px;
     }
   }
 
@@ -495,6 +498,8 @@
     #mobile-volume-bar {
       display: none;
     }
+
+
   }
   
   @media (max-width: 373px) {
@@ -521,7 +526,7 @@
     #mobile-volume {
       display: none;
     }
-
+    
     #mobile-volume-bar {
       display: none;
     }
