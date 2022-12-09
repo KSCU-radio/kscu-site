@@ -5,6 +5,7 @@ var playPauseBtnMobile = document.getElementById('play-pause-mobile');
 // Add event listener to play/pause button
 playPauseBtn.addEventListener('click', playPauseOnClick);
 playPauseBtnMobile.addEventListener('click', playPauseOnClick);
+var pageTitle = document.title;
 
 // Play/pause listeners
 function playUpdate() {
@@ -26,7 +27,7 @@ function pauseUpdate() {
     document.getElementById('play-mobile').style.display = 'block';
     document.getElementById('pause-mobile').style.display = 'none';
     document.getElementById('loader-mobile').style.display = 'none';
-    document.title = 'KSCU 103.3 FM'
+    document.title = pageTitle
 }
 
 var sound = new Howl({
