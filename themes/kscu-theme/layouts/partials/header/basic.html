@@ -249,8 +249,8 @@
 </div>
 
 <!-- Third row appears when screen width gets smaller -->
-<div id="third-row">
-  <div id="third-row" class="font-medium text-sm z-10">
+<div id="third-row-div">
+  <div id="third-row" class="font-medium text-sm z-10 overflow-hidden">
     <div class="px-6">
       <div class="flex justify-between items-center" style="
       height: 30px;
@@ -339,9 +339,9 @@
                           "></i>
             </a>
             <div style="
-                        height: 30px; 
-                        width: 1px; 
-                        background-color: black;
+            height: 33px; 
+            width: 1px; 
+            background-color: black;
                         "></div>
           </div>
         </div>
@@ -352,7 +352,7 @@
           padding-right: 1rem; 
           height: 30px;
           ">
-          <div 
+          <div id="new-page-links-bar"
             style="
             height: 30px; 
             width: 1px; 
@@ -481,6 +481,12 @@
     }
   }
 
+  @media (max-width: 470px) {
+    #new-page-links-bar {
+      display: none;
+    }
+  }
+
   /* remove live text to make more room for dj text */
   @media (max-width: 550px) {
     #live-play {
@@ -495,7 +501,7 @@
   /* remove social media icons to make room in mobile */
   
   @media (max-width: 376px) {
-    #mobile-volume-bar {
+    #new-page-links-bar {
       display: none;
     }
 
@@ -526,7 +532,7 @@
     #mobile-volume {
       display: none;
     }
-    
+
     #mobile-volume-bar {
       display: none;
     }
