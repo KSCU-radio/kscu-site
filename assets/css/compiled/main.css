@@ -2534,6 +2534,10 @@ body:has(#menu-controller:checked) {
   padding-right: 0.75rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2587,6 +2591,10 @@ body:has(#menu-controller:checked) {
 
 .text-\[0\.6rem\] {
   font-size: 0.6rem;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-light {

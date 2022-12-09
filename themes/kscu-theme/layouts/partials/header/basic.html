@@ -166,7 +166,7 @@
               width: 1px; 
               background-color: black;
               "></div>
-            <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
+            <ul class="flex list-none text-[15px] ltr:text-right rtl:text-left sm:flex-row">
               {{ if .Site.Menus.main }}
               {{ range .Site.Menus.main }}
               <li style="margin-left: 1rem;">
@@ -213,16 +213,15 @@
             </div>
           </div>
           <!-- Social media icons -->
-          <div id="social-media" class="flex items-center" style="padding-right: 1rem">
+          <div id="social-media" class="flex items-center">
             <div 
               style="
               height: 30px; 
               width: 1px; 
-              background-color: black; 
-              margin-right: 1rem;
+              background-color: black;
               "></div>
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-2 hover:text-neutral-400"
+              <i class="fa fa-instagram px-4 hover:text-neutral-400"
                 style="
                 font-size: 24px; 
                 transition: color 0.1s;
@@ -236,7 +235,7 @@
                 "></i>
             </a> -->
             <a href="https://open.spotify.com/user/kscu" target="_blank">
-              <i class="fa fa-spotify px-2 hover:text-neutral-400" 
+              <i class="fa fa-spotify pr-4 hover:text-neutral-400" 
                 style="font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
@@ -358,7 +357,7 @@
             width: 1px; 
             background-color: black;
             "></div>
-          <ul class="flex list-none ltr:text-right rtl:text-left sm:flex-row">
+          <ul class="flex list-none text-[15px] ltr:text-right rtl:text-left sm:flex-row">
             {{ if .Site.Menus.main }}
             {{ range .Site.Menus.main }}
             <li 
@@ -423,7 +422,7 @@
 
   /* Media queries for screen width adjustment */
   /* hides third row until screen width gets smaller */
-  @media (min-width: 821px) {
+  @media (min-width: 891px) {
     #third-row {
       display: none;
     }
@@ -436,7 +435,7 @@
   }
 
   /* move social media, page links, play button, and volume button to third row */
-  @media (max-width: 820px) {
+  @media (max-width: 890px) {
     #social-media {
       display: none;
     }
@@ -500,7 +499,7 @@
 
   /* remove social media icons to make room in mobile */
   
-  @media (max-width: 376px) {
+  @media (max-width: 384px) {
     #new-page-links-bar {
       display: none;
     }
@@ -508,7 +507,7 @@
 
   }
   
-  @media (max-width: 373px) {
+  @media (max-width: 384px) {
     #new-social-media {
       display: none;
     }
@@ -528,7 +527,7 @@
     }
   }
 
-  @media (max-width: 330px) {
+  @media (max-width: 338px) {
     #mobile-volume {
       display: none;
     }
