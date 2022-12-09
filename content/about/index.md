@@ -66,6 +66,8 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 
 **Volunteer Staff:** Joey Mena
 
+[Site Credits](/credits/)
+
 
 ![KSCU Staff Members](kscu-vintage-2.jpg "Former KSCU Staff Member")
 ![KSCU Studio](kscu-studio.jpg "Current KSCU Studio")
