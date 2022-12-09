@@ -122,11 +122,10 @@ function placeTracks() {
 async function fetchTracks() {
     // console.log("Fetching track data...");
     request = `/.netlify/functions/spins`
-    // console.log("Request: " + request)
     let response = await fetch(request);
     let res = await response.json();
-    let data = res["items"]
-    console.log(data)
+    let data = res
+    // console.log(data)
     store.remove("recentTracks")
     store("recentTracks", data)
 }

@@ -14,22 +14,23 @@ const handler = async (event) => {
         // let data = await response.json();
         // console.log(data)
         // console.log("Recieved data...");
-        // spins = data["items"]
-        // var toReturn = [{}, {}, {}, {}, {}]
-        // var i = 0
-        // for (const song in spins) {
-        //     toReturn[i]["song"] = spins[song]["song"];
-        //     toReturn[i]["artist"] = spins[song]["artist"];
-        //     toReturn[i]["image"] = spins[song]["image"];
-        //     toReturn[i]["duration"] = spins[song]["duration"];
-        //     toReturn[i]["released"] = spins[song]["released"];
-        //     toReturn[i]["end"] = spins[song]["end"];
-        //     i++;
-        // }
+        spins = data["items"]
+        var toReturn = [{}, {}, {}, {}, {}]
+        var i = 0
+        for (const song in spins) {
+            toReturn[i]["song"] = spins[song]["song"];
+            toReturn[i]["artist"] = spins[song]["artist"];
+            toReturn[i]["image"] = spins[song]["image"];
+            toReturn[i]["duration"] = spins[song]["duration"];
+            toReturn[i]["released"] = spins[song]["released"];
+            toReturn[i]["start"] = spins[song]["start"];
+            toReturn[i]["end"] = spins[song]["end"];
+            i++;
+        }
         // console.log(toReturn)
         return {
             statusCode: 200,
-            body: JSON.stringify(data)
+            body: JSON.stringify(toReturn)
         }
 
     } catch (error) {
