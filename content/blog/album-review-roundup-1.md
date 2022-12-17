@@ -61,4 +61,21 @@ Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listene
 * [Sweden](https://open.spotify.com/track/4NsPgRYUdHu2Q5JRNgXYU5?si=b5be50c215814681)
 * [Door](https://open.spotify.com/track/6PR3ZUCnxtQTEu30qgZLwT?si=3be9664c1e074d19)
 * [Minecraft](https://open.spotify.com/track/6xwhCiWXREsAIQVZqHswVw?si=65a256f74e854883)
-* Dry Hands
+* [Dry Hands](https://open.spotify.com/track/1gNcPHAiVIQZmqJFJdt3ti?si=e7f604a6f19d4f6a)
+
+## Pink Floyd - Dark Side of the Moon
+
+### Review by Kenji Kojima
+
+Pink Floyd’s Dark Side of the Moon is undoubtedly the quintessential prog rock and concept album of all time. It is one of the most critically acclaimed albums, and has charted almost 1000 weeks on the Billboard charts since its release in 1973. I feel unworthy to review it, as countless thousands have done so over the years. But here’s a go: Though it does have songs/tracks, each side of the LP is meant to be a continuous stream of music about life in general. Though commercial radio has tried, just playing one of the tracks is like picking just a line or chord out of a song – it doesn’t do the piece justice. That being said, the album track by track: 
+
+* [Speak to Me](https://open.spotify.com/track/574y1r7o2tRA009FW0LE7v?si=f35718cb67b74bce) – starts with a heartbeat, it overlays spoken quotes about life from various people over a rising heartbeat and sounds/takes from the rest of the album. You can hear spoken quotes throughout the album. 
+* [Breathe](https://open.spotify.com/track/2ctvdKmETyOzPb2GiJJT53?si=13ed553a403a4c6a) – a spacey floating track with views of the futility of life 
+* [On the Run](https://open.spotify.com/track/73OIUNKRi2y24Cu9cOLrzM?si=632a4e4b40524356) – an instrumental spacey yet fast-paced track, reminds me of rushing for trains during a commute. 
+* [Time](https://open.spotify.com/track/3TO7bbrUKrOSPGRTB5MeCz?si=1cb2b795366845fe) – if I have a favorite track on the album, it’s Time. It has a great lead in with synthesizer and drums, then leads into more lyrics about life with a fantastic guitar solo. One favorite line: “And you run and you run to catch up with the sun but it’s sinking. Racing around to come up behind you again”. The tail end of the song is a reprise on Breathe, the 2nd track. 
+* [The Great Gig in the Sky](https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d?si=021624d362664d0f) – evocative chord-sequenced keyboard driven track, with mazing non-lexical vocals by Clare Torry 
+* [Money](https://open.spotify.com/track/0vFOzaXqZHahrZp6enQwQb?si=6123e18eb18d4053) – Pink Floyd released this as a single about capitalism. Sounds of cash registers become part of the rhythm section. A rocker with more guitar solos backed by heavy bass/keyboards. 
+* [Us and Them](https://open.spotify.com/track/1TKTiKp3zbNgrBH2IwSwIx?si=d1ecd177f7eb4426) – slower, spacey synth with a sax solo. Lyrics about the social dichotomies of life. 
+* [Any Color You Like](https://open.spotify.com/track/6FBPOJLxUZEair6x4kLDhf?si=313f1d6b9b3e4f9a) – keyboard-led instrumental, a classic example of prog rock 
+* [Brain Damage](https://open.spotify.com/track/05uGBKRCuePsf43Hfm0JwX?si=cab90e64c5844651) – slow building rocker that builds. Addresses mental illness, likely from the experience with former bandmate Syd Barrett, who went insane. 
+* [Eclipse](https://open.spotify.com/track/1tDWVeCR9oWGX8d5J9rswk?si=c4fb824724174177) – closer about everything in life, ending with an proclamation about the Dark Side of the Moon. Ends with the same heartbeat that started the album. 
