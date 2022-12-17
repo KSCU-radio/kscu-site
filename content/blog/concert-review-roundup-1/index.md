@@ -1,16 +1,15 @@
 ---
-title: "Concert Review Roundup #1"
+title: 'Concert Review Roundup #1'
 date: 2022-11-29
-draft: false
-description: "Concert review of The Regrettes, "
+description: 'Concert review of The Regrettes, '
 showDate: true
-showAuthor: true
+showAuthor: false
 showReadingTime: false
 showEdit: false
 showPagination: false
 showTableOfContents: false
----
 
+---
 ## The Regrettes Live from The Neptune Theatre
 #### Review by Connor Grady
 
