@@ -3,6 +3,9 @@ command = "hugo --gc --minify -b $URL"
 publish = "public"
 functions = "netlify/functions/"
 
+[build.environment]
+HUGO_VERSION = "0.104.2"
+
 [functions]
 directory = "netlify/functions/"
 node_bundler = "esbuild"
