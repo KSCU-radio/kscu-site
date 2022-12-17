@@ -40,19 +40,19 @@ Bird closes out the album with his song _Bellevue_, a swinging string laced ball
 
 ### Review by Austin Douthit
 
-As someone who grew up playing Minecraft and still occasionally plays to this day, I’ve always been a fan of C418's music, and more specifically this album, but have never listened to many of the songs outside of the game itself. I knew going in that a lot of the songs would have a kind of whimsical, explorative sound and I was very excited to see if I was correct and how the German artist approached making one of the greatest videogame soundtracks of all time. 
+As someone who grew up playing Minecraft and still occasionally plays to this day, I’ve always been a fan of C418's music, and more specifically this album, but have never listened to many of the songs outside of the game itself. I knew going in that a lot of the songs would have a kind of whimsical, explorative sound and I was very excited to see if I was correct and how the German artist approached making one of the greatest videogame soundtracks of all time.
 
 {{< youtube 3uVZBJQ2Id0 >}}
 <!-- Format the snippet as above with videoID being the last part of the video link -->
 <!-- you must include "youtube" before the videoID -->
 
-The opening track “Key” introduces the listener to the light piano notes that appear consistently throughout the entire album as well as sets the tone for the kind of songs that will play throughout. Since there are so many songs on the album, I won’t be breaking each one down, but my favorites were “Door”, “Minecraft”, “Mice On Venus”, “Dry Hands”, and “Sweden”. 
+The opening track “Key” introduces the listener to the light piano notes that appear consistently throughout the entire album as well as sets the tone for the kind of songs that will play throughout. Since there are so many songs on the album, I won’t be breaking each one down, but my favorites were “Door”, “Minecraft”, “Mice On Venus”, “Dry Hands”, and “Sweden”.
 
-“Mice On Venus” hits especially hard, and somehow fills me with an overwhelming sense of accomplishment and nostalgia every time I hear the song. After listening to the whole album, it was very clear that C418 somehow created an album that captured exactly how the game feels. Having played Minecraft, I know that every song from the soundtrack comes in at random, and somehow each time the soundtrack comes in, it meshes perfectly with whatever I may be doing in game. C418 consistently uses a similar 3 note motif throughout the record that gives each song a sense of familiarity, and contributes to what makes each song feel so nostalgic. 
+“Mice On Venus” hits especially hard, and somehow fills me with an overwhelming sense of accomplishment and nostalgia every time I hear the song. After listening to the whole album, it was very clear that C418 somehow created an album that captured exactly how the game feels. Having played Minecraft, I know that every song from the soundtrack comes in at random, and somehow each time the soundtrack comes in, it meshes perfectly with whatever I may be doing in game. C418 consistently uses a similar 3 note motif throughout the record that gives each song a sense of familiarity, and contributes to what makes each song feel so nostalgic.
 
 Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listened to and after finishing the record, I had an unrelenting urge to start up Minecraft once again: 10/10 album.
 
-{{< twitter_simple user="210elbows" id="1603811375729762304" >}}
+{{< twitter user="210elbows" id="1603811375729762304" >}}
 
 ### Favorite Songs
 
@@ -66,19 +66,19 @@ Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listene
 
 ### Review by Kenji Kojima
 
-Pink Floyd’s Dark Side of the Moon is undoubtedly the quintessential prog rock and concept album of all time. It is one of the most critically acclaimed albums, and has charted almost 1000 weeks on the Billboard charts since its release in 1973. I feel unworthy to review it, as countless thousands have done so over the years. But here’s a go: Though it does have songs/tracks, each side of the LP is meant to be a continuous stream of music about life in general. 
+Pink Floyd’s Dark Side of the Moon is undoubtedly the quintessential prog rock and concept album of all time. It is one of the most critically acclaimed albums, and has charted almost 1000 weeks on the Billboard charts since its release in 1973. I feel unworthy to review it, as countless thousands have done so over the years. But here’s a go: Though it does have songs/tracks, each side of the LP is meant to be a continuous stream of music about life in general.
 
 ![](https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg)
 
-Though commercial radio has tried, just playing one of the tracks is like picking just a line or chord out of a song – it doesn’t do the piece justice. That being said, the album track by track: 
+Though commercial radio has tried, just playing one of the tracks is like picking just a line or chord out of a song – it doesn’t do the piece justice. That being said, the album track by track:
 
-* [Speak to Me](https://open.spotify.com/track/574y1r7o2tRA009FW0LE7v?si=f35718cb67b74bce) – starts with a heartbeat, it overlays spoken quotes about life from various people over a rising heartbeat and sounds/takes from the rest of the album. You can hear spoken quotes throughout the album. 
-* [Breathe](https://open.spotify.com/track/2ctvdKmETyOzPb2GiJJT53?si=13ed553a403a4c6a) – a spacey floating track with views of the futility of life 
-* [On the Run](https://open.spotify.com/track/73OIUNKRi2y24Cu9cOLrzM?si=632a4e4b40524356) – an instrumental spacey yet fast-paced track, reminds me of rushing for trains during a commute. 
-* [Time](https://open.spotify.com/track/3TO7bbrUKrOSPGRTB5MeCz?si=1cb2b795366845fe) – if I have a favorite track on the album, it’s Time. It has a great lead in with synthesizer and drums, then leads into more lyrics about life with a fantastic guitar solo. One favorite line: “And you run and you run to catch up with the sun but it’s sinking. Racing around to come up behind you again”. The tail end of the song is a reprise on Breathe, the 2nd track. 
-* [The Great Gig in the Sky](https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d?si=021624d362664d0f) – evocative chord-sequenced keyboard driven track, with mazing non-lexical vocals by Clare Torry 
-* [Money](https://open.spotify.com/track/0vFOzaXqZHahrZp6enQwQb?si=6123e18eb18d4053) – Pink Floyd released this as a single about capitalism. Sounds of cash registers become part of the rhythm section. A rocker with more guitar solos backed by heavy bass/keyboards. 
-* [Us and Them](https://open.spotify.com/track/1TKTiKp3zbNgrBH2IwSwIx?si=d1ecd177f7eb4426) – slower, spacey synth with a sax solo. Lyrics about the social dichotomies of life. 
-* [Any Color You Like](https://open.spotify.com/track/6FBPOJLxUZEair6x4kLDhf?si=313f1d6b9b3e4f9a) – keyboard-led instrumental, a classic example of prog rock 
-* [Brain Damage](https://open.spotify.com/track/05uGBKRCuePsf43Hfm0JwX?si=cab90e64c5844651) – slow building rocker that builds. Addresses mental illness, likely from the experience with former bandmate Syd Barrett, who went insane. 
-* [Eclipse](https://open.spotify.com/track/1tDWVeCR9oWGX8d5J9rswk?si=c4fb824724174177) – closer about everything in life, ending with an proclamation about the Dark Side of the Moon. Ends with the same heartbeat that started the album. 
+* [Speak to Me](https://open.spotify.com/track/574y1r7o2tRA009FW0LE7v?si=f35718cb67b74bce) – starts with a heartbeat, it overlays spoken quotes about life from various people over a rising heartbeat and sounds/takes from the rest of the album. You can hear spoken quotes throughout the album.
+* [Breathe](https://open.spotify.com/track/2ctvdKmETyOzPb2GiJJT53?si=13ed553a403a4c6a) – a spacey floating track with views of the futility of life
+* [On the Run](https://open.spotify.com/track/73OIUNKRi2y24Cu9cOLrzM?si=632a4e4b40524356) – an instrumental spacey yet fast-paced track, reminds me of rushing for trains during a commute.
+* [Time](https://open.spotify.com/track/3TO7bbrUKrOSPGRTB5MeCz?si=1cb2b795366845fe) – if I have a favorite track on the album, it’s Time. It has a great lead in with synthesizer and drums, then leads into more lyrics about life with a fantastic guitar solo. One favorite line: “And you run and you run to catch up with the sun but it’s sinking. Racing around to come up behind you again”. The tail end of the song is a reprise on Breathe, the 2nd track.
+* [The Great Gig in the Sky](https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d?si=021624d362664d0f) – evocative chord-sequenced keyboard driven track, with mazing non-lexical vocals by Clare Torry
+* [Money](https://open.spotify.com/track/0vFOzaXqZHahrZp6enQwQb?si=6123e18eb18d4053) – Pink Floyd released this as a single about capitalism. Sounds of cash registers become part of the rhythm section. A rocker with more guitar solos backed by heavy bass/keyboards.
+* [Us and Them](https://open.spotify.com/track/1TKTiKp3zbNgrBH2IwSwIx?si=d1ecd177f7eb4426) – slower, spacey synth with a sax solo. Lyrics about the social dichotomies of life.
+* [Any Color You Like](https://open.spotify.com/track/6FBPOJLxUZEair6x4kLDhf?si=313f1d6b9b3e4f9a) – keyboard-led instrumental, a classic example of prog rock
+* [Brain Damage](https://open.spotify.com/track/05uGBKRCuePsf43Hfm0JwX?si=cab90e64c5844651) – slow building rocker that builds. Addresses mental illness, likely from the experience with former bandmate Syd Barrett, who went insane.
+* [Eclipse](https://open.spotify.com/track/1tDWVeCR9oWGX8d5J9rswk?si=c4fb824724174177) – closer about everything in life, ending with an proclamation about the Dark Side of the Moon. Ends with the same heartbeat that started the album.
