@@ -593,6 +593,10 @@
   button:hover>#pause-mobile {
     filter: invert(50%);
   }
+  
+  blockquote {
+    border-left-color: #363940;
+  }
 </style>
 <!-- {{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
