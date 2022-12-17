@@ -9,6 +9,7 @@ var pageTitle = document.title;
 
 // Play/pause listeners
 function playUpdate() {
+    
     document.getElementById('loader').style.display = 'none';
     document.getElementById('pause').style.display = 'block';
     document.getElementById('play').style.display = 'none';
@@ -17,6 +18,24 @@ function playUpdate() {
     document.getElementById('loader-mobile').style.display = 'none';
     data = store.get("recentTracks")
     document.title = data[0]["artist"] + ' - ' + data[0]["song"]
+    if ('mediaSession' in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({
+            title: data[0]["song"],
+            artist: data[0]["artist"],
+            album: data[0]["album"],
+            artwork: [
+                { src: "kscu-round-92.png", sizes: "92x92", type: "image/png" },
+                { src: "kscu-round-128.png", sizes: "128x128", type: "image/png" },
+                { src: "kscu-round-192.png", sizes: "192x192", type: "image/png" },
+                { src: "kscu-round-256.png", sizes: "256x256", type: "image/png" },
+                { src: "kscu-round-384.png", sizes: "384x384", type: "image/png" },
+                { src: "kscu-round-512.png", sizes: "512x512", type: "image/png" },
+            ]
+        });
+        navigator.mediaSession.setActionHandler('play', function() { sound.play(); });
+        navigator.mediaSession.setActionHandler('pause', function() { sound.pause(); });
+        navigator.mediaSession.setActionHandler('stop', function() { sound.pause(); });
+    }
 }
 
 

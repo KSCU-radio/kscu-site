@@ -116,6 +116,16 @@ function placeTracks() {
     }
     if (typeof sound !== 'undefined' && sound.playing()) {
         document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: data[0]["song"],
+                artist: data[0]["artist"],
+                album: data[0]["album"],
+            });
+            navigator.mediaSession.setActionHandler('play', function () { sound.play(); });
+            navigator.mediaSession.setActionHandler('pause', function () { sound.pause(); });
+            navigator.mediaSession.setActionHandler('stop', function () { sound.pause(); });
+        }
     }
 }
 
