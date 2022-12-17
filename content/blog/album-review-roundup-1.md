@@ -43,6 +43,10 @@ Bird closes out the album with his song _Bellevue_, a swinging string laced ball
 
 As someone who grew up playing Minecraft and still occasionally plays to this day, I’ve always been a fan of C418's music, and more specifically this album, but have never listened to many of the songs outside of the game itself. I knew going in that a lot of the songs would have a kind of whimsical, explorative sound and I was very excited to see if I was correct and how the German artist approached making one of the greatest videogame soundtracks of all time. 
 
+{{< youtube 3uVZBJQ2Id0 >}}
+<!-- Format the snippet as above with videoID being the last part of the video link -->
+<!-- you must include "youtube" before the videoID -->
+
 The opening track “Key” introduces the listener to the light piano notes that appear consistently throughout the entire album as well as sets the tone for the kind of songs that will play throughout. Since there are so many songs on the album, I won’t be breaking each one down, but my favorites were “Door”, “Minecraft”, “Mice On Venus”, “Dry Hands”, and “Sweden”. 
 
 “Mice On Venus” hits especially hard, and somehow fills me with an overwhelming sense of accomplishment and nostalgia every time I hear the song. After listening to the whole album, it was very clear that C418 somehow created an album that captured exactly how the game feels. Having played Minecraft, I know that every song from the soundtrack comes in at random, and somehow each time the soundtrack comes in, it meshes perfectly with whatever I may be doing in game. C418 consistently uses a similar 3 note motif throughout the record that gives each song a sense of familiarity, and contributes to what makes each song feel so nostalgic. 
