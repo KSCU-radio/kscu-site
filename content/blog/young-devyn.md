@@ -1,13 +1,15 @@
 ---
 title: "Young Devyn - Artist Bio"
 date: 2020-08-14
-draft: false
-showDate: true
-showAuthor: false
 description: "A concert review of Acid Pauli at Public Works SF"
-showReadingTime: false
+showAuthor: false
+showDate: true
 showEdit: false
-showPagination: false
+showPagination: true
+showReadingTime: false
+showSummary: false
+showTableOfContents: false
+showWordCount: false
 ---
 
 Young Devyn is an up-and-coming Brooklyn rapper who just dropped her debut EP, Baby Goat. Drawing from her influences of Nicki Minaj, Lauryn Hill, Lil Baby, and Cardi B, Devyn bases her lyrics on her everyday conversations and life experiences. Devyn believes that cursing is often used as a substitute for good writing, and as such writes her songs without any profanity. She’s been writing music since the age of twelve.
