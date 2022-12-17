@@ -2789,6 +2789,10 @@ html {
   border-radius: 5px;
 }
 
+blockquote {
+  background-color: #363940;
+}
+
 .first\:mt-8:first-child {
   margin-top: 2rem;
 }

@@ -329,3 +329,7 @@ html {
   background: #CCCCCC;
   border-radius: 5px;
 }
+
+blockquote {
+  background-color: #363940;
+}
