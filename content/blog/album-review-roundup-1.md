@@ -8,7 +8,7 @@ showEdit = false
 showPagination = true
 showReadingTime = true
 showSummary = true
-showTableOfContents = true
+showTableOfContents = false
 showWordCount = true
 title = "Album Review Roundup #1"
 
