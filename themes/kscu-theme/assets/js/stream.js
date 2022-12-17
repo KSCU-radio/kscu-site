@@ -24,12 +24,12 @@ function playUpdate() {
             artist: data[0]["artist"],
             album: data[0]["album"],
             artwork: [
-                { src: "kscu-round-92.png", sizes: "92x92", type: "image/png" },
-                { src: "kscu-round-128.png", sizes: "128x128", type: "image/png" },
-                { src: "kscu-round-192.png", sizes: "192x192", type: "image/png" },
-                { src: "kscu-round-256.png", sizes: "256x256", type: "image/png" },
-                { src: "kscu-round-384.png", sizes: "384x384", type: "image/png" },
-                { src: "kscu-round-512.png", sizes: "512x512", type: "image/png" },
+                { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
+                { src: "/kscu-round-128.png", sizes: "128x128", type: "image/png" },
+                { src: "/kscu-round-192.png", sizes: "192x192", type: "image/png" },
+                { src: "/kscu-round-256.png", sizes: "256x256", type: "image/png" },
+                { src: "/kscu-round-384.png", sizes: "384x384", type: "image/png" },
+                { src: "/kscu-round-512.png", sizes: "512x512", type: "image/png" },
             ]
         });
         navigator.mediaSession.setActionHandler('play', function() { sound.play(); });
