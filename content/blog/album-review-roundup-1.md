@@ -48,7 +48,5 @@ The opening track “Key” introduces the listener to the light piano notes tha
 “Mice On Venus” hits especially hard, and somehow fills me with an overwhelming sense of accomplishment and nostalgia every time I hear the song. After listening to the whole album, it was very clear that C418 somehow created an album that captured exactly how the game feels. Having played Minecraft, I know that every song from the soundtrack comes in at random, and somehow each time the soundtrack comes in, it meshes perfectly with whatever I may be doing in game. C418 consistently uses a similar 3 note motif throughout the record that gives each song a sense of familiarity, and contributes to what makes each song feel so nostalgic. 
 
 {{< twitter_simple user="210elbows" id="1603811375729762304" >}}
-<!-- To embed a tweet, put the user's id (their @username) in the "" for user -->
-<!-- and put the tweet's ID (the end of it's url when your viewing the tweet) in the "" for id -->
 
 Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listened to and after finishing the record, I had an unrelenting urge to start up Minecraft once again: 10/10 album.
