@@ -17,7 +17,7 @@ We're back again with some music reviews from our DJs, this time sharing reviews
 
 ## Andrew Bird - Are You Serious
 
-##### Review by Sally Walsh
+### Review by Sally Walsh
 
 Andrew Bird's 13th album, 'Are You Serious' centers around his smooth, deep, and harmonic voice over the sounds of gorgeous strings and a jazz-like backing of percussion.
 
