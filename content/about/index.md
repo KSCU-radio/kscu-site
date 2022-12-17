@@ -2,7 +2,7 @@
 title: About KSCU
 date: 2020-08-14
 description: About KSCU
-showDate: true
+showDate: false
 showAuthor: false
 showReadingTime: false
 showPagination: false
