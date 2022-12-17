@@ -4,25 +4,41 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Blog Post Title
+  description: This appears above the post and across the site.
 - type: datetime
   name: date
-  label: date
+  label: Date Posted
+  description: This is displayed at the top of the post and is used to sort the recent
+    blog posts.
 - type: text
   name: description
-  label: description
+  label: Post Description
+  description: Short description used by search engines to index this post.
 - type: boolean
   name: showDate
-  label: showDate
+  label: Show Date
+  description: Whether the date is shown at the top of the blog post.
+  hidden: true
+  default: true
 - type: boolean
   name: showAuthor
   label: showAuthor
+  hidden: true
+  default: false
 - type: boolean
   name: showReadingTime
-  label: showReadingTime
+  label: Show Reading Time
+  description: Show the estimated reading time of the post. Could be useful for long
+    articles.
 - type: boolean
   name: showEdit
   label: showEdit
+  hidden: true
 - type: boolean
   name: showPagination
   label: showPagination
+  hidden: true
+  default: true
+  description: Controls whether the next and previous article links are shown at the
+    bottom of a post.
