@@ -67,7 +67,9 @@ Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listene
 
 ### Review by Kenji Kojima
 
-Pink Floyd’s Dark Side of the Moon is undoubtedly the quintessential prog rock and concept album of all time. It is one of the most critically acclaimed albums, and has charted almost 1000 weeks on the Billboard charts since its release in 1973. I feel unworthy to review it, as countless thousands have done so over the years. But here’s a go: Though it does have songs/tracks, each side of the LP is meant to be a continuous stream of music about life in general. Though commercial radio has tried, just playing one of the tracks is like picking just a line or chord out of a song – it doesn’t do the piece justice. That being said, the album track by track: 
+Pink Floyd’s Dark Side of the Moon is undoubtedly the quintessential prog rock and concept album of all time. It is one of the most critically acclaimed albums, and has charted almost 1000 weeks on the Billboard charts since its release in 1973. I feel unworthy to review it, as countless thousands have done so over the years. But here’s a go: Though it does have songs/tracks, each side of the LP is meant to be a continuous stream of music about life in general. 
+
+Though commercial radio has tried, just playing one of the tracks is like picking just a line or chord out of a song – it doesn’t do the piece justice. That being said, the album track by track: 
 
 * [Speak to Me](https://open.spotify.com/track/574y1r7o2tRA009FW0LE7v?si=f35718cb67b74bce) – starts with a heartbeat, it overlays spoken quotes about life from various people over a rising heartbeat and sounds/takes from the rest of the album. You can hear spoken quotes throughout the album. 
 * [Breathe](https://open.spotify.com/track/2ctvdKmETyOzPb2GiJJT53?si=13ed553a403a4c6a) – a spacey floating track with views of the futility of life 
