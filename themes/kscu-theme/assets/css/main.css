@@ -329,3 +329,9 @@ html {
   background: #CCCCCC;
   border-radius: 5px;
 }
+
+@media (any-hover: hover) {
+  a:hover {
+    background: yellow;
+  }
+}
