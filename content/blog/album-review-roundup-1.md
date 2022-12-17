@@ -6,10 +6,10 @@ showAuthor = false
 showDate = true
 showEdit = false
 showPagination = true
-showReadingTime = true
+showReadingTime = false
 showSummary = true
 showTableOfContents = false
-showWordCount = true
+showWordCount = false
 title = "Album Review Roundup #1"
 
 +++
