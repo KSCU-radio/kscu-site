@@ -53,7 +53,7 @@ The opening track “Key” introduces the listener to the light piano notes tha
 
 Minecraft - Volume Alpha is easily one of my favorite albums that I’ve listened to and after finishing the record, I had an unrelenting urge to start up Minecraft once again: 10/10 album.
 
-{{< twitter user="210elbows" id="1603811375729762304" >}}
+{{< twitter_simple user="210elbows" id="1603811375729762304" >}}
 
 ### Favorite Songs
 
