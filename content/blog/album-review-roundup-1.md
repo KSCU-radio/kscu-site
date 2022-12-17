@@ -30,3 +30,9 @@ _The New Saint Jude_ is incredibly playful, with the vocal track sounding more l
 _Valleys of the Young_, a nearly 6 minute song, takes the listener through ups and downs, with high-strung guitars, cymbals, and piano all in one at the crescedo near the end of the song.
 
 Bird closes out the album with his song _Bellevue_, a swinging string laced ballad which summarizes all the hopeful closing feelings of another gorgeous album, we can only wait and see what else Andrew Bird puts out into this most wonderful world.
+
+### Favorite Songs
+
+## Andrew Bird - Are You Serious
+
+### Review by Sally Walsh
