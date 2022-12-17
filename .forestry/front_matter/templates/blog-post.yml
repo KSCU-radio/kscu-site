@@ -60,3 +60,5 @@ fields:
     ALWAYS BE TRUE.
   hidden: true
   default: true
+pages:
+- content/blog/album-review-roundup-1.md
