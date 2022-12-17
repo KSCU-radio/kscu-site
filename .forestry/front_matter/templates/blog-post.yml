@@ -53,3 +53,10 @@ fields:
   label: Show Word Count
   description: Controls whether a post's word count is displayed at the top of the
     post.
+- name: showSummary
+  type: boolean
+  label: Show Summary
+  description: Whether an article summary is displayed on recent articles pages. SHOULD
+    ALWAYS BE TRUE.
+  hidden: true
+  default: true
