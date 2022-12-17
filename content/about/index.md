@@ -1,8 +1,7 @@
 ---
-title: "About KSCU"
+title: About KSCU
 date: 2020-08-14
-draft: false
-description: "About KSCU"
+description: About KSCU
 showDate: true
 showAuthor: false
 showReadingTime: false
@@ -11,15 +10,18 @@ showTableOfContents: true
 
 ---
 <style>
-    #metadata {
-        display: none;
-    }
+\#metadata {
+display: none;
+}
 
     #article-header {
         padding-bottom: 12px;
     }
+
 </style>
+
 ## Contact Us
+
 For most questions, please email the General Manager at [gm@kscu.org](mailto:gm@kscu.org).
 
 To submit music for airplay, please email our Music Director at [music@kscu.org](mailto:music@kscu.org).
@@ -67,7 +69,6 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 **Volunteer Staff:** Joey Mena
 
 [Site Credits](/credits/)
-
 
 ![KSCU Staff Members](kscu-vintage-2.jpg "Former KSCU Staff Member")
 ![KSCU Studio](kscu-studio.jpg "Current KSCU Studio")
