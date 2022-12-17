@@ -1,7 +1,6 @@
 +++
 date = 2022-12-17T06:00:00Z
 description = "A collection of album reviews by KSCU DJs."
-draft = true
 showAuthor = false
 showDate = true
 showEdit = false
