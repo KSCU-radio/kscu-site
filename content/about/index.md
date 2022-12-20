@@ -68,6 +68,8 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 
 **Volunteer Staff:** Joey Mena
 
+**Faculty Advisor:** [Gordon Young](mailto:gyoung@scu.edu)
+
 [Site Credits](/credits/)
 
 ![KSCU Staff Members](kscu-vintage-2.jpg "Former KSCU Staff Member")
