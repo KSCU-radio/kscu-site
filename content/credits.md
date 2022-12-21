@@ -1,5 +1,5 @@
 ---
-title: "Credits"
+title: "Site Credits"
 description: "A list of credits and resources used to make the site."
 
 showEdit: false
@@ -15,8 +15,7 @@ showPagination: false
 
 lastmod: 2022-12-09
 ---
-### Credits
-#### Site built by: 
+#### Build by:
 - [Aidan Smith](https://aidansmith.me)
 - [Amy Vu](https://github.com/vuamy)
 - [Patrick Lee](https://github.com/PatrickStarLee)
@@ -26,7 +25,7 @@ lastmod: 2022-12-09
 - [Amy Vu](https://github.com/vuamy)
 - [Katie Wei](https://www.instagram.com/ktweiart/)
 
-### Resources
+#### Resources:
 - [Congo Theme for Hugo by James Panther](https://github.com/jpanther/congo)
 - [Crowd Animation by Szenia Zadvornykh](https://codepen.io/zadvorsky)
 - [Open Peeps Project by Pablo Stanley](https://www.openpeeps.com/)
