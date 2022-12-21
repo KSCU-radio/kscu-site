@@ -77,10 +77,10 @@ function placeShow() {
 async function fetchShow() {
         try {
                 request = `/.netlify/functions/show`
-        console.log("Request: " + request)
+        // console.log("Request: " + request)
         let response = await fetch(request);
         let data = await response.json();
-        console.log("Recieved data...");
+        // console.log("Recieved data...");
         store.remove("showData")
         store('showData', data)
         return { statusCode: 500, body: "Next Show: " + title }
@@ -92,7 +92,7 @@ var showTimer = 60000
 
 async function updateShow() {
     // First fetch new data
-    console.log("Fetching new show data...")
+    // console.log("Fetching new show data...")
     await fetchShow()
 
     // Then place the new data
@@ -126,7 +126,7 @@ async function startShow() {
         placeShow()
         showEnd = new Date(store.get("showData")["end_time"])
         if (new Date(showEnd) > Date.now()) {
-            console.log("Show is currently on, waiting for it to end in " + ((new Date(showEnd) - Date.now())/1000/60).toFixed(2) + " mins")
+            // console.log("Show is currently on, waiting for it to end in " + ((new Date(showEnd) - Date.now())/1000/60).toFixed(2) + " mins")
             setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000 + Math.floor(Math.random() * 3000))
         } else {
             updateShow()

@@ -152,7 +152,7 @@ var progressiveTimer = 10000
 
 async function updateTracks() {
     // First fetch new data
-    console.log("Fetching new track data...")
+    // console.log("Fetching new track data...")
     await fetchTracks()
 
     // Then place the new data
@@ -170,7 +170,7 @@ async function updateTracks() {
 
     // Then grab the end time of the first track
     let songEnd = store.get("recentTracks")[0]["end"]
-    console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
+    // console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
     // call function again after the song ends + 25 seconds
     // console.log("Next update in " + (songEnd + 25 - Date.now()) + "ms")
     // Wait for 25 seconds
@@ -189,7 +189,7 @@ async function startTracks() {
         placeTracks() // Place the stored data immediately on page load
         songEnd = store.get("recentTracks")[0]["end"]
         if (new Date(songEnd) > Date.now()) {
-            console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
+            // console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
             setTimeout(updateTracks, (new Date(songEnd) - Date.now())+ 20000 + Math.floor(Math.random() * 10000))
         } else {
             updateTracks()
