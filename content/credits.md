@@ -22,7 +22,11 @@ lastmod: 2022-12-09
 - [Patrick Lee](https://github.com/PatrickStarLee)
 - [Jeffrey Chen](https://github.com/yoffrey)
 
+#### Design by:
+- [Amy Vu](https://github.com/vuamy)
+- [Katie Wei](https://www.instagram.com/ktweiart/)
+
 ### Resources
-- [Congo Theme by James Panther](https://github.com/jpanther/congo)
+- [Congo Theme for Hugo by James Panther](https://github.com/jpanther/congo)
 - [Crowd Animation by Szenia Zadvornykh](https://codepen.io/zadvorsky)
 - [Open Peeps Project by Pablo Stanley](https://www.openpeeps.com/)
