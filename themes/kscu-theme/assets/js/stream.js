@@ -19,9 +19,10 @@ function playUpdate() {
     data = store.get("recentTracks")
     document.title = data[0]["artist"] + ' - ' + data[0]["song"]
     if ('mediaSession' in navigator) {
+        console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
-            title: data[0]["song"],
-            artist: data[0]["artist"],
+            title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
+            artist: (data[0]["song"] + "-" + data[0]["artist"]),
             album: data[0]["album"],
             artwork: [
                 { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },

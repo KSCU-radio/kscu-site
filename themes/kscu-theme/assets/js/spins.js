@@ -116,10 +116,11 @@ function placeTracks() {
     }
     if (typeof sound !== 'undefined' && sound.playing()) {
         document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
+        console.log("Test")
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: data[0]["song"],
-                artist: data[0]["artist"],
+                title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
+                artist: (data[0]["song"] + "-" + data[0]["artist"]),
                 album: data[0]["album"],
                 artwork: [
                     { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
