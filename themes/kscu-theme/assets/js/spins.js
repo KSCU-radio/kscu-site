@@ -120,7 +120,7 @@ function placeTracks() {
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
                 title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
-                artist: (data[0]["song"] + "-" + data[0]["artist"]),
+                artist: (data[0]["song"] + " - " + data[0]["artist"]),
                 album: data[0]["album"],
                 artwork: [
                     { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
