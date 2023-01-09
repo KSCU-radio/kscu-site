@@ -19,14 +19,14 @@ article > header.max-w-prose {
 }
 
 </style>
-<div style="overflow: visible;">
+<div id=framewrapper style="overflow: visible;">
 <iframe class="iSchedule" src="https://spinitron.com/KSCU/calendar/?bodyclass=simple&sharing=0"
     style="width: 1024px; height: 1400px;" scrolling="auto" frameborder="0"></iframe>
 </div>
 <style>
     /* If mobile make iSchedule class overflow scroll */
     @media only screen and (max-width: 600px) {
-        .iSchedule {
+        #framewrapper {
             overflow: scroll;
         }
     }
