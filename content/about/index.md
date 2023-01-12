@@ -10,7 +10,7 @@ showTableOfContents: true
 
 ---
 <style>
-\#metadata {
+#metadata {
 display: none;
 }
 
@@ -59,6 +59,8 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 **On-Campus Promotions**: Sophie Piacentini
 
 **Off-Campus Promotions**: Jed Lambino
+
+**Sports Director** Thomas Dunne
 
 **Traffic Director:** Jackson Giraudi
 
