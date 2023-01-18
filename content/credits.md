@@ -12,6 +12,7 @@ showDate: false
 showTableOfContents: false
 showBreadcrumbs: false
 showPagination: false
+robots: "noindex"
 
 lastmod: 2022-12-09
 ---

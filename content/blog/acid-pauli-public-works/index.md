@@ -2,7 +2,7 @@
 title: "Acid Pauli at Public Works"
 date: 2022-08-29
 draft: false
-description: "A concert review of Acid Pauli at Public Works SF"
+description: "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration."
 showDate: true
 showAuthor: true
 showReadingTime: false

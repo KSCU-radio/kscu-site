@@ -7,16 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   {{/* Title */}}
   {{ if .IsHome -}}
-    <title>{{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Site.Title | emojify }}" />
+    <title>{{ .Title | emojify }}</title>
+    <meta name="title" content="{{ .Title | emojify }}" />
   {{- else -}}
     <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
     <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
   {{- end }}
   {{/* Metadata */}}
-  {{ with .Site.Params.description -}}
-    <meta name="description" content="{{ . }}" />
-  {{- end }}
+    
+  {{ if .IsHome -}}
+    {{ with .Site.Params.description -}}
+      <meta name="description" content="{{ . }}" />
+    {{- end }}
+  {{- else -}}
+    <meta name="description" content="{{ .Description }}" />
+  {{ end }}
+
   {{ with .Site.Params.keywords -}}
     <meta name="keywords" content="{{ . }}" />
   {{- end }}

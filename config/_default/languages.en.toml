@@ -7,11 +7,11 @@ rtl = false
 
 title = "KSCU 103.3 FM"
 # logo = "img/logo.jpg"
-description = "Tune in to the Underground Sound."
+description = "We are Santa Clara University's student-run radio station. We host over 108 DJs weekly with shows featuring non-commercial music, sports, and talk broadcasting."
 copyright = "CC 2022"
 
-# dateFormat = "2 January 2006"
-dateFormat = "1/2/2006"
+dateFormat = "2 January 2006"
+# dateFormat = "1/2/2006"
 
 # Access Spinitron API request data: https://api.countapi.xyz/get/kscu.org/spinitronRequests
 

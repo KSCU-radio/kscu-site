@@ -1,7 +1,7 @@
 ---
 title: 'Concert Review Roundup #1'
 date: 2022-11-29
-description: 'Concert review of The Regrettes, '
+description: "I saw the Regrettes play in Seattle on August 18 2022. They are an indie/alt rock band and had two guitarists, a bassist, and a drummer playing live. Lydia and the whole band had a (frankly surprisingly great) stage presence and had the small venue rocking. She would pause to make sure the crowd was singing loud enough, and even polled the crowd for what last song she should play."
 showDate: true
 showAuthor: false
 showReadingTime: false

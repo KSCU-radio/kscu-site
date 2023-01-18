@@ -9,5 +9,11 @@ enableRobotsTXT = true
 paginate = 10
 summaryLength = 20
 
+# title = "KSCU 103.3 FM | The Underground Sound"
+# description = "Tune in to the Underground Sound."
+# copyright = "CC 2022"
+
+googleAnalytics = "G-LTQTS3WW1X"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]

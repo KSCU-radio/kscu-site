@@ -2,7 +2,7 @@
 title: "Charles Bradley – Artist Bio"
 date: 2019-06-12
 draft: false
-description: "A concert review of Acid Pauli at Public Works SF"
+description: "Whatever happened to soul music? That’s probably a question Charles Bradley, who unfortunately passed two years ago, asked himself often. Charles Bradley, a soul singer himself, had one of the more interesting paths towards stardom."
 showDate: true
 showAuthor: true
 showReadingTime: false

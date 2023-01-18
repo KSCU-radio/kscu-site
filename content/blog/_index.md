@@ -1,8 +1,8 @@
 ---
-title: "Music Reviews, Concerts, etc"
+title: "Blog | Music Reviews, Concerts, and More"
 date: 2020-08-14
 draft: false
-description: "Music, concert, reviews and more - all from the fabulous DJs and staff at KSCU"
+description: "Writing about music, concerts reviews, and more - all from the fabulous DJs and staff at KSCU."
 showDate: false
 showAuthor: false
 showReadingTime: false

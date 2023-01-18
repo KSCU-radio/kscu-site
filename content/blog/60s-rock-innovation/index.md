@@ -2,7 +2,7 @@
 title: "Innovation in 1960’s Rock"
 date: 2019-04-14
 draft: false
-description: "An essay on innovation in 1960's rock"
+description: "Everyone knows that the 1960’s were the most influential years in music culture. Your parents know it, you know it, hell that one girl who keeps posting “born in the wrong generation” knows it."
 showDate: true
 showAuthor: true
 showReadingTime: false

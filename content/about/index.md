@@ -1,7 +1,7 @@
 ---
-title: About KSCU
+title: "About KSCU"
 date: 2020-08-14
-description: About KSCU
+description: "Learn about KSCU. Founded in 1948, we continue a long history of non-commercial music, sports broadcasting, and talk shows, all 100% student-run."
 showDate: false
 showAuthor: false
 showReadingTime: false
