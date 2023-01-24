@@ -119,8 +119,10 @@ lastmod: 2022-08-18
       margin: auto;
     }
 
+    #header_text {
+      display: inline !important;
+    }
   }
-  
 </style>
 
 <!-- Div containing a gif -->
@@ -128,7 +130,17 @@ lastmod: 2022-08-18
   <img src="/kscu-swig-and-studio.gif" alt="" id="kscu-gif" style="" />
 </div>
 
-<div id="top-recent-and-next" class="absolute flex flex-col" style="width: 445px; right: 435px; top: 83px">
+<div id="header_text" style="z-index: 0; display: none;">
+  <p class="font-semibold">
+    STUDENT-RUN RADIO AT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  </p>
+  <p class="font-semibold">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SANTA CLARA UNIVERSITY
+  </p>
+</div>
+
+
+<div id="top-recent-and-next" class="absolute flex flex-col flex-col-reverse"
+  style="width: 445px; right: 435px; top: 83px">
   <div id="recent-tracks-div" class="border mt-6 mr-3 text-neutral-900">
     <div class="flex flex-row items-center border-b">
       <span class="font-semibold text-lg m-1">
@@ -186,8 +198,7 @@ lastmod: 2022-08-18
     <div class="flex flex-row items-center">
       <!-- Img for profile picture with tailwind CSS -->
       <div class="img-container">
-        <img class="rounded-sm m-2" id="playing-image-4"
-          src="">
+        <img class="rounded-sm m-2" id="playing-image-4" src="">
       </div>
       <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
         <p id="playing-song-4" class="pr-2 m-0 whitespace-nowrap">
@@ -266,8 +277,6 @@ lastmod: 2022-08-18
   }
 
   #header_text {
-    color: white;
-    mix-blend-mode: difference;
     /* font: 900 35vmin/35vh; */
     font-family: 'Special Elite', cursive;
     text-align: center;
@@ -276,65 +285,38 @@ lastmod: 2022-08-18
     /* iOS Safari */
     -webkit-user-select: none;
   }
+  
+  #header_text > p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   /* Breakpoints */
   @media (min-width: 1536px) {
     #header_text {
-      margin-left: -40%;
-      margin-top: 144px;
       font-size: 36px;
       flex-basis: 50%;
     }
-
-    #img_width {
-      margin-left: 130px;
-      width: 50vw;
-    }
-
   }
 
   @media (max-width: 1536px) {
     #header_text {
-      margin-left: -20%;
-      margin-top: 144px;
       font-size: 36px;
       flex-basis: 50%;
     }
-
-    #img_width {
-      margin-left: 110px;
-      width: 50vw;
-    }
   }
 
-  @media (max-width: 1280px) {
-    #header_text {
-      margin-left: -10%;
-    }
-  }
+  @media (max-width: 1280px) {}
 
   @media (max-width: 1088px) {
     #header_text {
       font-size: 32px;
-      margin-left: -5%;
-    }
-
-    #img_width {
-      margin-left: 40px;
-      width: 450px;
     }
   }
 
   @media (max-width: 931px) {
     #header_text {
       font-size: 28px;
-      margin-left: -2%;
-      margin-top: 112px;
-    }
-
-    #img_width {
-      margin-left: 30px;
-      width: 350px;
     }
   }
 
@@ -344,19 +326,6 @@ lastmod: 2022-08-18
     }
   }
 
-  @media (max-width: 666px) {
-    #header_text {
-      margin-left: 20px;
-      margin-top: 20px;
-      font-size: 24px;
-      /* margin-left: 20%; */
-      flex-basis: 80%;
-    }
-
-    #img_width {
-      display: none;
-    }
-  }
 
   @media (max-width: 510px) {
     #header_text {
