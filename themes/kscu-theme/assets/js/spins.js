@@ -104,13 +104,13 @@ function placeTracks() {
 
     if (window.location.pathname == '/') {
         // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
-        for (let i = 0; i < 5; i++) {
+        for (let i = 1; i < 5; i++) {
             document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
             document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
             if (data[i]["image"] != null) {
                 loadIMG(i, data[i]["image"])
             } else {
-                document.getElementById("playing-image-" + i).src = "/brett-jordan-unsplash.jpeg"
+                document.getElementById("playing-image-" + i).src = "/vinyl.svg"
             }   
         }
     }
@@ -119,7 +119,7 @@ function placeTracks() {
         console.log("Test")
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
+                title: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
                 artist: (data[0]["song"] + " - " + data[0]["artist"]),
                 album: data[0]["album"],
                 artwork: [

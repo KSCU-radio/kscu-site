@@ -1853,6 +1853,10 @@ body:has(#menu-controller:checked) {
   pointer-events: auto;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1925,6 +1929,10 @@ body:has(#menu-controller:checked) {
   order: -9999;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -1935,10 +1943,6 @@ body:has(#menu-controller:checked) {
 
 .m-auto {
   margin: auto;
-}
-
-.m-1 {
-  margin: 0.25rem;
 }
 
 .-mx-2 {
@@ -1976,8 +1980,16 @@ body:has(#menu-controller:checked) {
   margin-right: 0px;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mb-3 {
@@ -2006,10 +2018,6 @@ body:has(#menu-controller:checked) {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .ml-3 {
@@ -2116,14 +2124,6 @@ body:has(#menu-controller:checked) {
   min-height: 0px;
 }
 
-.w-\[525px\] {
-  width: 525px;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -2186,6 +2186,10 @@ body:has(#menu-controller:checked) {
 
 .max-w-\[10rem\] {
   max-width: 10rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-none {
@@ -2251,16 +2255,16 @@ body:has(#menu-controller:checked) {
   align-items: center;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .place-self-center {
@@ -2554,8 +2558,8 @@ body:has(#menu-controller:checked) {
   vertical-align: text-bottom;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -2569,8 +2573,8 @@ body:has(#menu-controller:checked) {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -2789,8 +2793,10 @@ html {
   border-radius: 5px;
 }
 
-blockquote {
-  border-left-color: #363940;
+@media (any-hover: hover) {
+  a:hover {
+    background: yellow;
+  }
 }
 
 .first\:mt-8:first-child {

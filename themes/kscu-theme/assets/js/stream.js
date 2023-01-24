@@ -21,7 +21,7 @@ function playUpdate() {
     if ('mediaSession' in navigator) {
         console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
-            title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
+            title: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
             artist: (data[0]["song"] + " - " + data[0]["artist"]),
             album: data[0]["album"],
             artwork: [
