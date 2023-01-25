@@ -2092,10 +2092,6 @@ body:has(#menu-controller:checked) {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -2110,6 +2106,10 @@ body:has(#menu-controller:checked) {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-36 {
@@ -2338,14 +2338,6 @@ body:has(#menu-controller:checked) {
 
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-l-\[1px\] {
-  border-left-width: 1px;
-}
-
-.border-r-\[1px\] {
-  border-right-width: 1px;
 }
 
 .border-t {
@@ -2611,10 +2603,6 @@ body:has(#menu-controller:checked) {
 
 .text-\[15px\] {
   font-size: 15px;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-semibold {
