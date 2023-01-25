@@ -3,6 +3,7 @@ title: "Acid Pauli at Public Works"
 date: 2022-08-29
 draft: false
 description: "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration."
+summary: "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration. The last set I had been to..."
 showDate: true
 showAuthor: true
 showReadingTime: false

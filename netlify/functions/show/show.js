@@ -52,7 +52,7 @@ const handler = async (event) => {
         toReturn[1]["DJ_name"] = nextDJ['name']
         
         
-        console.log(data)
+        // console.log(data)
         toReturn[0]["title"] = data["items"][0]['title']
         toReturn[0]["start_time"] = data["items"][0]['start']
         toReturn[0]["end_time"] = data["items"][0]['end']
