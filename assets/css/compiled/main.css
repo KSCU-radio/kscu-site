@@ -2340,6 +2340,14 @@ body:has(#menu-controller:checked) {
   border-bottom-width: 1px;
 }
 
+.border-l-\[1px\] {
+  border-left-width: 1px;
+}
+
+.border-r-\[1px\] {
+  border-right-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -2795,12 +2803,6 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #CCCCCC;
   border-radius: 5px;
-}
-
-@media (any-hover: hover) {
-  a:hover {
-    background: yellow;
-  }
 }
 
 .first\:mt-8:first-child {
