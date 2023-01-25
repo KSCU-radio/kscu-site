@@ -1,14 +1,14 @@
 
-// // const formatAMPM = (date) => {
-// //     let hours = date.getHours();
-// //     let minutes = date.getMinutes();
-// //     let ampm = hours >= 12 ? 'pm' : 'am';
-// //     hours = hours % 12;
-// //     hours = hours ? hours : 12;
-// //     minutes = minutes.toString().padStart(2, '0');
-// //     let strTime = hours + ':' + minutes + '' + ampm;
-// //     return strTime;
-// // }
+const formatAMPM = (date) => {
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    minutes = minutes.toString().padStart(2, '0');
+    let strTime = hours + ':' + minutes
+    return strTime;
+}
 
 // async function fetchShow() {
 //     try {
@@ -71,7 +71,62 @@
 // // New code
 function placeShow() {
     data = store.get("showData")
-    document.getElementById("show_title").innerHTML = "<b>" + data["title"] + "</b>" + " with " + data["DJ_name"]
+    document.getElementById("show_title").innerHTML = "<b>" + data[0]["title"] + "</b>" + " with " + data[0]["DJ_name"]
+    // If on homepage
+    if (window.location.pathname == '/') {
+        document.getElementById("next-show-and-dj").innerHTML = "<b>" + data[1]["title"] + "</b>" + " with " + data[1]["DJ_name"]
+        document.getElementById("next-time").innerHTML = formatAMPM(new Date(data[1]["start_time"])) + " - " + formatAMPM(new Date(data[1]["end_time"]))
+        document.getElementById("next-genre").innerHTML = data[1]["category"]
+        // Set genre svg to the respective [category].svg based on the category in data[1]
+        svg = "genres/default.svg"
+        switch(data[1]["category"]) {
+            case "Automation":
+                svg = "genres/Automation.svg"
+                break
+            case "Blues":
+                svg = "genres/Blues.svg"
+                break
+            case "Country":
+                svg = "genres/Country.svg"
+                break
+            case "Electronic":
+                svg = "genres/Electronic.svg"
+                break
+            case "Hip-Hop":
+                svg = "genres/Hip-Hop.svg"
+                break
+            case "Indie":
+                svg = "genres/Indie.svg"
+                break
+            case "Jazz":
+                svg = "genres/Jazz.svg"
+                break
+            case "Pop":
+                svg = "genres/Pop.svg"
+                break
+            case "Punk":
+                svg = "genres/Punk.svg"
+                break
+            case "Rock":
+                svg = "genres/Rock.svg"
+                break
+            case "Soul":
+                svg = "genres/Soul.svg"
+                break
+            case "Sports":
+                svg = "genres/Sports.svg"
+                break
+            case "Talk":
+                svg = "genres/Talk.svg"
+                break
+            default:
+                // For use the hour of the day (0-12) to determine which svg to use
+                hour = new Date(data[1]["start_time"]).getHours() % 12 || 12;
+                console.log(hour)
+                svg = "genres/Other" + hour + ".svg"
+        }
+        document.getElementById("next-genre-svg").src = svg
+    }
 }
 
 async function fetchShow() {

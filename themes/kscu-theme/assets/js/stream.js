@@ -21,7 +21,7 @@ function playUpdate() {
     if ('mediaSession' in navigator) {
         console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
-            title: store.get("showData")["title"] + " - " + store.get("showData")["DJ_name"],
+            title: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
             artist: (data[0]["song"] + " - " + data[0]["artist"]),
             album: data[0]["album"],
             artwork: [
@@ -52,9 +52,17 @@ function pauseUpdate() {
 
 var sound = new Howl({
     src: 'https://kscu.streamguys1.com/live',
+    xlr: {
+        method: 'GET',
+        headers: {
+            'Range': 'bytes=0-',
+            'Connection': 'keep-alive',
+            'Cache-Control': 'no-store',
+        },
+        withCredentials: true,
+    },
     format: ['aac', 'mp3'],
     autoplay: false,
-    pool: 0,
     html5: true,
     preload: true,
     onplay: playUpdate,

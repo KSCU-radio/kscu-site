@@ -14,31 +14,230 @@ showBreadcrumbs: true
 lastmod: 2022-08-18
 ---
 
-<!--breakpoint 1167 and up: text aligns w/ what's in the figma-->
-<!-- THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
-<!-- STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp; -->
-<!-- AT -->
-<!-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CLARA UNIVERSITY &nbsp; -->
-<!-- width = 550; height = 257; (this is the max height)-->
-<div class="flex h-full">
-  <div id="img_width">
-    <img src="/kscuwebsitepic.jpeg" alt="KSCU" id="stylized-image" />
-  </div>
+<style>
+  #main-content {
+    margin-top: 0px;
+  }
+</style>
 
-  <div id="header_text" style="z-index: 0;">
-    <div class="">
-      <!-- <span class="font-light"> THE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> -->
-      <span class="font-semibold">
-        STUDENT-RUN RADIO &nbsp; &nbsp; &nbsp; STATION &nbsp; &nbsp;
+<style>
+  @media only screen and (max-width: 1825px) {
+    #top-recent-and-next {
+      right: 400px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1745px) {
+    #top-recent-and-next {
+      right: 350px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1665px) {
+    #top-recent-and-next {
+      right: 300px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1585px) {
+    #top-recent-and-next {
+      right: 250px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1480px) {
+    #top-recent-and-next {
+      right: 200px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1380px) {
+    #top-recent-and-next {
+      right: 150px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #top-recent-and-next {
+      right: 100px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1106px) {
+    #top-recent-and-next {
+      right: 50px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1106px) {
+    #up-next-div {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    #top-recent-and-next {
+      width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 953px) {
+    #up-next-div {
+      display: block;
+    }
+
+    #top-recent-and-next {
+      position: static;
+      right: 0px;
+      top: 0px;
+      flex-direction: column-reverse;
+      width: 95% !important;
+      margin: auto;
+    }
+
+    #header_text {
+      display: inline !important;
+    }
+  }
+</style>
+
+<!-- Div containing a gif -->
+<div id="gifwrapper">
+  <img src="/kscu-swig-and-studio.gif" alt="" id="kscu-gif" style="" />
+</div>
+
+<div id="header_text" style="z-index: 0; display: none;">
+  <p class="font-semibold">STUDENT-RUN RADIO AT</p>
+  <p class="font-semibold">&nbsp;SANTA CLARA &nbsp; UNIVERSITY
+  </p>
+</div>
+
+
+<div id="top-recent-and-next" class="absolute flex flex-col flex-col-reverse"
+  style="width: 445px; right: 435px; top: 83px">
+  <div id="recent-tracks-div" class="border mt-6 mr-3 text-neutral-900">
+    <div class="flex flex-row items-center border-b">
+      <span class="font-semibold text-lg m-1">
+        Previously Spun Tracks
       </span>
-      <span>AT </span><span class="font-semibold">SANTA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        CLARA UNIVERSITY
+    </div>
+
+    <!-- <div class="flex flex-row items-center border-b">
+    <img class="rounded-sm m-2" id="playing-image-0" src="/brett-jordan-unsplash.jpeg" width="45px">
+    <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
+      <p id="playing-song-0" class="pr-2 m-0 whitespace-nowrap">
+        Chinese Translation
+      </p>
+      <p id="playing-artist-0" class="pr-2 m-0 text-sm" style="font-weight: 400;">
+        Twin Peaks
+      </p>
+    </div>
+  </div> -->
+    <div class="flex flex-row items-center border-b">
+      <!-- Img for profile picture with tailwind CSS -->
+      <div class="img-container">
+        <img class="rounded-sm m-2" id="playing-image-1" src="">
+      </div>
+      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
+        <p id="playing-song-1" class="pr-2 m-0 whitespace-nowrap">
+        </p>
+        <p id="playing-artist-1" class="pr-2 m-0 text-sm" style="font-weight: 400;">
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row items-center border-b">
+      <!-- Img for profile picture with tailwind CSS -->
+      <div class="img-container">
+        <img class="rounded-sm m-2" id="playing-image-2" src="">
+      </div>
+      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
+        <p id="playing-song-2" class="pr-2 m-0 whitespace-nowrap">
+        </p>
+        <p id="playing-artist-2" class="pr-2 m-0 text-sm" style="font-weight: 400;">
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row items-center border-b">
+      <!-- Img for profile picture with tailwind CSS -->
+      <div class="img-container">
+        <img class="rounded-sm m-2" id="playing-image-3" src="">
+      </div>
+      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
+        <p id="playing-song-3" class="pr-2 m-0 whitespace-nowrap">
+        </p>
+        <p id="playing-artist-3" class="pr-2 m-0 text-sm" style="font-weight: 400;">
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row items-center">
+      <!-- Img for profile picture with tailwind CSS -->
+      <div class="img-container">
+        <img class="rounded-sm m-2" id="playing-image-4" src="">
+      </div>
+      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
+        <p id="playing-song-4" class="pr-2 m-0 whitespace-nowrap">
+        </p>
+        <p id="playing-artist-4" class="pr-2 m-0 text-sm" style="font-weight: 400;">
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="up-next-div" class="border mr-3 text-neutral-900 mt-6">
+    <div class="flex flex-row items-center border-b">
+      <span class="font-semibold text-lg m-1">
+        Up Next on KSCU
       </span>
+    </div>
+    <div class="flex flex-row items-center">
+      <!-- Img for profile picture with tailwind CSS -->
+      <div class="img-container">
+        <img class="rounded-sm m-2" id="next-genre-svg" src="">
+      </div>
+      <div class="track flex flex-1 flex-col justify-around whitespace-nowrap overflow-scroll">
+        <div>
+          <p id="next-show-and-dj" class="pr-2 m-0 whitespace-nowrap text-medium"></p>
+        </div>
+        <div class="flex flex-row justify-between">
+          <div>
+            <p id="next-time" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
+
+          </div>
+          <div>
+            <p id="next-genre" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+
+
+
+
 <style>
+  .img-container {
+    width: 61px;
+    height: 61px;
+  }
+
+  .img-container img {
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Styling for the gif */
+  #kscu-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
   /* All image and text styling */
   #stylized-image {
     max-height: 250px;
@@ -52,8 +251,6 @@ lastmod: 2022-08-18
   }
 
   #header_text {
-    color: white;
-    mix-blend-mode: difference;
     /* font: 900 35vmin/35vh; */
     font-family: 'Special Elite', cursive;
     text-align: center;
@@ -62,65 +259,38 @@ lastmod: 2022-08-18
     /* iOS Safari */
     -webkit-user-select: none;
   }
+  
+  #header_text > p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   /* Breakpoints */
   @media (min-width: 1536px) {
     #header_text {
-      margin-left: -40%;
-      margin-top: 144px;
       font-size: 36px;
       flex-basis: 50%;
     }
-
-    #img_width {
-      margin-left: 130px;
-      width: 50vw;
-    }
-
   }
 
   @media (max-width: 1536px) {
     #header_text {
-      margin-left: -20%;
-      margin-top: 144px;
       font-size: 36px;
       flex-basis: 50%;
     }
-
-    #img_width {
-      margin-left: 110px;
-      width: 50vw;
-    }
   }
 
-  @media (max-width: 1280px) {
-    #header_text {
-      margin-left: -10%;
-    }
-  }
+  @media (max-width: 1280px) {}
 
   @media (max-width: 1088px) {
     #header_text {
       font-size: 32px;
-      margin-left: -5%;
-    }
-
-    #img_width {
-      margin-left: 40px;
-      width: 450px;
     }
   }
 
   @media (max-width: 931px) {
     #header_text {
       font-size: 28px;
-      margin-left: -2%;
-      margin-top: 112px;
-    }
-
-    #img_width {
-      margin-left: 30px;
-      width: 350px;
     }
   }
 
@@ -130,19 +300,6 @@ lastmod: 2022-08-18
     }
   }
 
-  @media (max-width: 666px) {
-    #header_text {
-      margin-left: 20px;
-      margin-top: 20px;
-      font-size: 24px;
-      /* margin-left: 20%; */
-      flex-basis: 80%;
-    }
-
-    #img_width {
-      display: none;
-    }
-  }
 
   @media (max-width: 510px) {
     #header_text {
@@ -182,118 +339,28 @@ lastmod: 2022-08-18
       /* flex-basis: 60%; */
     }
   }
-
-
-
 </style>
 
-<br>
-
-<div class="flex flex-row justify-between" id="left-and-right">
-  <div class="flex flex-col w-[525px] justify-end">
-
-  </div>
-
-
-  <div id="recent-tracks-div" class="flex flex-col border w-2/5 mr-3 text-neutral-900">
-    <div class="flex flex-row items-center border-b">
-      <span class="font-semibold text-xl m-2">
-        Recently Played Tracks
-      </span>
-    </div>
-
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <img class="rounded-sm m-2" id="playing-image-0"
-        src="/brett-jordan-unsplash.jpeg"
-        width="45px">
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-0" class="pr-2 m-0 whitespace-nowrap">
-          Chinese Translation
-        </p>
-        <p id="playing-artist-0" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-          Twin Peaks
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <img class="rounded-sm m-2" id="playing-image-1"
-        src="/brett-jordan-unsplash.jpeg"
-        width="45px">
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-1" class="pr-2 m-0 whitespace-nowrap">
-          Chinese Translation
-        </p>
-        <p id="playing-artist-1" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-          Twin Peaks
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <img class="rounded-sm m-2" id="playing-image-2"
-        src="/brett-jordan-unsplash.jpeg"
-        width="45px">
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-2" class="pr-2 m-0 whitespace-nowrap">
-          Chinese Translation
-        </p>
-        <p id="playing-artist-2" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-          Twin Peaks
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <img class="rounded-sm m-2" id="playing-image-3"
-        src="/brett-jordan-unsplash.jpeg"
-        width="45px">
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-3" class="pr-2 m-0 whitespace-nowrap">
-          Chinese Translation
-        </p>
-        <p id="playing-artist-3" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-          Twin Peaks
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center">
-      <!-- Img for profile picture with tailwind CSS -->
-      <img class="rounded-sm m-2" id="playing-image-4"
-        src="https://is4-ssl.mzstatic.com/image/thumb/Music117/v4/0c/3a/9c/0c3a9c25-374e-f5b7-b6da-2bbe4bd16e27/821826013810.jpg/170x170bb.jpg"
-        width="45px">
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-4" class="pr-2 m-0 whitespace-nowrap">
-          Chinese Translation
-        </p>
-        <p id="playing-artist-4" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-          Twin Peaks
-        </p>
-      </div>
-    </div>
-    
-
-  </div>
-</div>
-
-<br>
 <br id="post-break">
 <!-- // Import script crowd.js and defer -->
 <script src="/crowd.js" defer></script>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
   .track {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
   }
 
-  .track::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+  .track::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
   }
 
-   /* For moving canvas up on homepage */
+  /* For moving canvas up on homepage */
   #canvas {
     margin-top: -130px;
   }
@@ -301,9 +368,10 @@ lastmod: 2022-08-18
   /* At 776 px of screen width, switch #left-and-right to flex-col */
   /* Greater than 776px */
   @media (max-width: 875px) {
-    #recent-tracks-div {
+    #top-recent-tracks-div {
       width: 80vw;
     }
+
     #left-and-right {
       flex-direction: column;
       align-items: center;
@@ -311,11 +379,8 @@ lastmod: 2022-08-18
   }
 
   @media (max-width: 454px) {
-    #recent-tracks-div {
+    #top-recent-tracks-div {
       width: 73vw;
-    }
-    #post-break {
-      display: none;
     }
   }
 </style>
