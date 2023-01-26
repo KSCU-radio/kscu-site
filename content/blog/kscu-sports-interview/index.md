@@ -28,4 +28,4 @@ Fortunately, OKC would be playing in Sacramento on Friday, January 20th. 110 mil
 
 From talking about his drive down here, to the memories of him in a SCU uniform, to a discussion about chicken, Jalen Williams’s heart still bleeds Bronco red. He’s humble, down to earth, and a rising star all in the same breath, evidenced by giving a resurging campus radio station some of his time when he didn’t have to. Those six minutes were a blur unlike any other, that gave insight to someone who was just like one of us a year ago but was also an out of body experience that illustrated just how far Jalen and the station has come. 
 
-Talk about getting something crossed off the bucket list. Jalen is a pro’s pro, and was a great person to interview and get to know. You can find our interview with him here at the 26:10 mark.
+Talk about getting something crossed off the bucket list. Jalen is a pro’s pro, and was a great person to interview and get to know.
