@@ -8,7 +8,7 @@ showAuthor: false
 showReadingTime: false
 showEdit: false
 showPagination: false
-showTableOfContents: false
+showTableOfContents: true
 
 ---
 ## The Regrettes Live from The Neptune Theatre
