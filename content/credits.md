@@ -16,17 +16,17 @@ robots: "noindex"
 
 lastmod: 2022-12-09
 ---
-#### Build by:
+#### Built by:
 - [Aidan Smith](https://aidansmith.me)
 - [Amy Vu](https://github.com/vuamy)
 - [Patrick Lee](https://github.com/PatrickStarLee)
-- [Jeffrey Chen](https://github.com/yoffrey)
 
 #### Design by:
 - [Amy Vu](https://github.com/vuamy)
 - [Katie Wei](https://www.instagram.com/ktweiart/)
 
 #### Resources:
+- Homepage Animation by Teagan Moore
 - [Congo Theme for Hugo by James Panther](https://github.com/jpanther/congo)
 - [Crowd Animation by Szenia Zadvornykh](https://codepen.io/zadvorsky)
 - [Open Peeps Project by Pablo Stanley](https://www.openpeeps.com/)
