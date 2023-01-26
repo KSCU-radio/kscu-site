@@ -60,11 +60,13 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 
 **Off-Campus Promotions**: Jed Lambino
 
-**Sports Director** Thomas Dunne
+**Sports Director** Thomas Dunn
 
 **Traffic Director:** Jackson Giraudi
 
 **Training Director:** Johnny Maddocks
+
+**Web Director:** Gabe Labadie
 
 **Volunteer Staff:** Ivy Wu
 

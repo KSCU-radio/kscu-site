@@ -14,7 +14,7 @@ showTableOfContents: false
 
 <div id="buzzsprout-player-12126134"></div><script src="https://www.buzzsprout.com/2076222/12126134-jalen-williams-interview-kscu-sports.js?container_id=buzzsprout-player-12126134&player=small" type="text/javascript" charset="utf-8"></script>
 
-#### Written by Thomas Dunne
+#### Written by Thomas Dunn
 
 It’s not often that Santa Clara basketball has an NBA prospect on their hands, let alone a first round lottery pick. Enter Jalen Williams stage left. The versatile player made a name for himself throughout his three seasons in Silicon Valley, so much so that the Oklahoma City Thunder grabbed him with the 12th overall pick in the 2022 draft.
 
