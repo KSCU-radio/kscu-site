@@ -89,7 +89,7 @@ function trimToLength(string, length) {
 
 function placeTracks() {
     function noimg(e) {
-        this.src = '/brett-jordan-unsplash.jpeg';
+        this.src = '/vinyl.svg';
     }
 
     function loadIMG(num, url) {
