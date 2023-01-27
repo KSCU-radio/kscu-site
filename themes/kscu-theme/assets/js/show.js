@@ -154,17 +154,9 @@ async function updateShow() {
     placeShow()
 
     // Log using the CountAPI API that a request to the Spinitron API has been made
-    fetch("https://api.countapi.xyz/hit/kscu.org/spinitronRequests")
-        .then(async response => {
-            // let data = await response.json()
-            // console.log("Spinitron API requests since API's creation on 12/2/2022: " + data.value)
-        })
-        .catch(error => {
-            console.error('There was an error fetching the API hitcounter!', error);
-        });
 
     // Then grab the end time of the show
-    let showEnd = new Date(store.get("showData")["end_time"])
+    let showEnd = new Date(store.get("showData")[0]["end_time"])
 
 
     if (new Date(showEnd) > Date.now()) {
@@ -176,10 +168,16 @@ async function updateShow() {
     }
 }
 
+
+
 async function startShow() {
+    if (store.get("showData")[1] === undefined) { // To make sure old show data (without categories)
+        console.log("No show data found, fetching...")
+        await fetchShow();
+    }
     if (store.has("showData")) {
         placeShow()
-        showEnd = new Date(store.get("showData")["end_time"])
+        showEnd = new Date(store.get("showData")[0]["end_time"])
         if (new Date(showEnd) > Date.now()) {
             // console.log("Show is currently on, waiting for it to end in " + ((new Date(showEnd) - Date.now())/1000/60).toFixed(2) + " mins")
             setTimeout(updateShow, (new Date(showEnd) - Date.now()) + 1000 + Math.floor(Math.random() * 3000))
