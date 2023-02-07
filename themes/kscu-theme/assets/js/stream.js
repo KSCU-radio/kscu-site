@@ -21,9 +21,9 @@ function playUpdate() {
     if ('mediaSession' in navigator) {
         console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
-            title: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
-            artist: (data[0]["song"] + " - " + data[0]["artist"]),
-            album: data[0]["album"],
+            title: (data[0]["song"] + " - " + data[0]["artist"]),
+            artist: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
+            album: "",
             artwork: [
                 { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
                 { src: "/kscu-round-128.png", sizes: "128x128", type: "image/png" },

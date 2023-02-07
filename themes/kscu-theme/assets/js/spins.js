@@ -1,14 +1,4 @@
 
-function trimToLength(string, length) {
-    if (string.length > length) {
-        trimmedStr = string.substring(0, length - 3)
-        // return trimmedStr to nearest word
-        return trimmedStr.substring(0, Math.min(trimmedStr.length, trimmedStr.lastIndexOf(" "))) + "…"
-    } else {
-        return string
-    }
-}
-
 // function insertTracks(data) {
 //     function duration(duration_time) {
 //         let minutes = Math.floor(duration_time / 60)
@@ -88,19 +78,10 @@ function trimToLength(string, length) {
 
 
 function placeTracks() {
-    function noimg(e) {
-        this.src = '/vinyl.svg';
-    }
-
-    function loadIMG(num, url) {
-        var img = document.getElementById("playing-image-" + num)
-        img.onerror = noimg;
-        img.src = url
-    }
 
     data = store.get("recentTracks")
 
-    document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + trimToLength(data[0]["artist"], 40) + "</em>"
+    document.getElementById("playing-song").innerHTML = data[0]["song"] + " - <em>" + data[0]["artist"], 40 + "</em>"
 
     if (window.location.pathname == '/') {
         // Loop over first 5 elements of data and place them their image, song, and artist in playing-image-n, playing-song-n, and playing-artist-n
@@ -108,20 +89,22 @@ function placeTracks() {
             document.getElementById("playing-song-" + i).innerHTML = data[i]["song"]
             document.getElementById("playing-artist-" + i).innerHTML = data[i]["artist"]
             if (data[i]["image"] != null) {
-                loadIMG(i, data[i]["image"])
+                document.getElementById("playing-image-" + i).onerror = "this.onerror=null;this.src='/vinyl.svg'";
+                document.getElementById("playing-image-" + i).src = data[i]["image"]
+                console.log(data[i]["image"])
+                // loadIMG(i, data[i]["image"])
             } else {
                 document.getElementById("playing-image-" + i).src = "/vinyl.svg"
             }   
         }
     }
     if (typeof sound !== 'undefined' && sound.playing()) {
-        document.title = "KSCU - " + data[0]["song"] + " - " + data[0]["artist"]
-        console.log("Test")
+        document.title = data[0]["song"] + " - " + data[0]["artist"]
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
-                title: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
-                artist: (data[0]["song"] + " - " + data[0]["artist"]),
-                album: data[0]["album"],
+                title: (data[0]["song"] + " - " + data[0]["artist"]),
+                artist: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
+                album: "",
                 artwork: [
                     { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
                     { src: "/kscu-round-128.png", sizes: "128x128", type: "image/png" },
@@ -131,9 +114,6 @@ function placeTracks() {
                     { src: "/kscu-round-512.png", sizes: "512x512", type: "image/png" },
                 ]
             });
-            navigator.mediaSession.setActionHandler('play', function () { sound.play(); });
-            navigator.mediaSession.setActionHandler('pause', function () { sound.pause(); });
-            navigator.mediaSession.setActionHandler('stop', function () { sound.pause(); });
         }
     }
 }
@@ -144,7 +124,7 @@ async function fetchTracks() {
     let response = await fetch(request);
     let res = await response.json();
     let data = res
-    // console.log(data)
+    console.log(data)
     store.remove("recentTracks")
     store("recentTracks", data)
 }
@@ -171,11 +151,7 @@ async function updateTracks() {
 
     // Then grab the end time of the first track
     let songEnd = store.get("recentTracks")[0]["end"]
-    // console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")
-    // call function again after the song ends + 25 seconds
-    // console.log("Next update in " + (songEnd + 25 - Date.now()) + "ms")
-    // Wait for 25 seconds
-
+    
     if (new Date(songEnd) > Date.now()) {
         progressiveTimer = 10000
         setTimeout(updateTracks, (new Date(songEnd) - Date.now()) + 20000 + Math.floor(Math.random() * 10000))
