@@ -23,6 +23,7 @@ enableCodeCopy = false
   showThemeAttribution = true
   showAppearanceSwitcher = false
   showScrollToTop = false
+  showPhone = true
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
