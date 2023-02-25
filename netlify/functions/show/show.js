@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
     try {
-        console.log(new Date().toISOString())
+        // console.log(new Date().toISOString())
         const url = `https://spinitron.com/api/`
         const access_string = `?access-token=`
         const _key = process.env.KEY
