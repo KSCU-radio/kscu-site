@@ -38,6 +38,8 @@ Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to sta
 
 ## Station Staff
 
+![KSCU Staff Members](kscu-2023-staff.jpeg)
+
 **General Manager:** Aidan Smith
 
 **Coordinating Director:** Gino Herbosa

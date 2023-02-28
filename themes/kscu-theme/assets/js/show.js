@@ -122,7 +122,7 @@ function placeShow() {
             default:
                 // For use the hour of the day (0-12) to determine which svg to use
                 hour = new Date(data[1]["start_time"]).getHours() % 12 || 12;
-                console.log(hour)
+                // console.log(hour)
                 svg = "genres/Other" + hour + ".svg"
         }
         document.getElementById("next-genre-svg").src = svg
@@ -171,10 +171,20 @@ async function updateShow() {
 
 
 async function startShow() {
-    if (store.get("showData")[1] === undefined) { // To make sure old show data (without categories)
-        console.log("No show data found, fetching...")
+    // console.group(store.get("showData")[1] === undefined)
+    // if (store.get("showData") === undefined || store.get("showData")[1] === undefined) { // To make sure old show data (without categories)
+    //     console.log("No show data found, fetching...")
+    //     await fetchShow();
+    // }
+    try {
+        if (store.get("showData")[1]["category"]) {
+            // console.log("Category data found, skipping fetch...")
+        }
+    } catch (error) {
+        // console.log("No category data found, fetching...")
         await fetchShow();
     }
+
     if (store.has("showData")) {
         placeShow()
         showEnd = new Date(store.get("showData")[0]["end_time"])
@@ -188,5 +198,5 @@ async function startShow() {
         updateShow()
     }
 }
-
+// console.log("Starting show.js...")
 startShow()

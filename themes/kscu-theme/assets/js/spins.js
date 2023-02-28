@@ -91,7 +91,7 @@ function placeTracks() {
             if (data[i]["image"] != null) {
                 document.getElementById("playing-image-" + i).onerror = "this.onerror=null;this.src='/vinyl.svg'";
                 document.getElementById("playing-image-" + i).src = data[i]["image"]
-                console.log(data[i]["image"])
+                // console.log(data[i]["image"])
                 // loadIMG(i, data[i]["image"])
             } else {
                 document.getElementById("playing-image-" + i).src = "/vinyl.svg"
@@ -124,7 +124,7 @@ async function fetchTracks() {
     let response = await fetch(request);
     let res = await response.json();
     let data = res
-    console.log(data)
+    // console.log(data)
     store.remove("recentTracks")
     store("recentTracks", data)
 }

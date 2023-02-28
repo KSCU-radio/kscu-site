@@ -19,7 +19,7 @@ function playUpdate() {
     data = store.get("recentTracks")
     document.title = data[0]["artist"] + ' - ' + data[0]["song"]
     if ('mediaSession' in navigator) {
-        console.log("test")
+        // console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
             title: (data[0]["song"] + " - " + data[0]["artist"]),
             artist: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
