@@ -1,6 +1,5 @@
-<article class="px-3">
-    <!-- <h2 class="font-semibold text-2xl py-3">{{ .Title }}</h2> -->
-    <h3 class="flex items-center justify mt-6 text-lg font-semibold">
+<article class="px-3 my-4">
+    <h3 class="flex items-center justify text-lg font-semibold">
       {{ with .Params.externalUrl }}
       <div>
         <a class="text-neutral-800 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400"
@@ -23,9 +22,9 @@
       {{ partial "extend-article-link.html" . }}
       {{ end }}
     </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+    <div class="text-sm text-neutral-500 dark:text-neutral-400 uppercase py-1 ">
       {{ partial "article-meta.html" . }}
     </div>
-    <div class="py-1 text-md prose dark:prose-invert">
+    <div class="text-md prose dark:prose-invert" style="font-family: 'Roboto';">
       {{ .Summary | emojify }}
 </article>

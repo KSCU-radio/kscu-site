@@ -1,5 +1,5 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
-{{/*  <div class="font-semibold text-4xl py-3" style="color: black">
+{{/* <div class="font-semibold text-4xl py-3" style="color: black">
   <div style="
         line-height: 0.1em;
         border-bottom: 1px solid black;
@@ -10,23 +10,24 @@
       Recent Posts
     </span>
   </div>
-</div>  */}}
-<div>
-  <div class="font-semibold text-2xl py-2 px-3 border">
-    <a href="/blog/">
-      <span class="hover:underline hover:decoration-wavy hover:decoration-1 hover:underline-offset-2 hover:text-gray-400"
-        style="text-decoration-skip-ink: none;">
-        Recent Blogposts
-      </span>
-    </a>
+</div> */}}
+<div class="flex shrink">
+  <div id=spins-header-box class="flex shrink border border-b-0">
+    <p id="spins-header-2" class="mx-3 my-2" style="
+                                      font-style: normal;
+                                      font-weight: 700;
+                                      font-size: 18px;
+                                      line-height: 20px;
+          
+                                      display: flex;
+                                      align-items: center;">RECENT BLOGPOSTS</p>
   </div>
 </div>
-<div id="articles" class="flex justify-between content-evenly px-3" 
-style="padding-bottom: 1rem; margin-bottom: 1rem; border-style: solid; border-width: 0px 1px 1px 1px;">
-{{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
-{{ partial "article-links-horizontal.html" . }}
-{{ end }}
-{{ end }}
+<div id="articles" class="flex justify-between content-evenly px-3 border">
+  {{ range first 3 (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)).Pages }}
+  {{ partial "article-links-horizontal.html" . }}
+  {{ end }}
+  {{ end }}
 </div>
 
 <style>

@@ -16,13 +16,16 @@ function playUpdate() {
     document.getElementById('play-mobile').style.display = 'none';
     document.getElementById('pause-mobile').style.display = 'block';
     document.getElementById('loader-mobile').style.display = 'none';
-    data = store.get("recentTracks")
-    document.title = data[0]["artist"] + ' - ' + data[0]["song"]
+    data = store.get("spin_data")
+
+    
+
+    document.title = data["spin-0"]["artist"] + ' - ' + data["spin-0"]["song"]
     if ('mediaSession' in navigator) {
         // console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
-            title: (data[0]["song"] + " - " + data[0]["artist"]),
-            artist: store.get("showData")[0]["title"] + " - " + store.get("showData")[0]["DJ_name"],
+            title: (data["spin-0"]["song"] + " - " + data["spin-0"]["artist"]),
+            artist: store.get("show_data")["show-0"].title + " - " + store.get("show_data")["dj-0"].name,
             album: "",
             artwork: [
                 { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },

@@ -2,9 +2,18 @@
 {{ $jsStore := resources.Get "js/store2.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsStore.RelPermalink }}"
   integrity="{{ $jsStore.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/show.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
-{{ $jsShow := resources.Get "js/spins.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $jsDetails := resources.Get "js/details.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsDetails.RelPermalink }}"
+  integrity="{{ $jsDetails.Data.Integrity }}"></script>
+{{ $jsTutorial := resources.Get "js/tutorial.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsTutorial.RelPermalink }}"
+  integrity="{{ $jsTutorial.Data.Integrity }}"></script>
+
+{{ $jsCron := resources.Get "js/cron-schedule.iife.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="text/javascript" src="{{ $jsCron.RelPermalink }}" integrity="{{ $jsCron.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/show2.js" | resources.Minify | resources.Fingerprint "sha512" }}
+<script defer type="module" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
+{{ $jsShow := resources.Get "js/spins2.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script defer type="text/javascript" src="{{ $jsShow.RelPermalink }}" integrity="{{ $jsShow.Data.Integrity }}"></script>
 
 {{ $jsHowl := resources.Get "js/loudest.core.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
@@ -28,21 +37,18 @@
   color: black;
  -->
 <div id="nav" class="font-medium text-sm z-10">
-  <div class="px-6 pt-4 max-w-7xl m-auto">
-    <div class="flex justify-between items-center"
-      style="
+  <div class="px-6 mt-4 max-w-7xl m-auto">
+    <div class="flex justify-between items-center" style="
       border: 1px solid black;
       height: 58px;
       overflow: hidden;
       ">
-      <div class="flex px-0 items-center" 
-      style="
+      <div class="flex px-0 items-center" style="
       border-right: 1px solid black;
       height: 100%;
       min-width: 100px;
       ">
-        <a class="p-0 flex items-center justify-center" href="/" 
-        style="
+        <a class="p-0 flex items-center justify-center" href="/" style="
         width: 100%; 
         height: 100%;
         ">
@@ -54,50 +60,46 @@
       <!-- Vertical Flexbox -->
       <div class="flex flex-col w-screen">
         <!-- Top Row Flexbox -->
-        <div id="top-row" class="flex justify-between items-center" 
-          style="
+        <div id="top-row" class="flex justify-between items-center" style="
           height: 29px;
           ">
-          <div class="flex px-1 items-center">
-            <div class="flex items-center">
+          <div class="flex grow max-h-[30px] items-center">
+            <div class="flex shrink items-center">
               <!-- id live-play for text live and divisor for mobile -->
               <p id="live-play" class="px-2 font-bold">LIVE</p>
               <span id="live-now-circle"></span>
             </div>
-            <div id="live-play" 
-              style="
+            <div id="live-play" style="
+              align-self: start;
               height: 30px; 
               width: 1px; 
               background-color: black; 
-              margin-left: 0.5rem;
+              
               "></div>
             <div style="
             background-color: black;
             height: 100%;"></div>
             <!-- play for play button, volume for volume button -->
-            <div id="play-pause" class="flex-grow m-0 px-0 py-0">
+            <div id="play-pause" class="flex m-0 px-0 py-0" style="align-self: start;">
               <button>
-                <img id="play" src="/play-solid.svg" alt="Click to Play" width="12"
-                  style="
-                  margin-top: 12px; 
+                <img id="play" src="/play-solid.svg" alt="Click to Play" width="12" style="
+                  margin-top: 8px; 
                   margin-bottom: 6px; 
                   margin-left: 14px; 
                   margin-right: 14px; 
                   transition: filter 0.1s;
                   ">
-                <img id="pause" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
-                  style="
-                  margin-top: 12px; 
-                  margin-bottom: 6px; 
+                <img id="pause" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12" style="
+                  margin-top: 6px; 
+                  margin-bottom: 8px; 
                   margin-left: 14px; 
                   margin-right: 14px; 
                   transition: filter 0.1s; 
                   display:none;
                   ">
-                <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
-                  style="
-                  margin-top: 12px; 
-                  margin-bottom: 6x; 
+                <img id="loader" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12" style="
+                  margin-top: 8px; 
+                  margin-bottom: 6px;
                   margin-left: 14px; 
                   margin-right: 14px; 
                   transition: filter 0.1s;
@@ -105,19 +107,19 @@
                   ">
               </button>
             </div>
-            <div id="volume-icon" 
-              style="
+            <div id="volume-icon" style="
+              align-self: start;
               height: 30px; 
               width: 1px; 
               background-color: black;
               "></div>
-            <div id="desktop-volume-div" class="flex-grow m-0 px-0 py-0">
+            <div id="desktop-volume-div" class="flex m-0 px-0 py-0" style="align-self: start;">
               <!-- Icon to toggle volume slider -->
               <button onclick="toggleVolume()">
-                <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                  style="
-                  margin-top: 10px; 
-                  margin-bottom: 4px; 
+                <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20" style="
+                align-self: start;
+                  margin-top: 6px; 
+                  margin-bottom: 6px; 
                   margin-left: 0.60rem; 
                   margin-right: 0.60rem; 
                   transition: filter 0.1s;
@@ -127,41 +129,63 @@
             <!-- Volume slider -->
             <div class="absolute">
               <div id="player" style="display: none;">
-                <i class="fa fa-volume-up absolute" 
-                  style="
+                <i class="fa fa-volume-up absolute" style="
                   top:0; 
                   margin-left: 14px; 
                   margin-top: 4px;
                   "></i>
                 <input type="range" min="1" max="100" value="100" class="slider" id="volume"
                   onchange="showValue(this.value)" oninput="showValue(this.value)">
-                <i class="fa fa-volume-down absolute" 
-                  style="bottom:0; 
+                <i class="fa fa-volume-down absolute" style="bottom:0; 
                   margin-left: 16px; 
                   margin-bottom: 4px;
                   "></i>
               </div>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="volume-line" 
-              style="
+            <div id="volume-line" style="
               height: 30px; 
               width: 1px; 
               background-color: black;
               "></div>
-            <div class="flex flex-row display">
-              <div class="pl-2">
-                <p class="whitespace-nowrap" id="show_title"></p>
+            <div class="flex flex-row grow justify-left">
+              <button id="info-2">
+                <img id="info-img-2" class="mx-2" src="/info-filled.svg" alt="Show Details" style="
+                                            margin-top: 8px;
+                                            margin-bottom: 6px;
+                                            transition: filter 0.1s;
+                                            min-width: 17px;
+                                            " width="17">
+              </button>
+              <div id="padding-without-info" class="pl-2">
+                <span class="whitespace-nowrap overflow-hidden" style="
+       text-align: center;
+       white-space: normal;
+       word-break: nowrap;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       display: flex;
+  justify-content: center;
+  align-items: center;
+" id="show_title"></span>
               </div>
             </div>
           </div>
           <!-- Page reference links -->
-          <div id="page-links" class="flex items-center" 
-            style="
+          <button id="info" style="display: none;">
+            <img id="info-img" src="/info-filled.svg" alt="Show Details" style="
+                              margin-top: 8px;
+                              margin-bottom: 6px;
+                              margin-left: 3px;
+                              margin-right: 7px;
+                              transition: filter 0.1s;
+                              min-width: 17px;
+                              " width="17">
+          </button>
+          <div id="page-links" class="flex items-center" style="
             padding-right: 1rem;
             ">
-            <div 
-              style="
+            <div style="
               height: 30px; 
               width: 1px; 
               background-color: black;
@@ -172,9 +196,7 @@
               <li style="margin-left: 1rem;">
                 <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
                   style="
-                  text-decoration-skip-ink: none;" 
-                  href="{{ .URL }}" 
-                  title="{{ .Title }}">{{
+                  text-decoration-skip-ink: none;" href="{{ .URL }}" title="{{ .Title }}">{{
                   .Name
                   | markdownify | emojify }}</a>
               </li>
@@ -197,15 +219,13 @@
               <p class="px-3 py-1 font-bold">PLAYING</p>
             </div>
             <!-- contain to row by setting height to 29px -->
-            <div id="playing-text" 
-              style="
+            <div id="playing-text" style="
               height: 30px; 
               width: 1px; 
               background-color: black;
               "></div>
             <div class="flex flex-row whitespace-nowrap">
-              <p id="playing-song" class="pl-2 pr-3 py-1"
-                style="
+              <p id="playing-song" class="pl-2 pr-3 py-1" style="
                 height: 30px; 
                 font-family: 'IBM Plex Mono', monospace;
                 ">
@@ -214,15 +234,13 @@
           </div>
           <!-- Social media icons -->
           <div id="social-media" class="flex items-center">
-            <div 
-              style="
+            <div style="
               height: 30px; 
               width: 1px; 
               background-color: black;
               "></div>
             <a href="https://www.instagram.com/kscuradio/?hl=en" target="_blank">
-              <i class="fa fa-instagram px-4 hover:text-neutral-400"
-                style="
+              <i class="fa fa-instagram px-4 hover:text-neutral-400" style="
                 font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
@@ -235,8 +253,7 @@
                 "></i>
             </a> -->
             <a href="https://open.spotify.com/user/kscu" target="_blank">
-              <i class="fa fa-spotify pr-4 hover:text-neutral-400" 
-                style="font-size: 24px; 
+              <i class="fa fa-spotify pr-4 hover:text-neutral-400" style="font-size: 24px; 
                 transition: color 0.1s;
                 "></i>
             </a>
@@ -262,16 +279,14 @@
           <!-- Play pause buttons in third row -->
           <div class="flex-grow m-0 px-0 py-0">
             <button id="play-pause-mobile" class="">
-              <img id="play-mobile" src="/play-solid.svg" alt="Click to Play" height="12" width="12"
-                style="
+              <img id="play-mobile" src="/play-solid.svg" alt="Click to Play" height="12" width="12" style="
                 margin-top: 12px; 
                 margin-bottom: 6px; 
                 margin-left: 14px; 
                 margin-right: 14px; 
                 transition: filter 0.1s;
                 ">
-              <img id="pause-mobile" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12"
-                style="
+              <img id="pause-mobile" src="/pause-solid.svg" alt="Click to Pause" height="12" width="12" style="
                 margin-top: 12px; 
                 margin-bottom: 6px; 
                 margin-left: 14px; 
@@ -279,8 +294,7 @@
                 transition: filter 0.1s; 
                 display: none;
                 ">
-              <img id="loader-mobile" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12"
-                style="
+              <img id="loader-mobile" src="/tower-broadcast-solid.svg" alt="Loading" height="12" width="12" style="
                 margin-top: 12px; 
                 margin-bottom: 6px; 
                 margin-left: 14px; 
@@ -290,8 +304,7 @@
                 ">
             </button>
           </div>
-          <div 
-            style="
+          <div style="
             height: 30px; 
             width: 1px; 
             background-color: black;
@@ -299,8 +312,7 @@
           <div id="mobile-volume" class="flex-grow m-0 px-0 py-0">
             <!-- Volume slider icon that toggles in third row -->
             <button onclick="toggleVolume()">
-              <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20"
-                style="
+              <img id="volume-i" src="/volume.svg" alt="Volume Icon" width="20" height="20" style="
                 margin-top: 10px; 
                 margin-bottom: 4px; 
                 margin-left: 0.60rem; 
@@ -309,8 +321,7 @@
                 "></img>
             </button>
           </div>
-          <div id="mobile-volume-bar" 
-            style="
+          <div id="mobile-volume-bar" style="
             height: 30px; 
             width: 1px; 
             background-color: black;
@@ -346,13 +357,11 @@
         </div>
 
         <!-- Page links in third row -->
-        <div id="new-page-links" class="flex items-center" 
-          style="
+        <div id="new-page-links" class="flex items-center" style="
           padding-right: 1rem; 
           height: 30px;
           ">
-          <div id="new-page-links-bar"
-            style="
+          <div id="new-page-links-bar" style="
             height: 30px; 
             width: 1px; 
             background-color: black;
@@ -360,15 +369,12 @@
           <ul class="flex list-none text-[15px] ltr:text-right rtl:text-left sm:flex-row">
             {{ if .Site.Menus.main }}
             {{ range .Site.Menus.main }}
-            <li 
-              style="
+            <li style="
               margin-left: 1rem;
               ">
               <a class="decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
                 style="
-                text-decoration-skip-ink: none;" 
-                href="{{ .URL }}" 
-                title="{{ .Title }}">{{
+                text-decoration-skip-ink: none;" href="{{ .URL }}" title="{{ .Title }}">{{
                 .Name
                 | markdownify | emojify }}</a>
             </li>
@@ -401,7 +407,7 @@
     }
   }
 
-  /* CSS for flashing red dot*/ 
+  /* CSS for flashing red dot*/
   #live-now-circle {
 
     /* display: flex; */
@@ -417,7 +423,7 @@
     transform: scale(1);
     animation: pulse-red 3s infinite;
     animation-play-state: running;
-    margin-right: 1px
+    margin-right: 0.5rem;
   }
 
   /* Media queries for screen width adjustment */
@@ -427,10 +433,24 @@
       display: none;
     }
 
+    #info-2 {
+      display: none;
+    }
+
+    #info {
+      display: block !important;
+    }
+
     #player {
       position: relative;
       top: 88px;
       left: 110px;
+    }
+  }
+
+  @media (max-width: 891px) {
+    #padding-without-info {
+      padding-left: 0px;
     }
   }
 
@@ -498,7 +518,7 @@
   }
 
   /* remove social media icons to make room in mobile */
-  
+
   @media (max-width: 384px) {
     #new-page-links-bar {
       display: none;
@@ -506,15 +526,17 @@
 
 
   }
-  
+
   @media (max-width: 384px) {
     #new-social-media {
       display: none;
     }
+
     #mobile-volume-bar {
       display: block;
     }
   }
+
   @media (max-width: 460px) {
     #new-spotify {
       display: none;
@@ -570,32 +592,40 @@
   }
 
   /* Hover effects for SVG logos */
-  a:hover > div > #kscu-logo {
-    filter: invert(50%);
+  a:hover>div>#kscu-logo {
+    filter: invert(40%);
+  }
+
+  button:hover>#info-img-2 {
+    filter: invert(40%);
   }
 
   @media (any-hover: hover) {
     button:hover>#volume-i {
-      filter: invert(50%);
+      filter: invert(40%);
     }
 
     button:hover>#play {
-      filter: invert(50%);
+      filter: invert(40%);
     }
 
     button:hover>#play-mobile {
-      filter: invert(50%);
+      filter: invert(40%);
     }
 
     button:hover>#pause {
-      filter: invert(50%);
+      filter: invert(40%);
     }
 
     button:hover>#pause-mobile {
-      filter: invert(50%);
+      filter: invert(40%);
+    }
+
+    button:hover>#info-img {
+      filter: invert(40%);
     }
   }
-  
+
   blockquote {
     border-left-color: #363940 !important;
   }
