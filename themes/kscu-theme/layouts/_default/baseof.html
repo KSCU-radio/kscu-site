@@ -26,6 +26,9 @@
   {{ else }}
   {{ partial "partials/header/basic.html" . }}
   {{ end }}
+  
+  {{ partial "partials/show-details.html" . }}
+
   <div class="font-medium text-sm">
     <main id="main-content" class="grow z-0 mt-5 px-10 py-2 max-w-6xl m-auto">
       {{ block "main" . }}{{ end }}

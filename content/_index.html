@@ -101,131 +101,372 @@ lastmod: 2022-08-18
   }
 </style>
 
-<!-- Div containing a gif -->
-<div id="gifwrapper">
-  <img src="/kscu-swig-and-studio.gif" alt="" id="kscu-gif" style="" />
-</div>
-
-<div id="header_text" style="z-index: 0; display: none;">
-  <p class="font-semibold">STUDENT-RUN RADIO AT</p>
-  <p class="font-semibold">&nbsp;SANTA CLARA &nbsp; UNIVERSITY
-  </p>
-</div>
 
 
-<div id="top-recent-and-next" class="absolute flex flex-col flex-col-reverse"
-  style="width: 445px; right: 435px; top: 83px">
-  <div id="recent-tracks-div" class="border mt-6 mr-3 text-neutral-900">
-    <div class="flex flex-row items-center border-b">
-      <span class="font-semibold text-lg m-1">
-        Previously Spun Tracks
-      </span>
-    </div>
+<div class="relative">
+  <!-- Div containing a gif -->
+  <div id="gifwrapper">
+    <img src="/kscu-swig-and-studio.gif" alt="" id="kscu-gif" draggable="false"/>
+  </div>
 
-    <!-- <div class="flex flex-row items-center border-b">
-    <img class="rounded-sm m-2" id="playing-image-0" src="/brett-jordan-unsplash.jpeg" width="45px">
-    <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-      <p id="playing-song-0" class="pr-2 m-0 whitespace-nowrap">
-        Chinese Translation
-      </p>
-      <p id="playing-artist-0" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-        Twin Peaks
-      </p>
-    </div>
-  </div> -->
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <div class="img-container">
-        <img class="rounded-sm m-2" id="playing-image-1" src="">
+  <div id="header_text" style="z-index: 0; display: none;">
+    <p class="font-semibold">STUDENT-RUN RADIO AT</p>
+    <p class="font-semibold">&nbsp;SANTA CLARA &nbsp; UNIVERSITY
+    </p>
+  </div>
+  <div id="move-upper">
+    <div id="to-move">
+      <div id="top-recent-and-next-2" class="absolute flex flex-col hidden" style="width: 43%; right: 10px; top: 0px">
+        <div id="recent-tracks-div" class="mt-4 text-neutral-900">
+          <div id="spins-top" class="flex flex-row justify-between">
+            <div class="flex shrink border border-b-0">
+              <p id="spins-header-box" class="mx-2 my-1" style="
+                                  font-style: normal;
+                                  font-weight: 700;
+                                  font-size: 15px;
+                                  line-height: 21px;
+      
+                                  display: flex;
+                                  align-items: center;">PREVIOUSLY SPUN</p>
+            </div>
+            <div class="flex">
+              <div class="flex shrink border border-b-0">
+                <button id="close-tracks">
+                  <p class="mx-2 my-1" style="
+                                                            font-style: normal;
+                                                            font-weight: 700;
+                                                            font-size: 15px;
+                                                            line-height: 21px;
+                                                            display: flex;
+                                                            align-items: center;">X</p>
+                </button>
+                <style>
+                  #close-tracks:hover {
+                    filter: invert(40%);
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <div class="border">
+            <div class="flex flex-row items-center border-b">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-1" src="">
+              </div>
+              <div class="track flex grow flex-col justify-center items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-1" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-1" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-1" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center border-b">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-2" src="">
+              </div>
+              <div class="track flex grow flex-col items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-2" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-2" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-2" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center border-b">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-3" src="">
+              </div>
+              <div class="track flex grow flex-col items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-3" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-3" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-3" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center border-b">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-4" src="">
+              </div>
+              <div class="track flex grow flex-col items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-4" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-4" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-4" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center border-b">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-5" src="">
+              </div>
+              <div class="track flex grow flex-col items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-5" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-5" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-5" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row items-center">
+              <!-- Img for profile picture with tailwind CSS -->
+              <div class="img-container">
+                <img class="" id="playing-image-6" src="">
+              </div>
+              <div class="track flex grow flex-col items-left whitespace-nowrap overflow-scroll ml-1"
+                style="font-weight: 500;">
+                <p id="playing-song-6" class="ml-1 pr-2 m-0 whitespace-nowrap">
+                </p>
+                <div class="flex flex-row grow justify-between">
+                  <p id="playing-artist-6" class="ml-1 pr-2 m-0 text-sm" style="font-weight: 400;">
+                  </p>
+                  <p id="year-6" class="m-0 mr-2 text-sm" style="font-weight: 400;"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="up-next-div" class="border mr-3 text-neutral-900 mt-6">
+      <div class="flex flex-row items-center border-b">
+        <span class="font-semibold text-lg m-1">
+          Up Next on KSCU
+        </span>
       </div>
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-1" class="pr-2 m-0 whitespace-nowrap">
-        </p>
-        <p id="playing-artist-1" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-        </p>
+      <div class="flex flex-row items-center">
+        <div class="img-container">
+          <img class="rounded-sm m-2" id="next-genre-svg" src="">
+        </div>
+        <div class="track flex flex-1 flex-col justify-around whitespace-nowrap overflow-scroll">
+          <div>
+            <p id="next-show-and-dj" class="pr-2 m-0 whitespace-nowrap text-medium"></p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p id="next-time" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
+
+            </div>
+            <div>
+              <p id="next-genre" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <div class="img-container">
-        <img class="rounded-sm m-2" id="playing-image-2" src="">
+    </div> -->
       </div>
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-2" class="pr-2 m-0 whitespace-nowrap">
-        </p>
-        <p id="playing-artist-2" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center border-b">
-      <!-- Img for profile picture with tailwind CSS -->
-      <div class="img-container">
-        <img class="rounded-sm m-2" id="playing-image-3" src="">
-      </div>
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-3" class="pr-2 m-0 whitespace-nowrap">
-        </p>
-        <p id="playing-artist-3" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-row items-center">
-      <!-- Img for profile picture with tailwind CSS -->
-      <div class="img-container">
-        <img class="rounded-sm m-2" id="playing-image-4" src="">
-      </div>
-      <div class="track flex flex-col items-left whitespace-nowrap overflow-scroll" style="font-weight: 500;">
-        <p id="playing-song-4" class="pr-2 m-0 whitespace-nowrap">
-        </p>
-        <p id="playing-artist-4" class="pr-2 m-0 text-sm" style="font-weight: 400;">
-        </p>
+
+      <div id="training" class="absolute flex flex-col" style="width: 45%; right: 10px; top: 0px">
+        <div id="recent-tracks-div-2" class="mt-4 text-neutral-900">
+          <div id="spins-top-2" class="flex flex-row justify-between">
+            <div id=spins-header-box class="flex shrink border border-b-0">
+              <p id="spins-header-2" class="mx-2 my-1" style="
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+
+                display: flex;
+                align-items: center;">WHAT IS THE UNDERGROUND SOUND?</p>
+            </div>
+            <div class="flex">
+              <div id="training-ascii-div" class="flex shrink border border-b-0">
+                <p id="training-ascii" class="mx-2 my-1" style="
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 15px;
+                  line-height: 21px;
+
+                  display: flex;
+                  align-items: center;">?????</p>
+              </div>
+            </div>
+          </div>
+          <script>
+            // get the text box element
+            const textBox = document.getElementById('training-ascii');
+
+            // set the initial text
+            let text = '?????';
+            let index = 0;
+            let left = true;
+
+            async function change() {
+              // generate random number between 0 and 4
+              index = Math.floor(Math.random() * 5);
+              textBox.innerHTML = text.substring(0, index) + '¿' + text.substring(index + 1);
+              setTimeout(change, 2082);
+            }
+            change();
+
+          </script>
+          <div class="border flex flex-col">
+            <div class="flex flex-col">
+              <p id="left-description" class="tutorial-text flex my-2 mx-2">
+                We're Santa Clara University's student-run radio station. Our team of over 120
+                student DJs is dedicated to bringing you the <b>freshest and most diverse</b> mix of music that you
+                won't find anywhere else on the radio.
+                But that's not all: we also feature independent talk shows, Bronco Sports broadcasting, and podcasts
+                that cover a wide range of
+                topics and perspectives. Without commercial incentives, our music solely reflects the passion and talent
+                of our DJs.
+              </p>
+              <p id="left-description" class="tutorial-text flex my-2 mx-2">
+                You can tune in right here on our website by clicking the play button above or by tuning your radio to
+                103.3 FM in the South Bay.
+              </p>
+              <p id="left-description" class="my-2 mx-2" style="
+                  font-family: 'Roboto Condensed';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 20px;
+                  width: fit-content;
+                  display: inline-block;
+                  ">
+                Explore the rest of our site to find concert reviews, our weekly schedule, and more info about how to
+                get involved.
+              </p>
+            </div>
+            <div id="tutorial-buttons" class="flex flex-row justify-between">
+              <button id="tutorial-show-details" class="m-3">
+                <div class="border-2">
+                  <p id="next-genre" class="flex grow m-2 whitespace-nowrap text-sm font-bold text-center">Detailed Show
+                    Info
+                    <span><img id="tutorial-info-svg" width="20" height="20" class="mt-0 mb-0 ml-[0.35rem]"
+                        style="vertical-align: middle;" src="info-filled.svg"></img></span>
+                  </p>
+                </div>
+              </button>
+              <button id="complete-tutorial" class="m-3">
+                <div class="border-2">
+                  <p id="next-genre" class="flex grow m-2 whitespace-nowrap text-sm font-bold text-center">See Tracklist
+                    <span><img width="20" height="20" class="mt-0 mb-0 ml-1" style="vertical-align: middle;"
+                        src="next-arrow.svg"></img></span>
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div id="up-next-div" class="border mr-3 text-neutral-900 mt-6">
-    <div class="flex flex-row items-center border-b">
-      <span class="font-semibold text-lg m-1">
-        Up Next on KSCU
-      </span>
-    </div>
-    <div class="flex flex-row items-center">
-      <!-- Img for profile picture with tailwind CSS -->
-      <div class="img-container">
-        <img class="rounded-sm m-2" id="next-genre-svg" src="">
-      </div>
-      <div class="track flex flex-1 flex-col justify-around whitespace-nowrap overflow-scroll">
-        <div>
-          <p id="next-show-and-dj" class="pr-2 m-0 whitespace-nowrap text-medium"></p>
-        </div>
-        <div class="flex flex-row justify-between">
-          <div>
-            <p id="next-time" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
-
-          </div>
-          <div>
-            <p id="next-genre" class="pr-2 m-0 whitespace-nowrap text-sm"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
-
-
-
+<div id="move-lower"></div>
 
 <style>
+  /* For mobile */
+  @media (max-width: 501px) {
+    #training-ascii-div {
+      border-left-width: 0px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #tutorial-buttons {
+      flex-direction: column;
+    }
+
+    #tutorial-show-details {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #left-col {
+      min-width: 85%;
+    }
+
+    #right-col {
+      min-width: 85%;
+    }
+  }
+</style>
+
+<style>
+  .lower-class {
+    position: relative;
+    width: 88% !important;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  #tutorial-show-details:hover {
+    filter: invert(40%);
+  }
+
+  #complete-tutorial:hover {
+    filter: invert(40%);
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<style>
+  .tutorial-text {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    width: fit-content;
+    display: inline-block;
+  }
+
   .img-container {
-    width: 61px;
-    height: 61px;
+    width: 60px;
+    height: 60px;
     flex-shrink: 0;
+    border-right: 1px solid black;
+    /* border: 2px solid black; */
   }
 
   .img-container img {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
     object-fit: cover;
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
   }
 
   /* Styling for the gif */
@@ -260,8 +501,8 @@ lastmod: 2022-08-18
     /* iOS Safari */
     -webkit-user-select: none;
   }
-  
-  #header_text > p {
+
+  #header_text>p {
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -280,8 +521,6 @@ lastmod: 2022-08-18
       flex-basis: 50%;
     }
   }
-
-  @media (max-width: 1280px) {}
 
   @media (max-width: 1088px) {
     #header_text {
@@ -314,32 +553,6 @@ lastmod: 2022-08-18
       display: none;
     }
   }
-
-  @media (max-width: 418px) {
-    #header_text {
-      /* font-size: 14px; */
-    }
-  }
-
-  @media (max-width: 384px) {
-    #header_text {
-      /* font-size: 13px; */
-    }
-  }
-
-  @media (max-width: 369px) {
-    #header_text {
-      /* margin-left: -50%;
-      /* font-size: 12px; */
-      /* flex-basis: 50%  */
-    }
-  }
-
-  @media (max-width: 325px) {
-    #header_text {
-      /* flex-basis: 60%; */
-    }
-  }
 </style>
 
 <br id="post-break">
@@ -364,24 +577,5 @@ lastmod: 2022-08-18
   /* For moving canvas up on homepage */
   #canvas {
     margin-top: -130px;
-  }
-
-  /* At 776 px of screen width, switch #left-and-right to flex-col */
-  /* Greater than 776px */
-  @media (max-width: 875px) {
-    #top-recent-tracks-div {
-      width: 80vw;
-    }
-
-    #left-and-right {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  @media (max-width: 454px) {
-    #top-recent-tracks-div {
-      width: 73vw;
-    }
   }
 </style>

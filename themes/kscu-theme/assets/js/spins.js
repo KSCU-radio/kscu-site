@@ -77,7 +77,7 @@
 
 
 
-function placeTracks() {
+function placeSpins() {
 
     data = store.get("recentTracks")
 
@@ -137,7 +137,7 @@ async function updateTracks() {
     await fetchTracks()
 
     // Then place the new data
-    placeTracks()
+    placeSpins()
 
     // Log using CountAPI that data has been fetched from Spinitron API
     fetch("https://api.countapi.xyz/hit/kscu.org/spinitronRequests")
@@ -163,7 +163,7 @@ async function updateTracks() {
 
 async function startTracks() {
     if (store.has("recentTracks")) {
-        placeTracks() // Place the stored data immediately on page load
+        placeSpins() // Place the stored data immediately on page load
         songEnd = store.get("recentTracks")[0]["end"]
         if (new Date(songEnd) > Date.now()) {
             // console.log("Song ends in  " + ((new Date(songEnd) - Date.now()) / 1000 / 60).toFixed(2) + "mins")

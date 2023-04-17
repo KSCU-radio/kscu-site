@@ -11,110 +11,117 @@
   color: black;
 
  -->
-<footer class="font-sm text-sm relative z-10 pt-3 pb-8">
-  <div class="px-6 pt-2 pb-4 max-w-7xl m-auto">
+<footer class="font-sm text-sm relative z-10 pt-0 pb-8">
+  <div class="px-6 pt-0 pb-4 max-w-7xl m-auto">
     <div class="flex flex-col justify-between border">
-    <div id="flex_container" class="flex justify-between items-center px-2"
+      <div id="flex_container" class="flex justify-between items-center px-2"
         style="font-family: 'IBM Plex Mono', monospace;">
         <div id="title_footer" class="my-3">
           <p id="title_text" class="text-xl font-bold text-neutral-900"> KSCU 103.3 FM </p>
           <p id="title_text" class="text-sm">Santa Clara University's Student-Run Radio</p>
           <a href="https://publicfiles.fcc.gov/fm-profile/KSCU">
-            <span id="opif" class="text-sm font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;">Access Public Inspection File (OPIF)</p>
+            <span id="opif"
+              class="text-sm font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+              style="text-decoration-skip-ink: none;">Access Public Inspection File (OPIF)</p>
           </a>
         </div>
         {{ if .Site.Params.footer.showPhone | default false}}
-        <div id="address" class="text-md py-3 font-base">
+        <div id="address" class="flex grow justify-between flex-col text-md font-base">
           <p class="text-sm">Studio Phone: (408)-554-5728</p>
-          <p>Email us: <a style="text-decoration-skip-ink: none;" class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" href="mailto:gm@kscu.org">gm@kscu.org</a></p>
+          <p>Email us: <a style="text-decoration-skip-ink: none;"
+              class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+              href="mailto:gm@kscu.org">gm@kscu.org</a></p>
           <!-- <p> 500 El Camino Real </p> -->
           <a href="/credits">
             <p id="credits"
               class="text-sm font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
               style="text-decoration-skip-ink: none;">Site Credits</p>
           </a>
+        </div>
         {{ else }}
         <div id="address" class="text-md py-3 font-medium">
           <p>Email us: <a style="text-decoration-skip-ink: none;"
-            class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
-            href="mailto:gm@kscu.org">gm@kscu.org</a></p>
+              class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+              href="mailto:gm@kscu.org">gm@kscu.org</a></p>
           <p> 500 El Camino Real </p>
           <!-- Link to site credits -->
           <a href="/credits">
-            <p id="credits" class="text-sm font-semibold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;">Site Credits</p>
+            <p id="credits"
+              class="text-sm font-semibold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+              style="text-decoration-skip-ink: none;">Site Credits</p>
           </a>
         </div>
         {{ end }}
 
       </div>
 
-  </div>
-  <style>
-    @media (min-width: 751px) {
-      #address {
-        text-align: right;
+    </div>
+    <style>
+      @media (min-width: 751px) {
+        #address {
+          text-align: right;
+        }
+
+        #title_footer {
+          margin-left: 1.5rem;
+        }
+
+        #address {
+          margin-right: 1.5rem;
+        }
+
+        #social_icons {
+          margin-left: 1.5rem;
+        }
+
+        #copyright {
+          margin-right: 1.5rem;
+        }
       }
 
-      #title_footer {
-        margin-left: 1.5rem;
+      @media (max-width: 750px) {
+        #flex_container {
+          flex-direction: column;
+        }
+
+        #title_footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 1rem;
+        }
+
+        #title_text {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        #address {
+          text-align: center;
+        }
+
+        #social_icons {
+          margin-left: 1.5rem;
+        }
+
+        #copyright {
+          margin-right: 1.5rem;
+        }
       }
 
-      #address {
-        margin-right: 1.5rem;
-      }
+      @media (max-width: 450px) {
+        #title_footer {
+          flex-direction: column;
+          text-align: center;
+        }
 
-      #social_icons {
-        margin-left: 1.5rem;
-      }
+        #flex_container {
+          text-align: center;
+        }
 
-      #copyright {
-        margin-right: 1.5rem;
+        #bottom_footer {
+          flex-direction: column;
+        }
       }
-    }
-
-    @media (max-width: 750px) {
-      #flex_container {
-        flex-direction: column;
-      }
-
-      #title_footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1rem;
-      }
-
-      #title_text {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-
-      #address {
-        text-align: center;
-      }
-
-      #social_icons {
-        margin-left: 1.5rem;
-      }
-
-      #copyright {
-        margin-right: 1.5rem;
-      }
-    }
-
-    @media (max-width: 450px) {
-      #title_footer {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      #flex_container {
-        text-align: center;
-      }
-
-      #bottom_footer {
-        flex-direction: column;
-      }
-    }
-  </style>
+    </style>
 </footer>
