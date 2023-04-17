@@ -20,7 +20,7 @@ const formatAMPM = (date) => {
 async function fetchShow() {
     console.log("Fetching show...")
     try {
-        let request = `http://api-relay.eba-kmnypfm3.us-west-1.elasticbeanstalk.com/shows/get`
+        let request = `https://kscuapi.org/shows/get`
         let response = await fetch(request);
         if (response.status != 200) {
             throw new Error("Error: " + response.status)

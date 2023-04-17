@@ -11,7 +11,7 @@ const formatSpin_AMPM = (date) => {
 async function fetchSpins() {
     console.log("hello from fetchSpins()")
     try {
-        let request = `http://api-relay.eba-kmnypfm3.us-west-1.elasticbeanstalk.com/spins/get`
+        let request = `https://kscuapi.org/spins/get`
         let response = await fetch(request);
         if (response.status != 200) {
             throw new Error("Error: " + response.status)
@@ -98,7 +98,7 @@ updateSpins();
 // Open a SSE connection to the /streams/ endpoint
 async function openSSE() {
     console.log("Opening SSE connection...")
-    let eventSource = new EventSource(`http://api-relay.eba-kmnypfm3.us-west-1.elasticbeanstalk.com/spins/stream/`);
+    let eventSource = new EventSource(`https://kscuapi.org/spins/stream/`);
     eventSource.onmessage = async function (event) {
         console.log("Received message: " + event.data)
         if (event.data == "Spin outdated - Update needed.") {
