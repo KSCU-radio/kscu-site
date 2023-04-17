@@ -117,7 +117,7 @@ lastmod: 2022-08-18
   <div id="move-upper">
     <div id="to-move">
       <div id="top-recent-and-next-2" class="absolute flex flex-col hidden" style="width: 43%; right: 10px; top: 0px">
-        <div id="recent-tracks-div" class="mt-4 mr-3 text-neutral-900">
+        <div id="recent-tracks-div" class="mt-4 text-neutral-900">
           <div id="spins-top" class="flex flex-row justify-between">
             <div class="flex shrink border border-b-0">
               <p id="spins-header-box" class="mx-2 my-1" style="
@@ -276,28 +276,28 @@ lastmod: 2022-08-18
       </div>
 
       <div id="training" class="absolute flex flex-col" style="width: 45%; right: 10px; top: 0px">
-        <div id="recent-tracks-div" class="mt-4 mr-3 text-neutral-900">
-          <div id="spins-top" class="flex flex-row justify-between">
+        <div id="recent-tracks-div-2" class="mt-4 text-neutral-900">
+          <div id="spins-top-2" class="flex flex-row justify-between">
             <div id=spins-header-box class="flex shrink border border-b-0">
               <p id="spins-header-2" class="mx-2 my-1" style="
-                                      font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 15px;
-                                      line-height: 20px;
-          
-                                      display: flex;
-                                      align-items: center;">WHAT IS THE UNDERGROUND SOUND?</p>
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+
+                display: flex;
+                align-items: center;">WHAT IS THE UNDERGROUND SOUND?</p>
             </div>
             <div class="flex">
-              <div class="flex shrink border border-b-0">
+              <div id="training-ascii-div" class="flex shrink border border-b-0">
                 <p id="training-ascii" class="mx-2 my-1" style="
-                                                              font-style: normal;
-                                                              font-weight: 700;
-                                                              font-size: 15px;
-                                                              line-height: 21px;
-                                  
-                                                              display: flex;
-                                                              align-items: center;">?????</p>
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 15px;
+                  line-height: 21px;
+
+                  display: flex;
+                  align-items: center;">?????</p>
               </div>
             </div>
           </div>
@@ -314,7 +314,7 @@ lastmod: 2022-08-18
               // generate random number between 0 and 4
               index = Math.floor(Math.random() * 5);
               textBox.innerHTML = text.substring(0, index) + '¿' + text.substring(index + 1);
-              setTimeout(change, 1082);
+              setTimeout(change, 2082);
             }
             change();
 
@@ -324,38 +324,30 @@ lastmod: 2022-08-18
               <p id="left-description" class="tutorial-text flex my-2 mx-2">
                 We're Santa Clara University's student-run radio station. Our team of over 120
                 student DJs is dedicated to bringing you the <b>freshest and most diverse</b> mix of music that you
-                won't
-                find
-                on commerical radio.
+                won't find anywhere else on the radio.
                 But that's not all: we also feature independent talk shows, Bronco Sports broadcasting, and podcasts
-                that
-                cover a wide range of
+                that cover a wide range of
                 topics and perspectives. Without commercial incentives, our music solely reflects the passion and talent
-                of
-                our DJs.
+                of our DJs.
               </p>
               <p id="left-description" class="tutorial-text flex my-2 mx-2">
                 You can tune in right here on our website by clicking the play button above or by tuning your radio to
-                103.3
-                FM in the South Bay.
+                103.3 FM in the South Bay.
               </p>
-
-              <p id="left-description" class="my-2 mx-2"
-                style="
-                                                                                                                                                                                                            font-family: 'Roboto Condensed';
-                                                                                                                                                                                                            font-style: normal;
-                                                                                                                                                                                                            font-weight: 400;
-                                                                                                                                                                                                            font-size: 18px;
-                                                                                                                                                                                                            line-height: 20px;
-                                                                                                                                                                                                            width: fit-content;
-                                                                                                                                                                                                            display: inline-block;
-                                                                                                                                                                                                            ">
+              <p id="left-description" class="my-2 mx-2" style="
+                  font-family: 'Roboto Condensed';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 20px;
+                  width: fit-content;
+                  display: inline-block;
+                  ">
                 Explore the rest of our site to find concert reviews, our weekly schedule, and more info about how to
-                get
-                involved.
+                get involved.
               </p>
             </div>
-            <div class="flex flex-row justify-between">
+            <div id="tutorial-buttons" class="flex flex-row justify-between">
               <button id="tutorial-show-details" class="m-3">
                 <div class="border-2">
                   <p id="next-genre" class="flex grow m-2 whitespace-nowrap text-sm font-bold text-center">Detailed Show
@@ -382,6 +374,35 @@ lastmod: 2022-08-18
 </div>
 
 <div id="move-lower"></div>
+
+<style>
+  /* For mobile */
+  @media (max-width: 501px) {
+    #training-ascii-div {
+      border-left-width: 0px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #tutorial-buttons {
+      flex-direction: column;
+    }
+
+    #tutorial-show-details {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #left-col {
+      min-width: 85%;
+    }
+
+    #right-col {
+      min-width: 85%;
+    }
+  }
+</style>
 
 <style>
   .lower-class {
@@ -500,8 +521,6 @@ lastmod: 2022-08-18
       flex-basis: 50%;
     }
   }
-
-  @media (max-width: 1280px) {}
 
   @media (max-width: 1088px) {
     #header_text {

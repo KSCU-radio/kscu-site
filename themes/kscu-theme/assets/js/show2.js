@@ -84,7 +84,7 @@ async function placeShow() {
         data = store.get("show_data");
     }
     var currentShow2 = data["show-0"].title;
-    const showTitle = `<b style="margin-right: 0.25rem;">${currentShow2}</b> <div id="dj_name_inner_div">with ${data["dj-0"].name}</div>`;
+    const showTitle = `<b style="margin-right: 0.25rem; white-space: nowrap;">${currentShow2}</b> <div id="dj_name_inner_div">with ${data["dj-0"].name}</div>`;
     document.getElementById("show_title").innerHTML = showTitle;
     document.getElementById("dj_name_inner_div").style.whiteSpace = "nowrap";
 

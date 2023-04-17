@@ -2012,16 +2012,16 @@ body:has(#menu-controller:checked) {
   margin-top: 1rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .ml-1 {
   margin-left: 0.25rem;
 }
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mt-6 {

@@ -64,11 +64,10 @@
           height: 29px;
           ">
           <div class="flex grow max-h-[30px] items-center">
-            <div class="flex shrink items-center">
+            <div id="live-and-circle" class="flex shrink items-center">
               <!-- id live-play for text live and divisor for mobile -->
               <p id="live-play" class="px-2 font-bold">LIVE</p>
               <span id="live-now-circle"></span>
-            </div>
             <div id="live-play" style="
               align-self: start;
               height: 30px; 
@@ -79,6 +78,7 @@
             <div style="
             background-color: black;
             height: 100%;"></div>
+            </div>
             <!-- play for play button, volume for volume button -->
             <div id="play-pause" class="flex m-0 px-0 py-0" style="align-self: start;">
               <button>
@@ -512,8 +512,8 @@
       display: none;
     }
 
-    #live-now-circle {
-      margin-left: 0.5rem;
+    #live-and-circle {
+      display: none;
     }
   }
 
