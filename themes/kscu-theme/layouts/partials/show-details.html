@@ -2,7 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
 </style>
 
-<div id="show-details-body" class="flex shrink-0 font-medium text-sm z-10">
+<div id="show-details-body" class="flex shrink-0 font-medium text-sm z-9">
     <div id="section-collapsible" class="pt-7 pb-2 max-w-6xl m-auto">
         <div class="flex shrink-0 justify-between items-center overflow-hidden">
             <div id="two-cols" class="flex grow flex-row justify-between">
@@ -166,6 +166,20 @@
 </div>
 
 <style>
+    .link-style:hover {
+        /* Wavy underline on hover */
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        color: rgba(var(--color-neutral-500),var(--tw-text-opacity));
+    }
+
+    .link-style {
+        
+        /* Wavy underline on hover */
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+
     #show-details-body {
         overflow: hidden !important;
         transition: height 0.3s ease-out !important;

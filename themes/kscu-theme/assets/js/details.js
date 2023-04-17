@@ -64,7 +64,7 @@ function generateHash(date) {
     const asciiChar = ["♨", "◑", "↕", "★", "♦", "♠", "♣", "❤", "♩", "の", "♫", "☺", "♪", "✿", "❀", "✦", "✩", "✭", "☽", "♨", "☉", "♪", "§", "✈", "☂", "✈", "✌", "❥", "✄", "☯", "❦", "➳", "▩"]
 
     const asciiMusic = ["♫ ♬", "♪♩", "♪♩♭", "☎✰", "☏♪♩", "✰", "☻♬♪", "♬♪", "♩♭", "♪", "♠♣❤"];
-    console.log(asciiMusic.length)
+    // console.log(asciiMusic.length)
 
     // // Get the day of the year as the seed
     const seed = getDayOfYear(date);

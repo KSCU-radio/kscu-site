@@ -2060,6 +2060,10 @@ body:has(#menu-controller:checked) {
   margin-top: 3rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -2814,6 +2818,11 @@ body:has(#menu-controller:checked) {
 .\!text-neutral {
   --tw-text-opacity: 1 !important;
   color: rgba(var(--color-neutral), var(--tw-text-opacity)) !important;
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .\!no-underline {

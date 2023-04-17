@@ -9,7 +9,7 @@ const formatSpin_AMPM = (date) => {
 }
 
 async function fetchSpins() {
-    console.log("hello from fetchSpins()")
+    // console.log("hello from fetchSpins()")
     try {
         let request = `https://kscuapi.org/spins/get`
         let response = await fetch(request);
@@ -26,18 +26,18 @@ async function fetchSpins() {
         }
         catch (error) {
             store('spin_data', data)
-            console.log("Error: " + error)
+            // console.log("Error: " + error)
         }
     }
     catch (error) {
-        console.log("Error: " + error)
+        // console.log("Error: " + error)
         // wait a random time between 0.2-0.6 seconds and try again
         setTimeout(fetchSpins, Math.floor(Math.random() * 400) + 200)
     }
 }
 
 async function placeSpins() {
-    console.log("hello from placeSpins()")
+    // console.log("hello from placeSpins()")
     let data;
     try {
         data = store.get("spin_data");
@@ -97,10 +97,10 @@ updateSpins();
 
 // Open a SSE connection to the /streams/ endpoint
 async function openSSE() {
-    console.log("Opening SSE connection...")
+    // console.log("Opening SSE connection...")
     let eventSource = new EventSource(`https://kscuapi.org/spins/stream/`);
     eventSource.onmessage = async function (event) {
-        console.log("Received message: " + event.data)
+        // console.log("Received message: " + event.data)
         if (event.data == "Spin outdated - Update needed.") {
             await updateSpins();
         }

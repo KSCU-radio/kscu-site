@@ -17,8 +17,23 @@ const formatAMPM = (date) => {
     return strTime;
 }
 
+function underlineLinksInParagraph(htmlString) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, "text/html");
+    const paragraphs = doc.getElementsByTagName("p");
+    for (let i = 0; i < paragraphs.length; i++) {
+        const links = paragraphs[i].getElementsByTagName("a");
+        for (let j = 0; j < links.length; j++) {
+            // Add class "link-style"
+            links[j].classList.add("link-style");
+        }
+    }
+    return doc.documentElement.innerHTML;
+}
+
+
 async function fetchShow() {
-    console.log("Fetching show...")
+   // console.log("Fetching show...")
     try {
         let request = `https://kscuapi.org/shows/get`
         let response = await fetch(request);
@@ -35,11 +50,11 @@ async function fetchShow() {
         }
         catch (error) {
             store('show_data', data)
-            console.log("Error: " + error)
+        //    console.log("Error: " + error)
         }
     }
     catch (error) {
-        console.log("Error: " + error)
+        // console.log("Error: " + error)
         // wait a random time between 0.2-0.6 seconds and try again
         setTimeout(fetchSpins, Math.floor(Math.random() * 400) + 200)
     }
@@ -52,12 +67,12 @@ async function placeShow() {
     try {
         data = store.get("show_data");
         // Check if current show is old
-        
+
         const currentShow = data["show-0"];
         const currentShowEndTime = new Date(currentShow.end);
         const now = new Date();
-        console.log("Current show end time: " + currentShowEndTime)
-        console.log("Now: " + now)
+       // console.log("Current show end time: " + currentShowEndTime)
+        // console.log("Now: " + now)
         if (now > currentShowEndTime) {
             // If so, fetch new show data
             await fetchShow()
@@ -100,18 +115,22 @@ async function placeShow() {
 }
 
 function placeDesc(elem, child, description) {
+    if (!description || /^\s*$/.test(description)) {
+        return
+    }
+    description = underlineLinksInParagraph(description);
+    // console.log(description)
+
     // console.log(description)
     // First, remove one set of <p> tags only from the start and end of the description if they exist
     if (description.startsWith('<p>') && description.endsWith('</p>')) {
         description = description.slice(3, -4);
     }
+    // Then, remove all other <p> tags
+    description = description.replace(/<p>/g, "").replace(/<\/p>/g, "");
 
-    if (!description || /^\s*$/.test(description)) {
-        return
-    } else {
-        if (!/^".+"$/.test(description) && !/^“.+”$/.test(description)) {
-            description = `“${description}”`;
-        }
+    if (!/^".+"$/.test(description) && !/^“.+”$/.test(description)) {
+        description = `“${description}”`;
     }
     child.innerHTML = description;
     elem.style.display = "block";
@@ -136,13 +155,13 @@ function placeImage(elem, imageUrl, category, start) {
         }[category] || `Other${new Date(start).getHours() % 12 || 12}`;
         elem.style.width = "75%";
         elem.style.width = "75%";
-        
+
         elem.src = `/genres/${categorySvg}.svg`;
     }
     var img = new Image();
 
     const regex = /spinitron\.com\/images\/Show/;
-    
+
     if (!regex.test(imageUrl)) {
         placeSVG();
         return;
@@ -150,12 +169,12 @@ function placeImage(elem, imageUrl, category, start) {
 
     img.src = imageUrl;
 
-    img.onload = function() {
+    img.onload = function () {
         // Image is valid
         elem.src = imageUrl;
     }
 
-    img.onerror = function() {
+    img.onerror = function () {
         placeSVG();
     }
 }
@@ -191,7 +210,7 @@ async function placeShowDetails() {
     }
 
     // Now set details
-    var { title, start, end, category, description} = data["show-0"];
+    var { title, start, end, category, description } = data["show-0"];
 
     document.getElementById("left-show").innerHTML = `${title}`;
     document.getElementById("left-dj").innerHTML = `with <i>${data["dj-0"].name}</i>`;

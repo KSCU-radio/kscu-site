@@ -1,37 +1,36 @@
 let show_details, show_tracks;
 
 function resizeFunction() {
-    if (window.innerWidth < 1077) {
-        // Check if #training has class lower-class
-        if (!document.getElementById('training').classList.contains("lower-class")) {
-            // Move to-move to move-lower
-            const target = document.getElementById('to-move');
-            // Change position to static so that it can be appended to move-lower
-            // target.style.position = "static";
-            document.getElementById('move-lower').appendChild(target)
-            document.getElementById('training').classList.add("lower-class")
-            document.getElementById('top-recent-and-next-2').classList.add("lower-class")
-            // document.getElementById('training').style.position = "static";
-            // document.getElementById('top-recent-and-next-2').style.position = "static";
-        }
-    } else {
-        if (document.getElementById('training').classList.contains("lower-class")) {
-            // Move to-move to move-upper
-            const target = document.getElementById('to-move');
-            // Change position to relative so that it can be appended to move-upper
-            // target.style.position = "relative";
-            document.getElementById('move-upper').appendChild(target)
-            document.getElementById('training').classList.remove("lower-class")
-            document.getElementById('top-recent-and-next-2').classList.remove("lower-class")
-
-            // document.getElementById('training').style.position = "absolute";
-            // document.getElementById('top-recent-and-next-2').style.position = "absolute";
+    if (window.location.pathname == '/') {
+        if (window.innerWidth < 1077) {
+            // Check if #training has class lower-class
+            if (!document.getElementById('training').classList.contains("lower-class")) {
+                // Move to-move to move-lower
+                const target = document.getElementById('to-move');
+                // Change position to static so that it can be appended to move-lower
+                // target.style.position = "static";
+                document.getElementById('move-lower').appendChild(target)
+                document.getElementById('training').classList.add("lower-class")
+                document.getElementById('top-recent-and-next-2').classList.add("lower-class")
+                // document.getElementById('training').style.position = "static";
+                // document.getElementById('top-recent-and-next-2').style.position = "static";
+            }
+        } else {
+            if (document.getElementById('training').classList.contains("lower-class")) {
+                // Move to-move to move-upper
+                const target = document.getElementById('to-move');
+                // Change position to relative so that it can be appended to move-upper
+                // target.style.position = "relative";
+                document.getElementById('move-upper').appendChild(target)
+                document.getElementById('training').classList.remove("lower-class")
+                document.getElementById('top-recent-and-next-2').classList.remove("lower-class")
+            }
         }
     }
 }
 
 // On resize, check to see if the window is large enough to show the details section
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     resizeFunction();
 });
 
@@ -41,8 +40,11 @@ resizeFunction();
 // First add add support for toggling the button to show and hide show details
 const infoButton = document.querySelector("#info");
 const infoSVG = document.querySelector("#info-img");
-const infoButton2 = document.querySelector("#info-2");
-const infoSVG2 = document.querySelector("#info-img-2");
+var infoButton2, infoSVG2;
+if (window.location.pathname == '/') {
+    infoButton2 = document.querySelector("#info-2");
+    infoSVG2 = document.querySelector("#info-img-2");
+}
 
 function toggleButton(show) {
     if (show) {
@@ -50,8 +52,8 @@ function toggleButton(show) {
         collapseSection(show_details_body);
         // document.querySelector("#show-details-body").style.display = "none";
         infoSVG.setAttribute("src", "/info.svg");
-        infoSVG2.setAttribute("src", "/info.svg");
         if (window.location.pathname == '/') {
+            infoSVG2.setAttribute("src", "/info.svg");
             document.querySelector("#tutorial-info-svg").setAttribute("src", "/info.svg");
         }
         store('show_details', false)
@@ -61,8 +63,8 @@ function toggleButton(show) {
         expandSection(show_details_body);
         // document.querySelector("#show-details-body").style.display = "block";
         infoSVG.setAttribute("src", "/info-filled.svg")
-        infoSVG2.setAttribute("src", "/info-filled.svg")
         if (window.location.pathname == '/') {
+            infoSVG2.setAttribute("src", "/info-filled.svg")
             document.querySelector("#tutorial-info-svg").setAttribute("src", "/info-filled.svg");
         }
         store('show_details', true)
@@ -70,13 +72,10 @@ function toggleButton(show) {
     }
 }
 
-
 // This is the important part!
 function collapseSection(element) {
     // get the height of the element's inner content, regardless of its actual size
-    console.log("Scroll height:" + element.scrollHeight)
     var sectionHeight = element.scrollHeight;
-    console.log("in")
 
     // temporarily disable all css transitions
     var elementTransition = element.style.transition;
@@ -106,8 +105,6 @@ function collapseSection(element) {
 function expandSection(element) {
     // get the height of the element's inner content, regardless of its actual size
     var sectionHeight = element.scrollHeight;
-    console.log("Scroll height:" + sectionHeight)
-    console.log("out")
 
     // have the element transition to the height of its inner content
     element.style.height = sectionHeight + 'px';
@@ -134,7 +131,7 @@ try {
     }
     show_details = store.get("show_details");
     if (show_details === null) {
-        if(show_tracks == true) {
+        if (show_tracks == true) {
             show_details = true
             store('show_details', true)
         } else {
@@ -142,14 +139,11 @@ try {
         }
     }
 } catch {
-    console.log("no show details")
     show_details = true
     show_tracks = false
 }
 
 if (window.location.pathname == '/') {
-    console.log("in home page:" + show_details)
-    console.log(show_details)
     if (!show_details) {
         document.getElementById("show-details-body").style.height = "0px";
         infoSVG.setAttribute("src", "/info.svg");
@@ -194,7 +188,9 @@ if (window.location.pathname == '/') {
     show_details = false;
     document.getElementById("show-details-body").style.height = "0px";
     infoSVG.setAttribute("src", "/info.svg");
-    infoSVG2.setAttribute("src", "/info.svg");
+    if (window.location.pathname == '/') {
+        infoSVG2.setAttribute("src", "/info.svg");
+    }
 }
 
 
@@ -202,6 +198,8 @@ infoButton.addEventListener("click", () => {
     show_details = toggleButton(show_details);
 });
 
-infoButton2.addEventListener("click", () => {
-    show_details = toggleButton(show_details);
-});
+if (window.location.pathname == '/') {
+    infoButton2.addEventListener("click", () => {
+        show_details = toggleButton(show_details);
+    });
+}
