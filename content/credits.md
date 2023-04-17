@@ -16,6 +16,29 @@ robots: "noindex"
 
 lastmod: 2022-12-09
 ---
+{{< rawhtml >}}
+
+<div id="podcast-div">
+    <img draggable="false" id="podcast" src="/Podcast.svg">
+</div>
+
+<style>
+    #metadata {
+        display: none;
+    }
+    #podcast-div {
+        padding: 0;
+        margin: 0;
+    }
+    #podcast {
+        padding: 0;
+        margin: 0;
+        width: 55vw;
+    }
+</style>
+
+{{< /rawhtml >}}
+
 #### Built by:
 - [Aidan Smith](https://aidansmith.me)
 - [Amy Vu](https://github.com/vuamy)
