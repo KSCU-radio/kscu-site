@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "tinacms dev -c \"hugo server -D\"",
-    "build": "tinacms build && hugo"
+    "build": "tinacms build && hugo --gc --minify -b $URL"
   }
 }
