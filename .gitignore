@@ -11,3 +11,5 @@ resources/_gen/
 
 # Node
 node_modules/
+
+node_modules

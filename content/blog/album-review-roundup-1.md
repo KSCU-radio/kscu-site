@@ -1,5 +1,5 @@
 +++
-date = 2022-12-17T06:00:00Z
+date = 2022-12-17T06:00:00.000Z
 description = "We're back again with some music reviews from our DJs, this time sharing reviews of albums rather than recent concert experiences. This time with reviews from Andrew Bird, C418, and Pink Floyd."
 showAuthor = false
 showDate = true
@@ -10,8 +10,9 @@ showSummary = false
 showTableOfContents = false
 showWordCount = false
 title = "Album Review Roundup #1"
-
+_template = "blog_post"
 +++
+
 We're back again with some music reviews from our DJs, this time sharing reviews of albums rather than recent concert experiences.
 
 ## Andrew Bird - Are You Serious
