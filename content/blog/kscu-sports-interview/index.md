@@ -1,16 +1,19 @@
----
-title: 'The Underground Sound meets the Hardwood'
-date: 2023-01-26
-description: "Jalen Williams, a basketball player from Santa Clara University, was drafted into the NBA by the Oklahoma City Thunder in the first round of the 2022 draft. Williams returned to Santa Clara to visit his old stomping grounds and grant an interview with KSCU."
-summary: "We caught up with Jalen Williams to talk about his time at Santa Clara, his NBA career, and his love for chicken."
-showDate: true
-showAuthor: false
-showReadingTime: false
-showEdit: false
-showPagination: true
-showTableOfContents: false
++++
+title = 'The Underground Sound meets the Hardwood'
+date = 2023-01-26
+description = "Jalen Williams, a basketball player from Santa Clara University, was drafted into the NBA by the Oklahoma City Thunder in the first round of the 2022 draft. Williams returned to Santa Clara to visit his old stomping grounds and grant an interview with KSCU."
+summary = "We caught up with Jalen Williams to talk about his time at Santa Clara and his success in the NBA."
+showSummary = true
+showDate = true
+showAuthor = false
+showReadingTime = false
+showEdit = false
+showPagination = true
+showTableOfContents = false
 
----
++++
+
+***
 
 <div id="buzzsprout-player-12126134"></div><script src="https://www.buzzsprout.com/2076222/12126134-jalen-williams-interview-kscu-sports.js?container_id=buzzsprout-player-12126134&player=small" type="text/javascript" charset="utf-8"></script>
 

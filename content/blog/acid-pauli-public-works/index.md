@@ -1,15 +1,19 @@
----
-title: "Acid Pauli at Public Works"
-date: 2022-08-29
-draft: false
-description: "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration."
-summary: "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration. The last set I had been to..."
-showDate: true
-showAuthor: true
-showReadingTime: false
-showEdit: false
-showPagination: false
----
++++
+title = "Acid Pauli at Public Works"
+date = 2022-08-29
+draft = false
+description = "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration."
+summary = "Heading up to San Fransisco, I wasn’t sure what to expect from Acid Pauli preforming for the final night of Public Works’ 12th Anniversary celebration. The last set I had been to..."
+showDate = true
+showAuthor = true
+showReadingTime = false
+showEdit = false
+showPagination = false
+
++++
+
+***
+
 {{< alert >}}
 Disclaimer: KSCU was provided with media tickets to this event in exchange for a review. This exchange had no stipulations about content of the review itself, and this is our honest and unbiased experience.
 {{< /alert >}}

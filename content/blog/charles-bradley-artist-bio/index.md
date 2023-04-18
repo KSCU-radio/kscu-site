@@ -1,14 +1,17 @@
----
-title: "Charles Bradley – Artist Bio"
-date: 2019-06-12
-draft: false
-description: "Whatever happened to soul music? That’s probably a question Charles Bradley, who unfortunately passed two years ago, asked himself often. Charles Bradley, a soul singer himself, had one of the more interesting paths towards stardom."
-showDate: true
-showAuthor: true
-showReadingTime: false
-showEdit: false
-showPagination: false
----
++++
+title = "Charles Bradley – Artist Bio"
+date = 2019-06-12
+draft = false
+description = "Whatever happened to soul music? That’s probably a question Charles Bradley, who unfortunately passed two years ago, asked himself often. Charles Bradley, a soul singer himself, had one of the more interesting paths towards stardom."
+showDate = true
+showAuthor = true
+showReadingTime = false
+showEdit = false
+showPagination = false
+
++++
+
+***
 
 Whatever happened to soul music? That’s probably a question Charles Bradley, who unfortunately passed two years ago, asked himself often. Charles Bradley, a soul singer himself, had one of the more interesting paths towards stardom. It took Bradley some time, as he did not breakthrough into the music industry until he was in his sixties. However, if one thing is certain about Charles Bradley, it’s that his music tells stories of a man who has gone through periods of tough heartache in life, but who has never given up in pursuit of his dreams.
 
