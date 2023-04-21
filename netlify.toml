@@ -1,7 +1,6 @@
 [build]
 command = "npm run build"
 publish = "public"
-functions = "netlify/functions/"
 
 [build.environment]
 HUGO_VERSION = "0.104.2"
@@ -13,4 +12,3 @@ node_bundler = "esbuild"
 [dev]
 framework = "hugo"
 publish = "public"
-functions = "netlify/functions/"
