@@ -1,10 +1,10 @@
 {
-  "dependencies": {
-    "@tinacms/cli": "^1.5.6",
-    "tinacms": "^1.4.6"
-  },
   "scripts": {
     "dev": "tinacms dev -c \"hugo server -D\"",
     "build": "tinacms build && hugo --gc --minify -b $URL"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.5.10",
+    "tinacms": "^1.5.3"
   }
 }
