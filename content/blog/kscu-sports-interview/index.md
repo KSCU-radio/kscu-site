@@ -1,4 +1,4 @@
-+++
+<!-- +++ -->
 title = "The Underground Sound meets the Hardwood"
 date = 2023-01-26T00:00:00.000Z
 description = "Jalen Williams, a basketball player from Santa Clara University, was drafted into the NBA by the Oklahoma City Thunder in the first round of the 2022 draft. Williams returned to Santa Clara to visit his old stomping grounds and grant an interview with KSCU."
@@ -14,10 +14,10 @@ showTableOfContents = false
 
 ***
 
-{{\< rawhtml >}}
+{{ < rawhtml >}}
 
 <div id="buzzsprout-player-12126134"></div><script src="https://www.buzzsprout.com/2076222/12126134-jalen-williams-interview-kscu-sports.js?container_id=buzzsprout-player-12126134&player=small" type="text/javascript" charset="utf-8"></script>
-{{< /rawhtml >}}
+{{ < /rawhtml > }} -->
 
 #### Written by Thomas Dunn
 
