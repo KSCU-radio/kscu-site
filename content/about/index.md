@@ -76,5 +76,5 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 [Site Credits](/credits/)
 
-![KSCU Staff Members](/uploadskscu-vintage-2.jpg "Former KSCU Staff Member")
+![KSCU Staff Members](/uploads/kscu-vintage-2.jpg "Former KSCU Staff Member")
 ![KSCU Studio](/uploadskscu-studio.jpg "Current KSCU Studio")
