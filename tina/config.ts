@@ -3,8 +3,8 @@ import { blog_postFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-const clientIDENV: string = process.env.clientId ?? "Could not find clientID";
-const tokenENV: string = process.env.token ?? "Could not find token";
+const clientIDENV: string = process.env.TINA_CLIENT ?? "Could not find clientID";
+const tokenENV: string = process.env.TINA_TOKEN ?? "Could not find token";
 
 export default defineConfig({
   branch,
