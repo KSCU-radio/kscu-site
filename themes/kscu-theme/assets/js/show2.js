@@ -17,6 +17,26 @@ const formatAMPM = (date) => {
     return strTime;
 }
 
+// This function takes in a list of DJs and returns a string of their names, concatnated to be grammatically correct.
+// It should add commas and "&" where appropriate.
+const formatDJs = (djs) => {
+    const len = Object.keys(djs).length;
+    let djString = "";
+    for (let i = 0; i < len; i++) {
+        if (i === len - 1) {
+            djString += djs[i].name;
+        }
+        else if (i === len - 2) {
+            djString += djs[i].name + " & ";
+        }
+        else {
+            djString += djs[i].name + ", ";
+        }
+    }
+    return djString;
+}
+
+
 function underlineLinksInParagraph(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
@@ -83,35 +103,20 @@ async function placeShow() {
         await fetchShow()
         data = store.get("show_data");
     }
-    var currentShow2 = data["show-0"].title;
-    const showTitle = `<b style="margin-right: 0.25rem; white-space: nowrap;">${currentShow2}</b> <div id="dj_name_inner_div">with ${data["dj-0"].name}</div>`;
+
+    // console.log(Object.keys(data["v2"]).length)
+    // let cur_djs = "with " + data["v2"]["dj-0"][0].name;
+    // const cur_djs_count = Object.keys(data["v2"]["dj-0"]).length;
+    // if (cur_djs_count > 1){
+    //     for (var i = 1; i < cur_djs_count; i++){
+    //         cur_djs += ", " + data["v2"]["dj-0"][i].name;
+    //     }
+    // }
+
+    const currentShow2 = data["show-0"].title;
+    const showTitle = `<b style="margin-right: 0.25rem; white-space: nowrap;">${currentShow2}</b> <div id="dj_name_inner_div">with ${formatDJs(data["v2"]["dj-0"])}</div>`;
     document.getElementById("show_title").innerHTML = showTitle;
     document.getElementById("dj_name_inner_div").style.whiteSpace = "nowrap";
-
-    // if (window.location.pathname === "/") {
-    //     const { title, start, end, category } = data["show-1"];
-    //     const dj_name = data["dj-1"].name;
-    //     document.getElementById("next-show-and-dj").innerHTML = `<b>${title}</b> with ${dj_name}`;
-    //     document.getElementById("next-time").innerHTML = `${formatAMPM(new Date(start))} - ${formatAMPM(new Date(end))}`;
-    //     document.getElementById("next-genre").innerHTML = category;
-
-    //     const categorySvg = {
-    //         Automation: "Automation",
-    //         Blues: "Blues",
-    //         Country: "Country",
-    //         Electronic: "Electronic",
-    //         "Hip-Hop": "Hip-Hop",
-    //         Indie: "Indie",
-    //         Jazz: "Jazz",
-    //         Pop: "Pop",
-    //         Punk: "Punk",
-    //         Rock: "Rock",
-    //         Soul: "Soul",
-    //         Sports: "Sports",
-    //         Talk: "Talk",
-    //     }[category] || `Other${new Date(start).getHours() % 12 || 12}`;
-    //     document.getElementById("next-genre-svg").src = `genres/${categorySvg}.svg`;
-    // }
 }
 
 function placeDesc(elem, child, description) {
@@ -213,14 +218,16 @@ async function placeShowDetails() {
     var { title, start, end, category, description } = data["show-0"];
 
     document.getElementById("left-show").innerHTML = `${title}`;
-    document.getElementById("left-dj").innerHTML = `with <i>${data["dj-0"].name}</i>`;
+    
+    document.getElementById("left-dj").innerHTML = `with <i>${formatDJs(data["v2"]["dj-0"])}</i>`;
     document.getElementById("left-time").innerHTML = `${formatDayOfWeek(new Date(start))} ${formatAMPM(new Date(start))} - ${formatAMPM(new Date(end))}`;
     document.getElementById("left-genre").innerHTML = category;
     placeDesc(document.getElementById("left-description-div"), document.getElementById("left-description"), description);
     placeImage(document.getElementById("left-image"), data["show-0"].image, category, start);
 
     document.getElementById("right-show").innerHTML = `${data["show-1"].title}`;
-    document.getElementById("right-dj").innerHTML = `with <i>${data["dj-1"].name}</i>`;
+
+    document.getElementById("right-dj").innerHTML = `with <i>${formatDJs(data["v2"]["dj-1"])}</i>`;
     document.getElementById("right-time").innerHTML = `${formatDayOfWeek(new Date(data["show-1"].start))} ${formatAMPM(new Date(data["show-1"].start))} - ${formatAMPM(new Date(data["show-1"].end))}`;
     document.getElementById("right-genre").innerHTML = data["show-1"].category;
     placeDesc(document.getElementById("right-description-div"), document.getElementById("right-description"), data["show-1"].description);

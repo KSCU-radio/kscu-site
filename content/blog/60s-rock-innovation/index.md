@@ -1,16 +1,17 @@
----
-title: "Innovation in 1960’s Rock"
-date: 2019-04-14
-draft: false
-description: "Everyone knows that the 1960’s were the most influential years in music culture. Your parents know it, you know it, hell that one girl who keeps posting “born in the wrong generation” knows it."
-showDate: true
-showAuthor: true
-showReadingTime: false
-showEdit: false
-showPagination: false
----
++++
+title = 'Innovation in 1960’s Rock'
+date = 2019-04-14
+draft = false
+description = "Everyone knows that the 1960’s were the most influential years in music culture. Your parents know it, you know it, hell that one girl who keeps posting “born in the wrong generation” knows it."
+showDate = true
+showAuthor = true
+showReadingTime = false
+showEdit = false
+showPagination = false
 
++++
 
+***
 
 Everyone knows that the 1960’s were the most influential years in music culture. Your parents know it, you know it, hell that one girl who keeps posting “born in the wrong generation” knows it. There is no doubt that todays music influence traces back to the Swinging Sixties. The creativity explosion that was seen both inside and outside of the studio was all thanks to talented pioneers who used their instruments differently from the rest of the white noise. Today, lets give it up to a few of my favorites, specifically in the 60’s rock genre, whose bold use of their respective skills have inspired generations past their inceptions.
 
@@ -26,4 +27,4 @@ Now if bass was the shell that held 60’s rock together, then drums would be th
 
 So for any of you unfamiliar with anyone mentioned above I suggest that you sign up for a crash course being offered on Spotify called “the shuffle button”. Thank you.
 
-_DJ Zaboomafoo_
+*DJ Zaboomafoo*

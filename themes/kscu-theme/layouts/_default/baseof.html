@@ -30,7 +30,21 @@
   {{ partial "partials/show-details.html" . }}
 
   <div class="font-medium text-sm">
-    <main id="main-content" class="grow z-0 mt-5 px-10 py-2 max-w-6xl m-auto">
+    {{ if (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) }}
+    <style>
+      #main-content {
+        max-width: 72rem;
+      }
+    </style>
+    <!-- Else -->
+    {{ else }}
+    <style>
+      /* #main-content {
+        max-width: 72rem;
+      } */
+    </style>
+    {{ end }}
+    <main id="main-content" class="grow z-0 mt-5 px-10 py-2 max-w-4xl m-auto">
       {{ block "main" . }}{{ end }}
       {{ if and (.Site.Params.footer.showScrollToTop | default false) (gt .WordCount 200) }}
       <div class="pointer-events-none absolute top-[100vh] bottom-0 w-12 ltr:right-0 rtl:left-0">

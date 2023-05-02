@@ -2248,20 +2248,24 @@ body:has(#menu-controller:checked) {
   max-width: 65ch;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-full {
   max-width: 100%;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-\[10rem\] {
@@ -2460,9 +2464,9 @@ body:has(#menu-controller:checked) {
   border-style: dotted;
 }
 
-.border-neutral-400 {
+.border-neutral-600 {
   --tw-border-opacity: 1;
-  border-color: rgba(var(--color-neutral-400), var(--tw-border-opacity));
+  border-color: rgba(var(--color-neutral-600), var(--tw-border-opacity));
 }
 
 .border-neutral-300 {
@@ -2576,6 +2580,11 @@ body:has(#menu-controller:checked) {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-2 {
@@ -2925,6 +2934,11 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #CCCCCC;
   border-radius: 5px;
+}
+
+.prose :where(hr):not(:where([class~="not-prose"] *)) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .first\:mt-8:first-child {

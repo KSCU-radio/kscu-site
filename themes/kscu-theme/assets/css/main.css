@@ -329,3 +329,8 @@ html {
   background: #CCCCCC;
   border-radius: 5px;
 }
+
+.prose :where(hr):not(:where([class~="not-prose"] *)) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
