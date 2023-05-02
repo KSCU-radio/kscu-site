@@ -40,6 +40,83 @@ export default defineConfig({
             label: "Body of Document",
             description: "This is the markdown body",
             isBody: true,
+            templates: [
+              {
+                name: 'alert',
+                label: 'alert',
+                match: {
+                  start: '{{<',
+                  end: '>}}',
+                },
+                fields: [
+                  {
+                    name: 'body',
+                    label: 'Body',
+                    type: 'string',
+                    required: true,
+                    ui: {
+                      component: 'textarea',
+                    },
+                  },
+                  {
+                    name: 'icon',
+                    label: 'Icon - Supported icons: comment, instagram, email, facebook, twitter, moon, search, soundcloud, tag, youtube, lightbulb. Defaults to traingle warning icon.',
+                    type: 'string',
+                    required: false,
+                    ui: {
+                      component: 'text',
+                    },
+                  },
+                ],
+              },
+              {
+                name: 'twitter',
+                label: 'tweet',
+                match: {
+                  start: '{{<',
+                  end: '>}}',
+                },
+                fields: [
+                  {
+                    name: 'id',
+                    label: 'Tweet ID',
+                    type: 'string',
+                    required: true,
+                    ui: {
+                      component: 'text',
+                    },
+                  },
+                  {
+                    name: 'user',
+                    label: 'Twitter Username - put without the @',
+                    type: 'string',
+                    required: true,
+                    ui: {
+                      component: 'text',
+                    },
+                  }
+                ],
+              },
+              {
+                name: 'youtube',
+                label: 'youtube',
+                match: {
+                  start: '{{<',
+                  end: '>}}',
+                },
+                fields: [
+                  {
+                    name: 'id',
+                    label: 'Youtube video ID - found in the URL of the video',
+                    type: 'string',
+                    required: true,
+                    ui: {
+                      component: 'text',
+                    },
+                  },
+                ],
+              }
+            ],   
           },
           ...blog_postFields(),
         ],
@@ -61,6 +138,36 @@ export default defineConfig({
             label: "Body of Document",
             description: "This is the markdown body",
             isBody: true,
+            templates: [
+              {
+                name: 'alert',
+                label: 'alert',
+                match: {
+                  start: '{{<',
+                  end: '>}}',
+                },
+                fields: [
+                  {
+                    name: 'body',
+                    label: 'Body',
+                    type: 'string',
+                    required: true,
+                    ui: {
+                      component: 'textarea',
+                    },
+                  },
+                  {
+                    name: 'icon',
+                    label: 'Icon - Supported icons: comment, instagram, email, facebook, twitter, moon, search, soundcloud, tag, youtube, lightbulb. Defaults to traingle warning icon.',
+                    type: 'string',
+                    required: false,
+                    ui: {
+                      component: 'text',
+                    },
+                  },
+                ],
+              },
+            ],
           },
         ],
       },

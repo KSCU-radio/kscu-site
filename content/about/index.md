@@ -1,14 +1,14 @@
----
-title: "About KSCU"
-date: 2020-08-14
-description: "Learn about KSCU. Founded in 1948, we continue a long history of non-commercial music, sports broadcasting, and talk shows, all 100% student-run."
-showDate: false
-showAuthor: false
-showReadingTime: false
-showPagination: false
-showTableOfContents: true
++++
+title = "About KSCU"
+date = "2020-08-14"
+description = "Learn about KSCU. Founded in 1948, we continue a long history of non-commercial music, sports broadcasting, and talk shows, all 100% student-run."
+showDate = false
+showAuthor = false
+showReadingTime = false
+showPagination = false
+showTableOfContents = true
++++
 
----
 <style>
 #metadata {
 display: none;
@@ -32,9 +32,7 @@ KSCU 103.3 FM continues a long tradition of radio broadcasting at Santa Clara Un
 ![KSCU Board](kscu-vintage-board.jpg "Vintage KSCU Broadcasting Board")
 KSCU is located in the basement of Benson Memorial Center at Santa Clara University. The station is staffed by students and is overseen by Gordon Young, a faculty advisor. Currently, the station is staffed by fifteen students and features over 83 different DJs. To view our current show and DJ roster, check out our [schedule](/schedule/).
 
-{{< alert "instagram" >}}
-Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to stay up to date with our most recent activity!
-{{< /alert >}}
+{{< alert icon="instagram" body="Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to stay up to date with our most recent activity!" >}}
 
 ## Station Staff
 
