@@ -5,10 +5,6 @@ publish = "public"
 [build.environment]
 HUGO_VERSION = "0.104.2"
 
-[functions]
-directory = "netlify/functions/"
-node_bundler = "esbuild"
-
 [dev]
 framework = "hugo"
 publish = "public"

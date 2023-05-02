@@ -2,7 +2,7 @@
     <h3 class="flex items-center justify text-lg font-semibold">
       {{ with .Params.externalUrl }}
       <div>
-        <a class="text-neutral-800 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 hover:text-gray-400"
+        <a class="hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;"
           href="{{ . }}" rel="external">{{ $.Title | emojify }}</a>
         <span class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500" title="{{ i18n "list.externalurl_title" }}">
           <span class="rtl:hidden">&#8599;</span>
@@ -10,7 +10,7 @@
         </span>
       </div>
       {{ else }}
-      <a class="text-neutral-800 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;" href="{{ .RelPermalink }}">{{ .Title |
+      <a class="hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy" style="text-decoration-skip-ink: none;" href="{{ .RelPermalink }}">{{ .Title |
         emojify }}</a>
       {{ end }}
       {{ if and .Draft .Site.Params.article.showDraftLabel }}

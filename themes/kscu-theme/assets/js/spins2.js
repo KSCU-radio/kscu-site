@@ -67,9 +67,16 @@ async function placeSpins() {
     }
 
     if (typeof sound !== 'undefined' && sound.playing()) {
+        const show_data = store.get("show_data");
         document.title = `${song} - ${artist}`;
         media_title = `${song} - ${artist}`;
-        media_artist = `${store.get("show_data")["show-0"].title} - ${store.get("show_data")["dj-0"].name}`;
+        const cur_djs = data["dj-0"][0].name;
+        if (show_data["dj-0"].length > 1) {
+            for (var i = 1; i < show_data["dj-0"].length; i++) {
+                cur_djs += ", " + show_data["dj-0"][i].name;
+            }
+        }
+        media_artist = `${show_data["show-0"].title} - ${cur_djs}`;
         if ('mediaSession' in navigator) {
             navigator.mediaSession.metadata = new MediaMetadata({
                     title: media_title,

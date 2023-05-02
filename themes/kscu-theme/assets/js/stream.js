@@ -1,3 +1,40 @@
+function openLinksInNewTab() {
+    // Get all the links on the page
+    const links = document.querySelectorAll('a');
+
+    // Loop through each link and update the target attribute
+    links.forEach(link => {
+        link.setAttribute('target', '_blank');
+    });
+}
+
+function openLinksInSameTab() {
+    // Get all the links on the page
+    const links = document.querySelectorAll('a');
+
+    // Loop through each link and remove the target attribute
+    links.forEach(link => {
+        link.removeAttribute('target');
+    });
+}
+
+const formatDJs = (djs) => {
+    const len = Object.keys(djs).length;
+    let djString = "";
+    for (let i = 0; i < len; i++) {
+        if (i === len - 1) {
+            djString += djs[i].name;
+        }
+        else if (i === len - 2) {
+            djString += djs[i].name + " & ";
+        }
+        else {
+            djString += djs[i].name + ", ";
+        }
+    }
+    return djString;
+}
+
 var playPauseBtn = document.getElementById('play-pause');
 // Add second play button for mobile
 var playPauseBtnMobile = document.getElementById('play-pause-mobile');
@@ -9,7 +46,6 @@ var pageTitle = document.title;
 
 // Play/pause listeners
 function playUpdate() {
-    
     document.getElementById('loader').style.display = 'none';
     document.getElementById('pause').style.display = 'block';
     document.getElementById('play').style.display = 'none';
@@ -18,6 +54,7 @@ function playUpdate() {
     document.getElementById('loader-mobile').style.display = 'none';
     data = store.get("spin_data")
 
+    const show_data = store.get("show_data");
     
 
     document.title = data["spin-0"]["artist"] + ' - ' + data["spin-0"]["song"]
@@ -25,7 +62,7 @@ function playUpdate() {
         // console.log("test")
         navigator.mediaSession.metadata = new MediaMetadata({
             title: (data["spin-0"]["song"] + " - " + data["spin-0"]["artist"]),
-            artist: store.get("show_data")["show-0"].title + " - " + store.get("show_data")["dj-0"].name,
+            artist: show_data["show-0"].title + " - " + formatDJs(show_data["v2"]["dj-0"]),
             album: "",
             artwork: [
                 { src: "/kscu-round-92.png", sizes: "92x92", type: "image/png" },
@@ -40,6 +77,8 @@ function playUpdate() {
         navigator.mediaSession.setActionHandler('pause', function() { sound.pause(); });
         navigator.mediaSession.setActionHandler('stop', function() { sound.pause(); });
     }
+
+    openLinksInNewTab();
 }
 
 
@@ -51,6 +90,7 @@ function pauseUpdate() {
     document.getElementById('pause-mobile').style.display = 'none';
     document.getElementById('loader-mobile').style.display = 'none';
     document.title = pageTitle
+    openLinksInSameTab();
 }
 
 var sound = new Howl({
