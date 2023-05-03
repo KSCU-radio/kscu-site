@@ -1,7 +1,8 @@
 +++
 title = 'Concert Review Roundup #2'
-date = 2023-05-02T00:00.000Z
+date = 2023-05-02
 description = "We gathered some of our DJs to write about their recent concert experiences. Read their empassioned reviews of  Matt Barri, and Poptopia!"
+summary = "We gathered some of our DJs to write about their recent concert experiences. Read their empassioned reviews of  Matt Barri, and Poptopia!"
 showDate = true
 showAuthor = false
 showReadingTime = false
