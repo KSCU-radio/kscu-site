@@ -1,17 +1,13 @@
 +++
-
-+++
-
-+++
 title = 'Concert Review Roundup #2'
 date = 2023-05-02T00:00.000Z
 description = "We gathered some of our DJs to write about their recent concert experiences. Read their empassioned reviews of  Matt Barri, and Poptopia!"
-showDate: true
-showAuthor: false
-showReadingTime: false
-showEdit: false
-showPagination: false
-showTableOfContents: true
+showDate = true
+showAuthor = false
+showReadingTime = false
+showEdit = false
+showPagination = false
+showTableOfContents = true
 +++
 
 ***
@@ -22,7 +18,7 @@ showTableOfContents: true
 
 Last October, we attended the Fisher Block Party in Oakland, California. This was an eight-hour house concert featuring two stages, street food trucks, and an impressive lineup of house artists. We were all super excited to go, especially given that the event was only 18+, and it did not disappoint.
 
-![Fisher Block Party](/uploadsfisher.jpg "Fisher Block Party 2022")
+![Fisher Block Party](/uploads/fisher.jpg "Fisher Block Party 2022")
 
 The streets were completely closed off for the day, and the event spanned multiple city blocks in the middle of downtown Oakland. The setup was impressive, with two stages featuring some of our favorite producers in the house scene. We spent most of our time at Stage 1, where FISHER was headlining. He performed a high-energy set, playing some of his most famous songs such as “Losing it” and “Stop It”.
 
@@ -48,7 +44,7 @@ It was an interesting experience because it involved my posse of friends going t
 
 It wasn’t anything too spectacular, but the stage production was magnificent and amazing visuals were set up on the projector behind Matt. Many visuals were psychedelic in nature and truly added to the experience. The first 20 minutes of his music was purely electronic, hard bass music which I'll admit is not my cup of tea, nonetheless the technical prowess in the production and DJ'ing was apparent. Matt has been producing music for as long as I have known him, since we're both 12, and that experience shows in his music.
 
-![The Morrocan Lounge](/uploadsmorrocan-lounge.jpg "Image courtesy of the Morrocan Lounge.")
+![The Morrocan Lounge](/uploads/morrocan-lounge.jpg "Image courtesy of the Morrocan Lounge.")
 
 The most memorable part of this concert was when he started singing his new single which hit on a lot of emotions he had been talking to us about recently. Emotions about a somewhat recent ex he had broken up with. I've never personally known the musician at a concert before, a new layer is added when historical context is added.  The sheer power and force of his musicianship was astounding. His singing was great, but the charisma he brought was so ecstatic it made everyone wanna dance. It truly made me more appreciative of the potentially emotional nature music has, not only has on the audience, but also the singer.
 
@@ -74,7 +70,7 @@ Pitbull was in top form, delivering hit after hit with his trademark swagger and
 
 Lauv also impressed with his set, showcasing his range as a songwriter and performer. He performed hits like "I Like Me Better" and "Modern Loneliness," as well as newer tracks like "Love Somebody" and "Fake," which showed off his ability to blend electronic and acoustic sounds.
 
-![Lauv](/uploadslauv.png)
+![Lauv](/uploads/lauv.png)
 
 Overall, the Poptopia Concert was a great showcase of the diversity and talent in the pop music world. Pitbull and Lauv both brought their A-game to the stage, delivering performances that left the crowd buzzing with excitement. It was a night of pure pop pleasure, and one that I won't soon forget.
 
