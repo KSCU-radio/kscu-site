@@ -30,6 +30,11 @@ export default defineConfig({
         path: "content/blog",
         frontmatterFormat: "toml",
         frontmatterDelimiters: "+++",
+        ui: {
+          filename: {
+            readonly: true,
+          },  
+        },
         match: {
           include: "**/*",
         },
@@ -128,10 +133,29 @@ export default defineConfig({
         path: "content/about",
         frontmatterFormat: "toml",
         frontmatterDelimiters: "+++",
+        ui: {
+          filename: {
+            readonly: true,
+          },
+          allowedActions: {
+            create: false,
+            delete: false
+          }
+        },
         match: {
           include: "**/*",
         },
         fields: [
+          {
+            name: 'title',
+            label: 'Title',
+            type: 'string',
+            isTitle: true,
+            required: true,
+            ui: {
+              component: 'text',
+            },
+          },
           {
             type: "rich-text",
             name: "body",

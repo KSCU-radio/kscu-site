@@ -5,11 +5,14 @@ export function blog_postFields() {
       type: "string",
       name: "title",
       label: "Blog Post Title",
+      isTitle: true,
+      required: true,
     },
     {
       type: "datetime",
       name: "date",
       label: "Date Posted",
+      required: true,
     },
     {
       type: "string",
