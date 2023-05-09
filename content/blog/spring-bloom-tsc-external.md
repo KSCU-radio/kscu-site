@@ -1,7 +1,7 @@
 +++
 title = "The Santa Clara - Sonic Bloom Flowers from Historical Roots"
 author = "Samantha Drumm"
-date = 2023-04-21T06:00:00Z
+date = 2023-04-21T06:00:00.000Z
 externalUrl = "https://www.thesantaclara.org/blog/sonic-bloom-flowers-from-historical-roots"
 description = "Student concert on Swig Lawn draws student crowds for relaxed rocking out."
 summary = "Check out The Santa Clara's coverage of KSCU's recent Sonic Bloom event, which brought together a crowd of students for an evening of live music and free food."
@@ -13,7 +13,13 @@ showReadingTime = false
 showSummary = false
 showTableOfContents = false
 showWordCount = false
-
 +++
+<!-- 
+This is an example of an external link. This text will not appear on the site but the link will appear in our blog section and users will be directed to the link specified by the externalUrl parameter above. 
 
-This is an example of an external link. This text will not appear on the site but the link will appear in our blog section and users will be directed to the link specified by the externalUrl parameter above.
+The only way a user could reach this page is by click the previous article button on another article, and that's why we include the text below.
+-->
+
+Click [here](https://www.thesantaclara.org/blog/sonic-bloom-flowers-from-historical-roots) to read the full article on *The Santa Clara* website.
+
+
