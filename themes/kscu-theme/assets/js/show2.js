@@ -107,18 +107,9 @@ async function placeShow() {
         data = store.get("show_data");
     }
 
-    // console.log(Object.keys(data["v2"]).length)
-    // let cur_djs = "with " + data["v2"]["dj-0"][0].name;
-    // const cur_djs_count = Object.keys(data["v2"]["dj-0"]).length;
-    // if (cur_djs_count > 1){
-    //     for (var i = 1; i < cur_djs_count; i++){
-    //         cur_djs += ", " + data["v2"]["dj-0"][i].name;
-    //     }
-    // }
-
     const currentShow2 = data["show-0"].title;
     const showTitle = `<b style="margin-right: 0.25rem; white-space: nowrap;">${currentShow2}</b> <div id="dj_name_inner_div">with ${formatDJs(data["v2"]["dj-0"])}</div>`;
-    document.getElementById("show_title").innerHTML = showTitle;
+    document.getElementById("show_title").innerHTML = DOMPurify.sanitize(showTitle, { ALLOWED_TAGS: ['b', 'i', 'div'], ALLOWED_ATTR: ['style', 'id'] });
     document.getElementById("dj_name_inner_div").style.whiteSpace = "nowrap";
 }
 
@@ -127,9 +118,7 @@ function placeDesc(elem, child, description) {
         return
     }
     description = remove_brs(description);
-    // console.log(description)
 
-    // console.log(description)
     // First, remove one set of <p> tags only from the start and end of the description if they exist
     if (description.startsWith('<p>') && description.endsWith('</p>')) {
         description = description.slice(3, -4);
@@ -241,19 +230,19 @@ async function placeShowDetails() {
     // Now set details
     var { title, start, end, category, description } = data["show-0"];
 
-    document.getElementById("left-show").innerHTML = `${title}`;
+    document.getElementById("left-show").innerHTML = DOMPurify.sanitize(`${title}`, {ALLOWED_TAGS: []});
     
-    document.getElementById("left-dj").innerHTML = `with <i>${formatDJs(data["v2"]["dj-0"])}</i>`;
-    document.getElementById("left-time").innerHTML = `${formatDayOfWeek(new Date(start))} ${formatAMPM(new Date(start))} - ${formatAMPM(new Date(end))}`;
-    document.getElementById("left-genre").innerHTML = category;
+    document.getElementById("left-dj").innerHTML = DOMPurify.sanitize(`with <i>${formatDJs(data["v2"]["dj-0"])}</i>`, { ALLOWED_TAGS: ['i'] });
+    document.getElementById("left-time").innerHTML = DOMPurify.sanitize(`${formatDayOfWeek(new Date(start))} ${formatAMPM(new Date(start))} - ${formatAMPM(new Date(end))}`, { ALLOWED_TAGS: [] });
+    document.getElementById("left-genre").innerHTML = DOMPurify.sanitize(category, { ALLOWED_TAGS: [] });
     placeDesc(document.getElementById("left-description-div"), document.getElementById("left-description"), description);
     placeImage(document.getElementById("left-image"), data["show-0"].image, category, start);
 
-    document.getElementById("right-show").innerHTML = `${data["show-1"].title}`;
+    document.getElementById("right-show").innerHTML = DOMPurify.sanitize(`${data["show-1"].title}`, { ALLOWED_TAGS: [] });
 
-    document.getElementById("right-dj").innerHTML = `with <i>${formatDJs(data["v2"]["dj-1"])}</i>`;
-    document.getElementById("right-time").innerHTML = `${formatDayOfWeek(new Date(data["show-1"].start))} ${formatAMPM(new Date(data["show-1"].start))} - ${formatAMPM(new Date(data["show-1"].end))}`;
-    document.getElementById("right-genre").innerHTML = data["show-1"].category;
+    document.getElementById("right-dj").innerHTML = DOMPurify.sanitize(`with <i>${formatDJs(data["v2"]["dj-1"])}</i>`, { ALLOWED_TAGS: ['i'] });
+    document.getElementById("right-time").innerHTML = DOMPurify.sanitize(`${formatDayOfWeek(new Date(data["show-1"].start))} ${formatAMPM(new Date(data["show-1"].start))} - ${formatAMPM(new Date(data["show-1"].end))}`, { ALLOWED_TAGS: [] });
+    document.getElementById("right-genre").innerHTML = DOMPurify.sanitize(data["show-1"].category, { ALLOWED_TAGS: [] });
     placeDesc(document.getElementById("right-description-div"), document.getElementById("right-description"), data["show-1"].description);
     placeImage(document.getElementById("right-image"), data["show-1"].image, data["show-1"].category, data["show-1"].start);
 

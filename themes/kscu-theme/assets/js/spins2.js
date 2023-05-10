@@ -48,14 +48,14 @@ async function placeSpins() {
     }
     const song = data["spin-0"].song
     const artist = data["spin-0"].artist
-    document.getElementById("playing-song").innerHTML = `${song} - <em>${artist}</em>`;
+    document.getElementById("playing-song").innerHTML = DOMPurify.sanitize(`${song} - <em>${artist}</em>`, { ALLOWED_TAGS: ['em'] });
     const elems = ['spin-0', 'spin-1', 'spin-2', 'spin-3', 'spin-4', 'spin-5', 'spin-6', 'spin-7', 'spin-8', 'spin-9'];
     if (window.location.pathname == '/') {
         for (let i = 1; i < 7; i++) {
             j = elems[i];
-            document.getElementById("playing-song-" + i).innerHTML = data[j]["song"]
-            document.getElementById("playing-artist-" + i).innerHTML = data[j]["artist"]
-            document.getElementById("year-" + i).innerHTML = data[j]["released"]
+            document.getElementById("playing-song-" + i).innerHTML = DOMPurify.sanitize(data[j]["song"], { ALLOWED_TAGS: [] });
+            document.getElementById("playing-artist-" + i).innerHTML = DOMPurify.sanitize(data[j]["artist"], { ALLOWED_TAGS: [] })
+            document.getElementById("year-" + i).innerHTML = DOMPurify.sanitize(data[j]["released"], { ALLOWED_TAGS: [] })
             // document.getElementById("year-" + i).innerHTML = "At " + formatSpin_AMPM(new Date(data[j]["start"]))
             if (data[j]["image"] != null) {
                 document.getElementById("playing-image-" + i).onerror = "this.onerror=null;this.src='/vinyl.svg'";
