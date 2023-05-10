@@ -1,6 +1,3 @@
-
-// TODO: Make all date outputs in PST.
-
 const formatDayOfWeek = (date) => {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const dayIndex = date.getDay();
@@ -40,17 +37,23 @@ const formatDJs = (djs) => {
 function underlineLinksInParagraph(htmlString) {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, "text/html");
-    const paragraphs = doc.getElementsByTagName("p");
-    for (let i = 0; i < paragraphs.length; i++) {
-        const links = paragraphs[i].getElementsByTagName("a");
-        for (let j = 0; j < links.length; j++) {
-            // Add class "link-style"
-            links[j].classList.add("link-style");
-        }
+    const links = doc.getElementsByTagName("a");
+    for (let j = 0; j < links.length; j++) {
+        // Add class "link-style"
+        links[j].classList.add("link-style");
     }
     return doc.documentElement.innerHTML;
 }
 
+function remove_brs(html) {
+    const regexLeading = /^(\s*<br\s*\/?\s*>|(\s*<p>\s*<br\s*\/?\s*>\s*<\/p>))+/i;
+    const regexTrailing = /(\s*<br\s*\/?\s*>|(\s*<p>\s*<br\s*\/?\s*>\s*<\/p>))+\s*$/i;
+
+    let sanitizedHtml = html.replace(regexLeading, '');
+    sanitizedHtml = sanitizedHtml.replace(regexTrailing, '');
+
+    return sanitizedHtml;
+}
 
 async function fetchShow() {
    // console.log("Fetching show...")
@@ -123,7 +126,7 @@ function placeDesc(elem, child, description) {
     if (!description || /^\s*$/.test(description)) {
         return
     }
-    description = underlineLinksInParagraph(description);
+    description = remove_brs(description);
     // console.log(description)
 
     // console.log(description)
@@ -137,6 +140,20 @@ function placeDesc(elem, child, description) {
     if (!/^".+"$/.test(description) && !/^“.+”$/.test(description)) {
         description = `“${description}”`;
     }
+
+    // DOMPurify configuration object
+    var config = {
+        ALLOWED_TAGS: ['strong', 'em', 'ol', 'ul', 'li', 'br', 'a', 'p'],
+        ALLOWED_ATTR: ['href', 'target'], // You can add more allowed attributes if needed
+        ALLOW_STYLES: [],
+        FORBID_ATTR: ['style']
+    };
+
+    // Sanitize the description
+    description = DOMPurify.sanitize(description, config);
+
+    description = underlineLinksInParagraph(description);
+
     child.innerHTML = description;
     elem.style.display = "block";
 }
@@ -165,7 +182,7 @@ function placeImage(elem, imageUrl, category, start) {
             Metal: "Metal",
             "Special Event": "SpecialEvent",
         }[category] || `Other`;
-        elem.style.width = "75%";
+        elem.style.height = "75%";
         elem.style.width = "75%";
 
         elem.src = `/genres/${categorySvg}.svg`;

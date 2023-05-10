@@ -20,6 +20,8 @@
         >{{ i18n "nav.skip_to_main" }}</a
       >
     </div> -->
+  {{ $jsPurify := resources.Get "js/purify.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
+  <script type="text/javascript" src="{{ $jsPurify.RelPermalink }}" integrity="{{ $jsPurify.Data.Integrity }}"></script>
   {{ $header := print "partials/header/" .Site.Params.header.layout ".html" }}
   {{ if templates.Exists $header }}
   {{ partial $header . }}
@@ -58,7 +60,7 @@
     </main>
   </div>
   {{ $jsGsap := resources.Get "js/gsap.min.js" | resources.Minify | resources.Fingerprint "sha512" }}
-  <script defer type="text/javascript" src="{{ $jsGsap.RelPermalink }}" integrity="{{ $jsGsap.Data.Integrity }}"></script>
+  <script type="text/javascript" src="{{ $jsGsap.RelPermalink }}" integrity="{{ $jsGsap.Data.Integrity }}"></script>
   {{- partial "footer.html" . -}}
   <canvas id="canvas" style="z-index: 1; display: none;"></canvas>
 </body>
