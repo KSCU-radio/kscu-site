@@ -157,6 +157,7 @@ function placeImage(elem, imageUrl, category, start) {
             Soul: "Soul",
             Sports: "Sports",
             Talk: "Talk",
+            "Special Event": "SpecialEvent",
         }[category] || `Other${new Date(start).getHours() % 12 || 12}`;
         elem.style.width = "75%";
         elem.style.width = "75%";
