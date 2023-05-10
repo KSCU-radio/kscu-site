@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:54;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:133.3333;}
+</style>
+<path d="M725,775h-50c-41.3,0-75-33.7-75-75V500c0-41.3,33.7-75,75-75h50c8.8,0,17.2,1.8,25,4.6V425c0-193-157-350-350-350
+	S50,232,50,425v4.6c7.8-2.8,16.2-4.6,25-4.6h50c41.3,0,75,33.7,75,75v200c0,41.3-33.7,75-75,75H75c-41.4,0-75-33.7-75-75V550v-50
+	v-75C0,204.4,179.4,25,400,25s400,179.4,400,400v75v50v150C800,741.3,766.3,775,725,775z M50,700c0,13.8,11.2,25,25,25h50
+	c13.8,0,25-11.2,25-25V500c0-13.8-11.2-25-25-25H75c-13.8,0-25,11.2-25,25v50V700z M725,475h-50c-13.8,0-25,11.2-25,25v200
+	c0,13.8,11.2,25,25,25h50c13.8,0,25-11.2,25-25V550v-50C750,486.2,738.8,475,725,475z"/>
+<g id="Interface__x2F__Heart_x5F_02">
+	<path id="Vector" class="st0" d="M527.1,318.7c27.2,27.2,28.2,70.8,2.4,99.3L400,560.3L270.6,417.9c-25.8-28.4-24.8-72.1,2.4-99.3
+		c30.3-30.3,80.2-27.5,107,5.9l20,25l20-25C446.8,291.1,496.7,288.4,527.1,318.7z"/>
+</g>
+</svg>

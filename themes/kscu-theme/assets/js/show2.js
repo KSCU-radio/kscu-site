@@ -157,8 +157,14 @@ function placeImage(elem, imageUrl, category, start) {
             Soul: "Soul",
             Sports: "Sports",
             Talk: "Talk",
+            Disco: "Disco",
+            Psychedelic: "Psychedelic",
+            Folk: "Folk",
+            "R&B": "R&B",
+            Reggae: "Reggae",
+            Metal: "Metal",
             "Special Event": "SpecialEvent",
-        }[category] || `Other${new Date(start).getHours() % 12 || 12}`;
+        }[category] || `Other`;
         elem.style.width = "75%";
         elem.style.width = "75%";
 
