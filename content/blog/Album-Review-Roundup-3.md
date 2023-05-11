@@ -7,7 +7,7 @@ showPagination = true
 
 Happy week 6 Broncos! Here are three album reviews and recommendations as you go into your second round of midterms, or start preparing for your finals. 
 
-## Middle Sister - Isabella Stillman
+## Middle Sister - Isabelle Stillman
 
 ### Review by Carson Killer
 
