@@ -6,8 +6,6 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "slate" # Recommend you don't change this
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = false
 
 enableSearch = false
 enableCodeCopy = false
