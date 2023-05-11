@@ -9,20 +9,15 @@ Another month, another round of album reviews! Enjoy these three reviews brought
 
 ## Where We Go - Animal Eyes
 
-### Review by Cooper McCarthy
+### Review by Carson Killer
 
-Where We Go by Animal Eyes is an interesting album that, while creative, didn't quite resonate with me. The instrumentals and beats in the tracks were intriguing and varied, but unfortunately, they overpowered the vocals of the singers. As a result, it was difficult to comprehend the lyrics or understand their meaning.
+Middle Sister, the debut album by Isabella Stillman, is an intriguing blend of various genres, showcasing the artist's versatility and range as a musician. While I personally didn't find myself completely drawn to the album, I must admit that the diversity of styles and sounds present on Middle Sister is impressive.
 
-![Animal Eyes band members](/uploads/animal-eyes.jpg)
-Despite this issue, I found the musical background of the album to be quite interesting. The band does a great job of creating diverse and engaging beats, giving each track a unique sound and feel. Each song offers something new and different, making for an enjoyable and creative listening experience. However, as mentioned before, the volume of the lyrics is a significant drawback. I found myself struggling to hear and understand the words, which left me feeling confused and disconnected from the music. Even when I could make out the lyrics, they were often forgettable and lacking in catchiness.
+One of the standout tracks on the album is "Driving Alone" which features a bluesy guitar riff and soulful vocals. The track is raw and gritty, with lyrics that speak to the heartache of lost love. The following song, "Fine" is a complete departure from the previous track, with a pop-infused beat and catchy hooks that are sure to get stuck in your head.
 
-Overall, Where We Go by Animal Eyes is an album that I found interesting, but not particularly memorable. It might be suitable as background music, but I wouldn't actively seek it out to listen to again. While the band clearly has talent and creativity, they could benefit from focusing more on the lyrics to create a more well-rounded listening experience.
+As the album progresses, Stillman continues to mix things up. "Kid" has a folksy feel with acoustic guitar and harmonica, while "Worry" has a dreamy, electronic sound with airy vocals. The album closes with "Truth Is," amballad that showcases Stillman's emotive vocals.
 
-While the instrumentals and musical background of Where We Go are enjoyable, the lyrics are forgettable and difficult to comprehend. Animal Eyes have the potential for great success, but they would benefit from putting more emphasis on their lyrical content. With some improvements, this band could truly shine and create an impact.
-
-I think that Animal eyes can see some really great improvements with the few issues that I have described and I'm excited to see where they will go in the music world.
-
-
+Overall, Middle Sister is a solid debut from Isabella Stillman. While it may not be everyone's cup of tea, the album's diversity of genres and styles is admirable. Stillman's ability to seamlessly transition from blues to pop to folk is a testament to her talent and creativity as a musician. I would recommend giving this album a listen, even if it's just to appreciate the breadth of Stillman's abilities.
 
 ### Favorite Songs
 
