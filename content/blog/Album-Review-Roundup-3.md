@@ -25,23 +25,28 @@ Overall, Middle Sister is a solid debut from Isabella Stillman. While it may not
 * [Passin' Me By](https://open.spotify.com/track/4G3dZN9o3o2X4VKwt4CLts?si=21b4d9ecb4ab4fa8)
 * [Otha Fish](https://open.spotify.com/track/1KcZRMyC2tSs3CMIsng9wx?si=b62e14021f0f403a)
 
-## Sweet Trip - You Will Never Know Why
+## The Diet - Cullen Omori
 
-### Review by Ariana Tabrizi
+### Review by Grace Roy
 
-I love quiet dream pop vibes in an album and this was exactly that. The mixture of quiet, melodic guitar chords in the background mixed with some cool electronic beats gave it a really nice almost other-worldly energy to it. I imagine myself sitting outside in the grass on a sunny day enjoying this album while drawing, reading, or just vibing.
+The Diet, Cullen Omori’s sophomore album,  is a contemporary approach to 70s rock and provides the listeners with a psychedelic and love-filled piece that is an easy and extremely satisfying listen.
 
-The first two songs on the album, “Conservation of Two” and “Air Supply,” are some of my favorites. “Conservation of Two” starts with some really amazing vocals that overlap and are soft until the guitar comes in and the song sort of picks up. When I’m listening to this song, and all their songs for that matter, all I want to do is just close my eyes, run around, and bop my head around. “Air Supply” is sort of the opposite where it starts out with some guitar chords coming in and then switches to vocals with a techno scale in the background that just really hits and feels almost like it’s scratching an itch way in the back of your brain.
+The use of reverb and weepy guitar licks are deeply nostalgic, despite the record being released in 2018. Its lyrics are full of hope and adoration in its purest form, telling the of loving someone beyond their imperfections and accepting them for who they are.
 
-My third favorite song on the album is “Pretending” and, while I also love it for the sound, what really hits for me are the lyrics and the message of the song. It’s all about being present and in the moment, leaving the past to be memories that can be looked back on but that won’t take you away from building new memories and exploring new things in the present. I think this really goes with that general theme of the album that’s appreciating the small things like the little changes in the song and the bits of electronic beats added in that really transform the sound. And more than that I think the song amplifies those feelings of quiet contemplation and happiness that being in a chill environment brings to a person.
+![](</uploads/the diet.jpg>)
+Happiness Reigns is one of the most beautiful encapsulations of the thrill and true happiness that comes with unconditionally loving someone. the dreamy guitar to uplifting drum rhythm and hopeful and accepting lyrics like “The tears in your eyes/Your fingerprints and common sense/Have probably saved my life/Oh baby, please don't cry”. The reason this song is so intriguing is because it doesn’t exactly align with the traditional idea in rock of putting your love interest on a pedestal. The love described in this song is real, authentic and loving someone for who they are and how they love you.
 
-This album is all peace and appreciation for life, a great listen for anyone wanting some calming vibes to bop to throughout their day.
+
+Another track that I particularly adore is Four Years, the first track on this beautiful album. Like Happiness Reigns, this song is not a romanticized version of loving someone, but a description of the way love feels through beautiful chords and truthful lyrics like “you do so many things/ And I love you for it/but I usually forget”. It’s upfront honesty yet beautiful composition are an accurate representation of how it feels to love someone yet not be able to properly articulate your feelings, something Omori captures so well.
+
+
+This album is not larger than life, grand, or triumphantly, but it is humble and and mystifying. 
 
 ### Favorite Songs
 
-* [Conservation of Two](https://open.spotify.com/track/1EfjX1u3coTBbmkFofxLoj?si=700292fc6ea94f09)
-* [Air Supply](https://open.spotify.com/track/3I7Uqll4wyJmfBSDQWiLWh?si=72b82ad49ae8485b)
-* [Pretending](https://open.spotify.com/track/3GTxASUt4xxZsvxDxyvJFi?si=71b54bcea3a24d24)
+* [Queen](https://open.spotify.com/track/143PdX1QEjkhDb81E42YO6?si=c21f081780324215 "Queen")
+* Master Eyes
+* Four Years
 
 ## Grouper - A I A: Alien Observer
 
