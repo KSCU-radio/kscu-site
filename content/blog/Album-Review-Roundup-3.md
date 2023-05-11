@@ -5,7 +5,7 @@ showDate = true
 showPagination = true
 +++
 
-Another month, another round of album reviews! Enjoy these three reviews brought to you courtesy of KSCU's lovely DJs. We hope you find some new music to get you through midterms!
+Happy week 6 Broncos! Here are three album reviews and recommendations as you go into your second round of midterms, or start preparing for your finals. 
 
 ## Middle Sister - Isabella Stillman
 
@@ -45,27 +45,28 @@ This album is not larger than life, grand, or triumphantly, but it is humble and
 ### Favorite Songs
 
 * [Queen](https://open.spotify.com/track/143PdX1QEjkhDb81E42YO6?si=c21f081780324215 "Queen")
-* Master Eyes
-* Four Years
+* [Master Eyes](https://open.spotify.com/track/6CwVL0GVY5fDoCEP0PT4X2?si=cd437452419e46cb "Master Eyes")
+* [Four Years](https://open.spotify.com/track/49nVnWLwZC8yboc0kps0uS?si=1a4855a1df964435 "Four Years")
 
-## Grouper - A I A: Alien Observer
+## Yggdrasil - A Year from Monday
 
-### Review by Lauren Foster
+### Review by Jackson Potter
 
-A I A: Alien Observer is a beautiful experimental album that is so different from most things in the music world. Grouper has created something so haunting and ethereal and has made something that transports you to another realm.
+Yggdrasil is a sonic journey that transports the listener to a world of their own making. The album's title is inspired by Norse mythology, specifically the world tree, Yggdrasil, which connects the nine worlds. It's a fitting title for an album that feels like a journey through different realms and landscapes. From the opening track, "The Root," it's clear that A Year from Monday has crafted something special. The track's moody intro gives way to a mesmerizing guitar riff that builds to a stunning crescendo, setting the stage for the rest of the album.
 
-The album starts with the track "Moon Is Sharp, " a blend of different sounds, voices, and melodies that sounds like the embodiment of space and the galaxy. This album contains a lot of deep emotions; some songs like "Come Softly-For Daniel D" are so beautifully sad and each song makes you feel like you're floating around in the sky.
+Yggdrasil is an album that rewards repeat listens. Each track is layered and complex, revealing new details with each listen. The band's ability to blend different genres and styles seamlessly is on full display throughout the album. "The World Tree," for example, is a hauntingly beautiful track that showcases the band's talent for creating ethereal soundscapes. The track's slow, atmospheric intro gives way to a driving beat that propels the song forward. Sheldon's guitar work is particularly impressive here, as he weaves in and out of the mix, creating an otherworldly atmosphere.
+![](/uploads/Yggdrasil.jpg)
+Another standout track is "The Bifrost," named after the rainbow bridge that connects Asgard and Midgard in Norse mythology. The track's opening riff is instantly recognizable, and it's easy to get lost in its hypnotic melody. The track's climax is particularly impressive, as the band builds to a cacophonous crescendo before bringing it back down to earth.
 
-One thing I enjoyed about Grouper's writing style is that she keeps her lyrics very simple. With that said, the simplicity doesn't take away from her ability to deliver beautiful and moving lyrics. One of my favorite lines is from the track "Vapor Trails" where Grouper sings "you never made a cloud float in the air. But you rise the atoms in the air with your smile" The album closes with the track "Come Softly- For Daniel D" which was something so simple but it was honestly amazing. The keyboard echoes through your ears as does Grouper's voice. This track was the perfect song to close out the album due to how delicate of a piece it is.
+One of the things that sets A Year from Monday apart from other post-rock bands is their ability to create emotional connections with their music. Despite the lack of lyrics, each track feels like a journey with its own narrative. "Idunn's Orchard," for example, is a lush, dreamy track that evokes images of a mystical garden. The track's soaring melodies and shimmering guitars create a sense of wonder and awe, like discovering something magical for the first time.
 
-![](/uploadshttps://ih1.redbubble.net/image.3098983699.1343/pp,840x830-pad,1000x1000,f8f8f8.jpg)
-
-At times in this album, I did feel like there was a lot of repetitiveness. For instance “She Loves Me That Way” and “Mary, On the Wall- Second Heart Tone” feel very similar at times. However, I still think this was a well put together album.
-
-Through this album, Grouper has demonstrated her ability to layer different tracks in an amazing way. While this album is short, only 39 minutes, it contains a great grouping of songs that left me wanting to hear more.
+In terms of production, Yggdrasil is a masterclass in post-rock soundscapes. The album was recorded live in a single room with minimal overdubs, giving it a raw, organic feel. The mix is clean and spacious, allowing each instrument to shine through. The band's use of effects and textures is also impressive, creating a sense of depth and space that's essential to the post-rock genre.
 
 ### Favorite Songs
 
-* [Moon Is Sharp](https://open.spotify.com/track/73OIUNKRi2y24Cu9cOLrzM?si=632a4e4b40524356)
-* [Come Softly-For Daniel D.](https://open.spotify.com/track/574y1r7o2tRA009FW0LE7v?si=f35718cb67b74bce)
-* [Vapor Trails](https://open.spotify.com/track/2ctvdKmETyOzPb2GiJJT53?si=13ed553a403a4c6a)
+* The Root
+* The World Tree
+* The Bifrost
+* Idunn's Orchard
+
+Unfortunately Yggdrasil is not available online.
