@@ -7,7 +7,7 @@ showPagination = true
 
 Another month, another round of album reviews! Enjoy these three reviews brought to you courtesy of KSCU's lovely DJs. We hope you find some new music to get you through midterms!
 
-## Where We Go - Animal Eyes
+## Middle Sister - Isabella Stillman
 
 ### Review by Carson Killer
 
@@ -21,7 +21,7 @@ Overall, Middle Sister is a solid debut from Isabella Stillman. While it may not
 
 ### Favorite Songs
 
-* [On The DL](https://open.spotify.com/track/1XEhyHoErJvMksWXjZRauV?si=aa770a0887e54245)
+* [Driving Alone](https://open.spotify.com/track/57EhbWSOLw2hVI5wj9AeEe?si=d07ddc6a134c4d0e "Driving Alone")
 * [Passin' Me By](https://open.spotify.com/track/4G3dZN9o3o2X4VKwt4CLts?si=21b4d9ecb4ab4fa8)
 * [Otha Fish](https://open.spotify.com/track/1KcZRMyC2tSs3CMIsng9wx?si=b62e14021f0f403a)
 
