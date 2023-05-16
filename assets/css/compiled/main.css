@@ -2163,6 +2163,10 @@ body:has(#menu-controller:checked) {
   min-height: 0px;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -2205,6 +2209,10 @@ body:has(#menu-controller:checked) {
 
 .min-w-\[400px\] {
   min-width: 400px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-3xl {
@@ -2491,6 +2499,11 @@ body:has(#menu-controller:checked) {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .object-scale-down {
@@ -2897,6 +2910,10 @@ html {
 .prose :where(hr):not(:where([class~="not-prose"] *)) {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
 }
 
 :is(.dark .dark\:prose-invert) {
@@ -3399,8 +3416,4 @@ html {
   .xl\:w-1\/5 {
     width: 20%;
   }
-}
-
-::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0);
 }
