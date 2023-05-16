@@ -2163,10 +2163,6 @@ body:has(#menu-controller:checked) {
   min-height: 0px;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -2209,10 +2205,6 @@ body:has(#menu-controller:checked) {
 
 .min-w-\[400px\] {
   min-width: 400px;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .max-w-3xl {

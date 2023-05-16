@@ -164,8 +164,11 @@ function placeImage(elem, imageUrl, category, start) {
             Metal: "Metal",
             "Special Event": "SpecialEvent",
         }[category] || `Other`;
-        elem.style.height = "75%";
-        elem.style.width = "75%";
+
+        elem.style.minHeight = "75%";
+        elem.style.minWidth = "75%";
+        elem.style.maxWidth = "75%";
+        elem.style.maxHeight = "75%";
 
         elem.src = `/genres/${categorySvg}.svg`;
     }
@@ -182,6 +185,12 @@ function placeImage(elem, imageUrl, category, start) {
 
     img.onload = function () {
         // Image is valid
+
+        elem.style.minHeight = "100%";
+        elem.style.minWidth = "100%";
+        elem.style.maxWidth = "100%";
+        elem.style.maxHeight = "100%";
+
         elem.src = imageUrl;
     }
 
