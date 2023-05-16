@@ -45,14 +45,12 @@ function underlineLinksInParagraph(htmlString) {
     return doc.documentElement.innerHTML;
 }
 
-function remove_brs(html) {
-    const regexLeading = /^(\s*<br\s*\/?\s*>|(\s*<p>\s*<br\s*\/?\s*>\s*<\/p>))+/i;
-    const regexTrailing = /(\s*<br\s*\/?\s*>|(\s*<p>\s*<br\s*\/?\s*>\s*<\/p>))+\s*$/i;
+function replaceBreaksAndParagraphsWithSpaces(text) {
+    console.log(text);
 
-    let sanitizedHtml = html.replace(regexLeading, '');
-    sanitizedHtml = sanitizedHtml.replace(regexTrailing, '');
-
-    return sanitizedHtml;
+    let toReturn = text.replace(/<br\s*\/?>|<br\s*>\s*<\/br\s*>/gi, ' ').trim();
+    toReturn = toReturn.replace(/<p>|<\/p>/gi, ' ').trim();
+    return toReturn;
 }
 
 async function fetchShow() {
@@ -113,21 +111,16 @@ async function placeShow() {
     document.getElementById("dj_name_inner_div").style.whiteSpace = "nowrap";
 }
 
-function placeDesc(elem, child, description) {
-    if (!description || /^\s*$/.test(description)) {
-        return
+function placeDesc(parentElement, descriptionElement, descriptionText) {
+    if (!descriptionText || descriptionText.trim() === "") {
+        return;
     }
-    description = remove_brs(description);
 
-    // First, remove one set of <p> tags only from the start and end of the description if they exist
-    if (description.startsWith('<p>') && description.endsWith('</p>')) {
-        description = description.slice(3, -4);
-    }
-    // Then, remove all other <p> tags
-    description = description.replace(/<p>/g, "").replace(/<\/p>/g, "");
+    descriptionText = replaceBreaksAndParagraphsWithSpaces(descriptionText);
 
-    if (!/^".+"$/.test(description) && !/^“.+”$/.test(description)) {
-        description = `“${description}”`;
+    // Add quotes around the description if they don't already exist
+    if (!/^".+"$/.test(descriptionText) && !/^“.+”$/.test(descriptionText)) {
+        descriptionText = `“${descriptionText}”`;
     }
 
     // DOMPurify configuration object
@@ -139,12 +132,12 @@ function placeDesc(elem, child, description) {
     };
 
     // Sanitize the description
-    description = DOMPurify.sanitize(description, config);
+    descriptionText = DOMPurify.sanitize(descriptionText, config);
 
-    description = underlineLinksInParagraph(description);
+    descriptionText = underlineLinksInParagraph(descriptionText);
 
-    child.innerHTML = description;
-    elem.style.display = "block";
+    descriptionElement.innerHTML = descriptionText;
+    parentElement.style.display = "block";
 }
 
 function placeImage(elem, imageUrl, category, start) {

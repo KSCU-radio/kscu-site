@@ -334,3 +334,7 @@ html {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
