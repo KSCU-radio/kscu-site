@@ -3400,3 +3400,7 @@ html {
     width: 20%;
   }
 }
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
