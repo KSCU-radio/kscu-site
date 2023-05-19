@@ -559,6 +559,18 @@
     }
   }
 
+  @media (max-width: 652px) {
+    #third-row > div {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    #nav > div {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+
   /* Location and visual appearance of volume slider */
   #player {
     width: 40px;
@@ -571,7 +583,9 @@
 
   .slider {
     -webkit-appearance: none;
+    appearance: none;
     -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
     position: absolute;
     width: 100px;
     height: 4px;
