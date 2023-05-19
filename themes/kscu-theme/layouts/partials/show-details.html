@@ -5,8 +5,8 @@
 <div id="show-details-body" class="flex shrink-0 font-medium text-sm z-9">
     <div id="section-collapsible" class="pt-7 pb-2 max-w-6xl m-auto">
         <div class="flex shrink-0 justify-between items-center overflow-hidden">
-            <div id="two-cols" class="flex grow flex-row justify-between">
-                <div id="left-col" class="flex grow flex-col mr-8 ml-6 min-w-[400px]">
+            <div id="two-cols" class="flex grow flex-row justify-around mx-7">
+                <div id="left-col" class="flex grow flex-col mr-12 min-w-[400px]">
                     <div id="left-top" class="flex flex-row justify-between">
                         <div class="flex border border-b-0">
                             <p id="left-header-box" class="mx-2 my-1" style="
@@ -82,7 +82,7 @@
                                                             "></p>
                     </div>
                 </div>
-                <div id="right-col" class="flex grow flex-col mr-6 ml-8 min-w-[400px]">
+                <div id="right-col" class="flex grow flex-col min-w-[400px]">
                     <div id="right-top" class="flex flex-row justify-between">
                         <div class="flex shrink border border-b-0">
                             <p id="right-header-box" class="mx-2 my-1" style="
@@ -184,19 +184,28 @@
         height: auto;
     }
 
+    @media (max-width: 1040px) {
+        #left-col {
+            margin-right: 1.8rem; 
+        }
+    }
+
     /* If less than 916px, change #two-cols to flex-col */
     @media (max-width: 916px) {
         #two-cols {
             flex-direction: column;
         }
         #left-col {
-            margin-left: max(0px, 5%);
-            margin-right: max(0px, 5%);
-            margin-bottom: 1rem;
+            /* margin-left: max(0px, 5%);
+            margin-right: max(0px, 5%); */
+            margin-bottom: 1.5rem;
+            min-width: none;
+            margin-right: 0px;
         }
         #right-col {
-            margin-left: max(0px, 5%);
-            margin-right: max(0px, 5%);
+            min-width: none;
+            /* margin-left: max(0px, 5%);
+            margin-right: max(0px, 5%); */
         }
     }
 </style>

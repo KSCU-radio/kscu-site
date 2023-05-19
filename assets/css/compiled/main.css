@@ -1941,6 +1941,11 @@ body:has(#menu-controller:checked) {
   margin-right: 0.75rem;
 }
 
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2031,16 +2036,12 @@ body:has(#menu-controller:checked) {
   margin-left: 0.75rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .ml-\[0\.35rem\] {
   margin-left: 0.35rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .mr-2 {
@@ -2049,14 +2050,6 @@ body:has(#menu-controller:checked) {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
-.mr-8 {
-  margin-right: 2rem;
 }
 
 .mt-0 {
