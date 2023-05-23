@@ -265,5 +265,5 @@ await placeShow()
 await placeShowDetails();
 
 // Create cron job
-const cron = cronSchedule.parseCronExpression('2 0,15,30,45 * * * *')
+const cron = cronSchedule.parseCronExpression('5 0,15,30,45 * * * *')
 const timer = cronSchedule.TimerBasedCronScheduler.setInterval(cron, updateShow, 0);
