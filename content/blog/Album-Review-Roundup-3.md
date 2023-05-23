@@ -46,12 +46,11 @@ This album is not larger than life, grand, or triumphantly, but it is humble and
 * [Master Eyes](https://open.spotify.com/track/6CwVL0GVY5fDoCEP0PT4X2?si=cd437452419e46cb "Master Eyes")
 * [Four Years](https://open.spotify.com/track/49nVnWLwZC8yboc0kps0uS?si=1a4855a1df964435 "Four Years")
 
-## A Bath Full of Ecstasy - Hot 
+## A Bath Full of Ecstasy - Hot
 
 ### Review by Vanish Malik
 
 Hot Chip's 2019 release "A Bath Full of Ecstasy" is a stunning album that captures the band's signature blend of electronic beats, catchy hooks, and introspective lyrics. With this album, the band explores themes of love, connection, and transformation, using their unique sound to create an immersive and emotionally resonant experience for the listener.
-
 
 The album's opening track, "Melody of Love," sets the tone for the rest of the album with its upbeat, danceable rhythm and heartfelt lyrics about the power of love to transform and heal. Lead singer Alexis Taylor's vocals are at their most soulful and expressive, conveying a sense of hope and optimism that carries through the entire album.
 Other standout tracks on the album include "Hungry Child," a pulsing, synth-driven ode to the hunger for human connection, and "Positive," a joyful celebration of the power of positive thinking and the importance of staying connected to the people and things that bring us joy.
@@ -59,12 +58,6 @@ Other standout tracks on the album include "Hungry Child," a pulsing, synth-driv
 ![](/uploads/ecstasy.jpg)
 Throughout the album, Hot Chip's intricate electronic production creates a lush, immersive sonic landscape that invites the listener to get lost in the music. The band's use of live instrumentation, including guitars and drums, adds a human touch that grounds the electronic beats and gives the music a warm, organic feel.
 
-
 At its core, "A Bath Full of Ecstasy" is an album about connection and transformation, about the power of love to heal and transform us. With its irresistible hooks, catchy beats, and heartfelt lyrics, it's an album that invites the listener to dance, to sing along, and to connect with the world around them in a more meaningful way.
 
-
 Overall, "A Bath Full of Ecstasy" is a powerful and engaging album that showcases Hot Chip's unique sound and vision. It's a must-listen for fans of electronic music, but it's also a great album for anyone who loves music that speaks to the heart and soul. So why not dive in and take a bath full of ecstasy?
-
-### Favorite Songs
-
-*
