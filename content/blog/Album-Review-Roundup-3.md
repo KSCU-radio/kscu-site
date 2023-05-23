@@ -5,7 +5,7 @@ showDate = true
 showPagination = true
 +++
 
-Happy week 6 Broncos! Here are three album reviews and recommendations as you go into your second round of midterms, or start preparing for your finals. 
+Happy week 6 Broncos! Here are three album reviews and recommendations as you go into your second round of midterms, or start preparing for your finals.
 
 ## Middle Sister - Isabelle Stillman
 
@@ -36,11 +36,9 @@ The use of reverb and weepy guitar licks are deeply nostalgic, despite the recor
 ![](</uploads/the diet.jpg>)
 Happiness Reigns is one of the most beautiful encapsulations of the thrill and true happiness that comes with unconditionally loving someone. the dreamy guitar to uplifting drum rhythm and hopeful and accepting lyrics like “The tears in your eyes/Your fingerprints and common sense/Have probably saved my life/Oh baby, please don't cry”. The reason this song is so intriguing is because it doesn’t exactly align with the traditional idea in rock of putting your love interest on a pedestal. The love described in this song is real, authentic and loving someone for who they are and how they love you.
 
-
 Another track that I particularly adore is Four Years, the first track on this beautiful album. Like Happiness Reigns, this song is not a romanticized version of loving someone, but a description of the way love feels through beautiful chords and truthful lyrics like “you do so many things/ And I love you for it/but I usually forget”. It’s upfront honesty yet beautiful composition are an accurate representation of how it feels to love someone yet not be able to properly articulate your feelings, something Omori captures so well.
 
-
-This album is not larger than life, grand, or triumphantly, but it is humble and and mystifying. 
+This album is not larger than life, grand, or triumphantly, but it is humble and and mystifying.
 
 ### Favorite Songs
 
@@ -48,25 +46,25 @@ This album is not larger than life, grand, or triumphantly, but it is humble and
 * [Master Eyes](https://open.spotify.com/track/6CwVL0GVY5fDoCEP0PT4X2?si=cd437452419e46cb "Master Eyes")
 * [Four Years](https://open.spotify.com/track/49nVnWLwZC8yboc0kps0uS?si=1a4855a1df964435 "Four Years")
 
-## Yggdrasil - A Year from Monday
+## A Bath Full of Ecstasy - Hot 
 
-### Review by Jackson Potter
+### Review by Vanish Malik
 
-Yggdrasil is a sonic journey that transports the listener to a world of their own making. The album's title is inspired by Norse mythology, specifically the world tree, Yggdrasil, which connects the nine worlds. It's a fitting title for an album that feels like a journey through different realms and landscapes. From the opening track, "The Root," it's clear that A Year from Monday has crafted something special. The track's moody intro gives way to a mesmerizing guitar riff that builds to a stunning crescendo, setting the stage for the rest of the album.
+Hot Chip's 2019 release "A Bath Full of Ecstasy" is a stunning album that captures the band's signature blend of electronic beats, catchy hooks, and introspective lyrics. With this album, the band explores themes of love, connection, and transformation, using their unique sound to create an immersive and emotionally resonant experience for the listener.
 
-Yggdrasil is an album that rewards repeat listens. Each track is layered and complex, revealing new details with each listen. The band's ability to blend different genres and styles seamlessly is on full display throughout the album. "The World Tree," for example, is a hauntingly beautiful track that showcases the band's talent for creating ethereal soundscapes. The track's slow, atmospheric intro gives way to a driving beat that propels the song forward. Sheldon's guitar work is particularly impressive here, as he weaves in and out of the mix, creating an otherworldly atmosphere.
-![](/uploads/Yggdrasil.jpg)
-Another standout track is "The Bifrost," named after the rainbow bridge that connects Asgard and Midgard in Norse mythology. The track's opening riff is instantly recognizable, and it's easy to get lost in its hypnotic melody. The track's climax is particularly impressive, as the band builds to a cacophonous crescendo before bringing it back down to earth.
 
-One of the things that sets A Year from Monday apart from other post-rock bands is their ability to create emotional connections with their music. Despite the lack of lyrics, each track feels like a journey with its own narrative. "Idunn's Orchard," for example, is a lush, dreamy track that evokes images of a mystical garden. The track's soaring melodies and shimmering guitars create a sense of wonder and awe, like discovering something magical for the first time.
+The album's opening track, "Melody of Love," sets the tone for the rest of the album with its upbeat, danceable rhythm and heartfelt lyrics about the power of love to transform and heal. Lead singer Alexis Taylor's vocals are at their most soulful and expressive, conveying a sense of hope and optimism that carries through the entire album.
+Other standout tracks on the album include "Hungry Child," a pulsing, synth-driven ode to the hunger for human connection, and "Positive," a joyful celebration of the power of positive thinking and the importance of staying connected to the people and things that bring us joy.
 
-In terms of production, Yggdrasil is a masterclass in post-rock soundscapes. The album was recorded live in a single room with minimal overdubs, giving it a raw, organic feel. The mix is clean and spacious, allowing each instrument to shine through. The band's use of effects and textures is also impressive, creating a sense of depth and space that's essential to the post-rock genre.
+![](/uploads/ecstasy.jpg)
+Throughout the album, Hot Chip's intricate electronic production creates a lush, immersive sonic landscape that invites the listener to get lost in the music. The band's use of live instrumentation, including guitars and drums, adds a human touch that grounds the electronic beats and gives the music a warm, organic feel.
+
+
+At its core, "A Bath Full of Ecstasy" is an album about connection and transformation, about the power of love to heal and transform us. With its irresistible hooks, catchy beats, and heartfelt lyrics, it's an album that invites the listener to dance, to sing along, and to connect with the world around them in a more meaningful way.
+
+
+Overall, "A Bath Full of Ecstasy" is a powerful and engaging album that showcases Hot Chip's unique sound and vision. It's a must-listen for fans of electronic music, but it's also a great album for anyone who loves music that speaks to the heart and soul. So why not dive in and take a bath full of ecstasy?
 
 ### Favorite Songs
 
-* The Root
-* The World Tree
-* The Bifrost
-* Idunn's Orchard
-
-Unfortunately Yggdrasil is not available online.
+*
