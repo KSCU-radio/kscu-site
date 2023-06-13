@@ -14,9 +14,9 @@
 <footer class="font-sm text-sm relative z-10 pt-0 pb-8">
   <div class="px-6 pt-0 pb-4 max-w-7xl m-auto">
     <div class="flex flex-col justify-between border">
-      <div id="flex_container" class="flex justify-between items-center px-2"
+      <div id="flex_container" class="flex justify-between items-center px-2 my-3"
         style="font-family: 'IBM Plex Mono', monospace;">
-        <div id="title_footer" class="my-3">
+        <div id="title_footer">
           <p id="title_text" class="text-xl font-bold text-neutral-900"> KSCU 103.3 FM </p>
           <p id="title_text" class="text-sm">Santa Clara University's Student-Run Radio</p>
           <a href="https://publicfiles.fcc.gov/fm-profile/KSCU">
@@ -27,16 +27,16 @@
         </div>
         {{ if .Site.Params.footer.showPhone | default false}}
         <div id="address" class="flex grow justify-between flex-col text-md font-base">
-          <p class="text-sm">Studio Phone: (408)-554-5728</p>
-          <p>Email us: <a style="text-decoration-skip-ink: none;"
+          <p class="text-sm">Studio Phone: <a 
+          style="text-decoration-skip-ink: none;"
+          class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+          href="tel:4085545728"
+          >(408)-554-5728</a></p>
+          <p>Email Us: <a style="text-decoration-skip-ink: none;"
               class="font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
               href="mailto:gm@kscu.org">gm@kscu.org</a></p>
-          <!-- <p> 500 El Camino Real </p> -->
-          <a href="/credits">
-            <p id="credits"
-              class="text-sm font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
-              style="text-decoration-skip-ink: none;">Site Credits</p>
-          </a>
+          <p id="credits"><a class="text-sm font-bold hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+            style="text-decoration-skip-ink: none;" href="/credits">Site Credits</a></p>
         </div>
         {{ else }}
         <div id="address" class="text-md py-3 font-medium">
@@ -88,7 +88,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 1rem;
+          margin-bottom: .75rem;
         }
 
         #title_text {
