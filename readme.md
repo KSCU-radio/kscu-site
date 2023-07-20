@@ -10,7 +10,7 @@ While this began as a classroom project, the project has grown into a complex in
 
 ## Tools Used
 
-- [**Hugo**]((https://gohugo.io/)) - For static site generation and templating.
+- [**Hugo**](https://gohugo.io/) - For static site generation and templating.
 - [**Congo**](https://github.com/jpanther/congo) - As a base template for Hugo.
 - [**Tailwind CSS**](https://tailwindcss.com/) - For class based CSS.
 - [**Howler**](https://howlerjs.com/) - Web audio library for in-browser streaming of the station broadcast.
