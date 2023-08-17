@@ -1,39 +1,44 @@
 {{ $paginator := .Paginator }}
 {{ if gt $paginator.TotalPages 1 }}
-  <ul class="flex flex-row mt-8">
+<div class="flex flex-row my-3.5 list-none justify-center">
+  <div id="pagination-div" class="flex flex-row mx-4">
+    {{ $prevURL := "" }}
     {{ if $paginator.HasPrev }}
-      <li>
-        <a
-          href="{{ $paginator.Prev.URL }}"
-          class="mx-1 block min-w-[1.8rem] rounded text-center hover:bg-primary-600 hover:text-neutral"
-          rel="prev"
-        >
-          &larr;
-        </a>
-      </li>
+    {{ $prevURL = $paginator.Prev.URL }}
     {{ end }}
+    <li class="{{ if not $paginator.HasPrev }} invisible {{ end }}">
+      <a href="{{ $prevURL }}"
+        class="border mr-5 px-3 py-2 block min-w-[1.8rem] text-center hover:text-neutral-500" rel="prev">
+        &larr;
+      </a>
+    </li>
+    <ul id="paginator-numbers" class="flex flex-row list-none">
     {{ range $paginator.Pagers }}
       <li>
-        <a
-          href="{{ .URL }}"
-          class="{{ if eq . $paginator }}
-            bg-primary-200 dark:bg-primary-400 dark:text-neutral-800
-          {{ end }} mx-1 block min-w-[1.8rem] rounded text-center hover:bg-primary-600 hover:text-neutral"
-        >
+        <a href="{{ .URL }}" class="{{ if eq . $paginator }}
+              underline decoration-1 underline-offset-2 decoration-wavy
+            {{ end }} border border-l-[0px] px-4 py-2 block min-w-[1.8rem] text-center hover:text-neutral-500 middle-number">
           {{ .PageNumber }}
         </a>
       </li>
-    {{ end }}
+      {{ end }}
+    </ul>
+    {{ $nextURL := "" }}
     {{ if $paginator.HasNext }}
-      <li>
-        <a
-          href="{{ $paginator.Next.URL }}"
-          class="mx-1 block min-w-[1.8rem] rounded text-center hover:bg-primary-600 hover:text-neutral"
-          rel="next"
-        >
-          &rarr;
-        </a>
-      </li>
+    {{ $nextURL = $paginator.Next.URL }}
     {{ end }}
-  </ul>
+    <li class="{{ if not $paginator.HasNext }} invisible {{ end }}">
+      <a href="{{ $nextURL }}"
+        class="border ml-5 px-3 py-2 block min-w-[1.8rem] text-center hover:text-neutral-500" rel="next">
+        &rarr;
+      </a>
+    </li>
+  </div>
+</div>
+
+<style>
+#paginator-numbers > li:first-child > a {
+    border-left: 1px solid #000;
+}
+</style>
 {{ end }}
