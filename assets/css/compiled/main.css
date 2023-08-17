@@ -1941,6 +1941,11 @@ body:has(#menu-controller:checked) {
   margin-right: 0.75rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-7 {
   margin-left: 1.75rem;
   margin-right: 1.75rem;
@@ -1969,6 +1974,11 @@ body:has(#menu-controller:checked) {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-3\.5 {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
 }
 
 .my-4 {
@@ -2036,6 +2046,10 @@ body:has(#menu-controller:checked) {
   margin-left: 0.75rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .ml-\[0\.35rem\] {
   margin-left: 0.35rem;
 }
@@ -2050,6 +2064,10 @@ body:has(#menu-controller:checked) {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mt-0 {
@@ -2406,6 +2424,10 @@ body:has(#menu-controller:checked) {
 
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-l-\[0px\] {
+  border-left-width: 0px;
 }
 
 .border-t {
@@ -2806,8 +2828,24 @@ body:has(#menu-controller:checked) {
   text-decoration-color: rgba(var(--color-primary-500), 1);
 }
 
+.decoration-wavy {
+  text-decoration-style: wavy;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .shadow-lg {
@@ -2955,11 +2993,6 @@ html {
 .hover\:bg-primary-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-500), var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-600), var(--tw-bg-opacity));
 }
 
 .hover\:text-neutral:hover {
@@ -3206,11 +3239,6 @@ html {
   background-color: rgba(var(--color-neutral-900), 0.5);
 }
 
-:is(.dark .dark\:bg-primary-400) {
-  --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-primary-400), var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-primary-800) {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-primary-800), var(--tw-bg-opacity));
@@ -3239,11 +3267,6 @@ html {
 :is(.dark .dark\:text-neutral-500) {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral-500), var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-neutral-800) {
-  --tw-text-opacity: 1;
-  color: rgba(var(--color-neutral-800), var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-primary-400) {
