@@ -573,10 +573,31 @@ video {
 }
 
 .prose :where(a):not(:where([class~="not-prose"] *)):hover {
-  color: rgba(var(--color-neutral), 1);
+  /* color: rgba(var(--color-neutral), 1);
   text-decoration: none;
   background-color: rgba(var(--color-primary-600), 1);
-  border-radius: 0.09rem;
+  border-radius: 0.09rem; */
+  text-decoration: underline;
+  text-decoration-line: underline;
+  /* For broader browser compatibility */
+  text-decoration-color: initial;
+  /* Assuming the default color */
+  text-decoration-style: solid;
+  /* Assuming the default style */
+  text-decoration-thickness: auto;
+  /* Assuming the default thickness */
+  text-underline-offset: 2px;
+  color: #718096;
+  /* Equivalent to hover:text-gray-400 in Tailwind */
+  text-decoration: wavy;
+  text-decoration-line: wavy;
+  /* For browsers that support wavy lines */
+  text-decoration-color: initial;
+  /* Assuming the default color */
+  text-decoration-style: wavy;
+  /* Applying wavy style */
+  text-decoration-thickness: auto;
+  /* Assuming the default thickness */
 }
 
 .prose :where(strong):not(:where([class~="not-prose"] *)) {

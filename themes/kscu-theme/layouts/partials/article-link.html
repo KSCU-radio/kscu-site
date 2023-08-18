@@ -3,7 +3,7 @@
     {{ with .Params.externalUrl }}
       <div>
         <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+          class="text-neutral-800 decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
           href="{{ . }}"
           target="_blank"
           rel="external"
@@ -19,7 +19,7 @@
       </div>
     {{ else }}
       <a
-        class="text-neutral-800 decoration-primary-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
+        class="text-neutral-800 decoration-primary-500 hover:text-neutral-500 hover:underline hover:decoration-1 hover:underline-offset-2 hover:text-gray-400 hover:decoration-wavy"
         href="{{ .RelPermalink }}"
         >{{ .Title | emojify }}</a
       >
