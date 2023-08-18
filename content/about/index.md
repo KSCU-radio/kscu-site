@@ -9,17 +9,6 @@ showPagination = false
 showTableOfContents = true
 +++
 
-<style>
-#metadata {
-display: none;
-}
-
-    #article-header {
-        padding-bottom: 12px;
-    }
-
-</style>
-
 ## Contact Us
 
 For most questions, please email the General Manager at [gm@kscu.org](mailto:gm@kscu.org).
@@ -78,3 +67,13 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 ![KSCU Staff Members](/uploads/kscu-vintage-2.jpg "Former KSCU Staff Member")
 ![KSCU Studio](/uploads/kscu-studio.jpg "Current KSCU Studio")
+
+<style>
+/* You can ignore the following block of code, it's for removing the extra padding at the bottom of the page */
+#metadata {
+display: none;
+}
+#article-header {
+    padding-bottom: 12px;
+}
+</style>
