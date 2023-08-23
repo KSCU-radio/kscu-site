@@ -48,8 +48,9 @@ function underlineLinksInParagraph(htmlString) {
 function replaceBreaksAndParagraphsWithSpaces(text) {
     console.log(text);
 
-    let toReturn = text.replace(/<br\s*\/?>|<br\s*>\s*<\/br\s*>/gi, ' ').trim();
-    toReturn = toReturn.replace(/<p>|<\/p>/gi, ' ').trim();
+    // let toReturn = text.replace(/<br\s*\/?>|<br\s*>\s*<\/br\s*>/gi, ' ').trim();
+    // toReturn = toReturn.replace(/<p>|<\/p>/gi, ' ').trim();
+    let toReturn = text.replace(/<br\s*\/?>|<br\s*>\s*<\/br\s*>|<p[^>]*>|<\/p>/gi, ' ').trim();
     return toReturn;
 }
 
@@ -101,6 +102,7 @@ async function placeShow() {
         }
     }
     catch (error) {
+        console.log("Could not get show data from store")
         await fetchShow()
         data = store.get("show_data");
     }
@@ -199,11 +201,37 @@ function placeImage(elem, imageUrl, category, start) {
     }
 }
 
+function fadeIn(element) {
+    var opacity = 0;
+    var timer = setInterval(function () {
+        if (opacity >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = opacity;
+        element.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+        opacity += 0.1;
+    }, 8);
+}
+
+function fadeOut(element) {
+    var opacity = 1;
+    var timer = setInterval(function () {
+        if(opacity <= 0) {
+            clearInterval(timer);
+        }
+        element.style.opacity = opacity;
+        element.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+        opacity -= 0.1;
+    }, 8);
+}
+
+
 async function placeShowDetails() {
     let data;
     try {
         data = store.get("show_data");
     } catch (error) {
+        console.log("Couldn't find show data in store. Fetching...")
         await fetchShow()
         data = store.get("show_data");
     }
@@ -247,7 +275,6 @@ async function placeShowDetails() {
     document.getElementById("right-genre").innerHTML = DOMPurify.sanitize(data["show-1"].category, { ALLOWED_TAGS: [] });
     placeDesc(document.getElementById("right-description-div"), document.getElementById("right-description"), data["show-1"].description);
     placeImage(document.getElementById("right-image"), data["show-1"].image, data["show-1"].category, data["show-1"].start);
-
 }
 
 async function updateShow() {
