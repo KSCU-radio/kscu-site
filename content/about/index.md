@@ -27,39 +27,37 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 ![KSCU Staff Members](/uploads/kscu-2023-staff.jpeg)
 
-**General Manager:** Aidan Smith
+**General Manager:** Anabelle Oldham
 
-**Coordinating Director:** Gino Herbosa
+**Coordinating Director:** Joey Mena
 
 **Music Director:** Abby Grimm
 
-**Data Analysis Director:** Esteban Samayoa Mayora
+**Junior Music Director:** Sidney Deiss
 
-**Business Director:** Anabelle Oldham
+**Media Director: **Laisha Lizarraga
+
+**Marketing Director:** Ellie Henrich
+
+**Business Director:** Ellie Shepard
 
 **Production Director:** Kyle Kinard
 
-**Events Director:** Daniel Grant
+**Programming Director:** Carson Killer
 
-**Programming Director:** Ellie Henrich
+**Creative Director:** Diego Acevedo Garcia
 
-**Creative Director:** Katie Wei
+**On-Campus Promotions**: Maggie McCurdy
 
-**On-Campus Promotions**: Sophie Piacentini
-
-**Off-Campus Promotions**: Jed Lambino
+**Off-Campus Promotions**: Simon Lazoni
 
 **Sports Director** Thomas Dunn
 
 **Traffic Director:** Jackson Giraudi
 
-**Training Director:** Johnny Maddocks
+**Training Director:** Corrodo Moy
 
 **Web Director:** Gabe Labadie
-
-**Volunteer Staff:** Ivy Wu
-
-**Volunteer Staff:** Joey Mena
 
 **Faculty Advisor:** [Gordon Young](mailto:gyoung@scu.edu)
 
