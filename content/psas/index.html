@@ -1,0 +1,172 @@
++++
+title = 'PSAs'
+description = 'Check out all of the PSAs that can be read on air!'
+date = 2023-11-13
+showDate = false
+showAuthor = false
+showReadingTime = false
+showEdit = false
+showPagination = false
+showTableOfContents = true
+
++++
+<style>
+    #metadata {
+        display: none;
+    }
+
+    article>header.max-w-prose {
+        max-width: 100%;
+    }
+</style>
+<select id="psa-lengths">
+    <option value="long">Long</option>
+    <option value="medium">Medium</option>
+</select>
+<select id="psa-tags" multiple>
+    <option>Long</option>
+    <option>Medium</option>
+</select>
+<div style="display:flex; flex-direction: column; flex-grow: 1; min-height: 500px;">
+    <table>
+        <h3 id="psa-title"></h3>
+        <h5 id="psa-text"></h5>
+    </table>
+</div>
+<div style="display: flex; flex-shrink: 1;">
+    <p style="width: 100%; text-align: center;">
+        <button class="psa-button" id="psa-left" style="float: left"><</button>
+        <span id="psa-pagination"></span>
+        <button class="psa-button" id="psa-right" style="float: right">></button>
+    </p>
+</div>
+<br>
+<style>
+    @media screen and (max-width: 1090px) {
+        #content-wrapper {
+            max-width: 100% !important;
+        }
+
+        #framewrapper {
+            overflow: scroll !important;
+            border-left: 1px dashed; 
+            border-right: 1px dashed;
+        }
+    }
+    .psa-button {
+        border: 2px;
+        border-style: dotted;
+        border-color: #000000;
+        line-height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+    }
+    .psa-button:hover {
+        border-color: #7f7f7f;
+        color: #7f7f7f;
+    }
+</style>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">-->
+
+
+<script>
+
+    var values;
+    var psaIndex = 0;
+
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                let lengths = document.getElementById('psa-lengths');
+
+                values = JSON.parse(xhr.response).values;
+
+                let tags = [];
+                let tagsHTML = "";
+                for (let i = 0; i < values.length; i++) {
+                    let currTags = values[i][1].split(',');
+                    for (let j = 0; j < currTags.length; j++) {
+                        if (tags.indexOf(currTags[j]) == -1 && (currTags[j] != "long" && currTags[j] != "medium")) {
+                            tags.push(currTags[j]);
+                            tagsHTML += `<option>${currTags[j]}</option>`;
+                        }
+                    }
+                }
+
+                document.getElementById('psa-tags').innerHTML = tagsHTML;
+
+                updatePSA([ lengths.value ]);
+
+                function pageLeft() {
+                    psaIndex--;
+                    psaIndex = Math.max(psaIndex, 0);
+                }
+
+                function pageRight() {
+                    psaIndex++;
+                    psaIndex = Math.min(psaIndex, values.length - 1);
+                }
+
+                document.getElementById('psa-right').onclick = function() {
+                    pageRight();
+                    updatePSA([ lengths.value ]);
+                };
+
+                document.getElementById('psa-left').onclick = function() {
+                    pageLeft();
+                    updatePSA([ lengths.value ]);
+                };
+                
+                document.body.addEventListener('keydown', function(e) {
+                    if (e.key == "ArrowLeft") {
+                        pageLeft();
+                        updatePSA([ lengths.value ]);
+                    }
+                    else if (e.key == "ArrowRight") {
+                        pageRight();
+                        updatePSA([ lengths.value ]);
+                    }
+                });
+
+                lengths.addEventListener('change', function(e) {
+                    updatePSA([ lengths.value ]);
+                });
+            } else {
+                console.log("There was a problem with the request.");
+            }
+        }
+    };
+
+    function updatePSA(tags) {
+        let retValues = [];
+        if (tags.length > 0) {
+            let tempVals = values;
+            for (let i = 0; i < tempVals.length; i++) {
+                for (let j = 0; j < tags.length; j++) {
+                    let currTags = tempVals[i][1].split(',');
+                    console.log(currTags.indexOf(tags[j]) != -1);
+                    if (currTags.indexOf(tags[j]) != -1 && retValues.indexOf(tempVals[i]) == -1) {
+                        retValues.push(tempVals[i]);
+                    }
+                }
+            }
+        }
+        else {
+            retValues = values;
+        }
+        
+        document.getElementById('psa-title').innerHTML = retValues[psaIndex][0];
+        document.getElementById('psa-text').innerHTML = retValues[psaIndex][2];
+        document.getElementById('psa-pagination').innerHTML = `${psaIndex + 1}/${retValues.length}`;
+    }
+
+    // xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/1OFRo1pOe_UMeR9JiWguvGXibyZ0MUSL_10sI29hJAOQ?key=AIzaSyCBgurrAx69oVqbUzqCqnqXKSFEKTuGig4');
+    // xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/1OFRo1pOe_UMeR9JiWguvGXibyZ0MUSL_10sI29hJAOQ/values/2:10?key=AIzaSyCBgurrAx69oVqbUzqCqnqXKSFEKTuGig4');
+    xhr.open('GET', 'https://sheets.googleapis.com/v4/spreadsheets/1UtTBxPiAsRTvpqC0yAFnUDA0ONes7ftNEnaFSKuJ3-g/values/A2:Z?key=AIzaSyCBgurrAx69oVqbUzqCqnqXKSFEKTuGig4');
+    xhr.send();
+</script>

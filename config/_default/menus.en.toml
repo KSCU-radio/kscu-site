@@ -26,6 +26,12 @@
   weight = 20
 
 [[main]]
+  name = "PSAs"
+  pageRef = "PSAs"
+  url = '//psas/'
+  weight = 25
+
+[[main]]
   name = "About"
   pageRef = "about"
   url = '//about/'
