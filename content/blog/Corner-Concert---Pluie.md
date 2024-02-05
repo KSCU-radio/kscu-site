@@ -14,9 +14,15 @@ Inspired by The New York Times' Tiny Desks, Corner Concerts represent KSCU's com
 Finally, thank you so much to the Corner Concert team for all of your hard work in making this production possible!\
 \
 Producer: Kyle Kinard
+
 Director/Editor: Laisha Lizarraga
-Videographers: Laisha Lizarraga, Rena Zhang, and Adam Zekaria 
+
+Videographers: Laisha Lizarraga, Rena Zhang, and Adam Zekaria
+
 Audio Engineer: Kyle Kinard and Simon Lanzoni
+
 Audio Assistants: Joey Hernandez Mena and Corrado Moy
+
 Production Assistant: Ellen Duncan and Charlie Gray
+
 Animator: Diego Acevedo
