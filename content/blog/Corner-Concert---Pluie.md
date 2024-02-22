@@ -6,7 +6,7 @@ showDate = true
 
 KSCU is pleased to present our first Corner Concert of the year, featuring Pluie! Performing live in our very own studio in the Benson basement, watch Pluie tear it up in our highest-quality production to date. \
 \
-Inspired by The New York Times' Tiny Desks, Corner Concerts represent KSCU's commitment to showing off SCU's student music scene to as large an audience as we can. Make sure to check out Pluie on [Spotify](https://open.spotify.com/artist/45B0eXysoBg7vSontnZMeO?si=ARnV_N-LRJORCvjqNbX0Lg "Spotify")!
+Inspired by NPR's Tiny Desks, Corner Concerts represent KSCU's commitment to showing off SCU's student music scene to as large an audience as we can. Make sure to check out Pluie on [Spotify](https://open.spotify.com/artist/45B0eXysoBg7vSontnZMeO?si=ARnV_N-LRJORCvjqNbX0Lg "Spotify")!
 
 {{< youtube id="R3bndZvBJ5c" >}}
 
