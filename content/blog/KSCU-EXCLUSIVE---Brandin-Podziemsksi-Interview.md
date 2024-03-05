@@ -1,5 +1,5 @@
 +++
-title = "KSCU EXCLUSIVE - Brandin Podziemsksi Interview"
+title = "KSCU EXCLUSIVE - Brandin Podziemski Interview"
 date = 2024-02-05T08:00:00.000Z
 showDate = true
 showAuthor = false
