@@ -33,23 +33,23 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Music Director:** Sidney Deiss
 
-**Assoc. Music Director:** Natalia Fernandez 
+**Assoc. Music Director:** Natalia Fernandez
 
 **Production Director:** Ivy Wu
 
-**Assoc. Production Director: **Colin Friedel
+**Assoc. Production Director:** Colin Friedel
 
-**Marketing Director: **Cecily Mooney
+**Marketing Director:** Cecily Mooney
 
-**Assoc. Marketing Director: **Margot Milton 
+**Assoc. Marketing Director:** Margot Milton
 
-**Studio Director:** Billy Wagner 
+**Studio Director:** Billy Wagner
 
-**Creative Director: **Ren Foster
+**Creative Director:** Ren Foster
 
-**Business Director: **Zack Yamashita
+**Business Director:** Zack Yamashita
 
-**Programming Director: **Janet Scharmer
+**Programming Director:** Janet Scharmer
 
 **Community Music Director:** Gonzalo Chun
 
@@ -57,9 +57,9 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Off-Campus Relations**: Jackson Giraudi
 
-**Sports Director:** Nick Pecora 
+**Sports Director:** Nick Pecora
 
-**Web Director:** Gwyn Anawalt 
+**Web Director:** Gwyn Anawalt
 
 **Faculty Advisor:** [Gordon Young](mailto:gyoung@scu.edu)
 
