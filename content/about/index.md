@@ -1,5 +1,4 @@
 +++
-title = "About KSCU"
 date = "2020-08-14"
 description = "Learn about KSCU. Founded in 1948, we continue a long history of non-commercial music, sports broadcasting, and talk shows, all 100% student-run."
 showDate = false
@@ -7,6 +6,7 @@ showAuthor = false
 showReadingTime = false
 showPagination = false
 showTableOfContents = true
+title = "About KSCU"
 +++
 
 ## Contact Us
@@ -27,37 +27,39 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 ![KSCU Staff Members](/uploads/kscu-2023-staff.jpeg)
 
-**General Manager:** Anabelle Oldham
+**General Manager:** Diego Acevedo
 
-**Coordinating Director:** Joey Mena
+**Coordinating Director:** Joey Hernandez
 
-**Music Director:** Abby Grimm
+**Music Director:** Sidney Deiss
 
-**Junior Music Director:** Sidney Deiss
+**Assoc. Music Director:** Natalia Fernandez 
 
-**Media Director: **Laisha Lizarraga
+**Production Director:** Ivy Wu
 
-**Marketing Director:** Ellie Henrich
+**Assoc. Production Director: **Colin Friedel
 
-**Business Director:** Ellie Shepard
+**Marketing Director: **Cecily Mooney
 
-**Production Director:** Kyle Kinard
+**Assoc. Marketing Director: **Margot Milton 
 
-**Programming Director:** Carson Killer
+**Studio Director:** Billy Wagner 
 
-**Creative Director:** Diego Acevedo Garcia
+**Creative Director: **Ren Foster
 
-**On-Campus Promotions**: Maggie McCurdy
+**Business Director: **Zack Yamashita
 
-**Off-Campus Promotions**: Simon Lazoni
+**Programming Director: **Janet Scharmer
 
-**Sports Director** Thomas Dunn
+**Community Music Director:** Gonzalo Chun
 
-**Traffic Director:** Jackson Giraudi
+**On-Campus Promotions**: Mike Freitag
 
-**Training Director:** Corrodo Moy
+**Off-Campus Relations**: Jackson Giraudi
 
-**Web Director:** Gabe Labadie
+**Sports Director:** Nick Pecora 
+
+**Web Director:** Gwyn Anawalt 
 
 **Faculty Advisor:** [Gordon Young](mailto:gyoung@scu.edu)
 
