@@ -18,7 +18,7 @@ To submit music for airplay, please email our Music Director at [music@kscu.org]
 ## KSCU History
 
 KSCU 103.3 FM continues a long tradition of radio broadcasting at Santa Clara University dating back to 1948 when Fr. Ferdinand J. Spieler, S.J., created KVSC, “The Kampus Voice of Santa Clara.” Reflecting the mission and goals of Santa Clara University, the station has a proud history as a forum for the debate of issues, ideas, and concerns on-campus and in the surrounding community, and it offers an eclectic selection of non-commercial music, sports, and public affairs programming.
-![KSCU Board](/uploads/kscu-vintage-board.jpg "Vintage KSCU Broadcasting Board")
+![KSCU Board](/uploads/bandcamp-27.jpeg "Vintage KSCU Broadcasting Board")
 KSCU is located in the basement of Benson Memorial Center at Santa Clara University. The station is staffed by students and is overseen by Gordon Young, a faculty advisor. Currently, the station is staffed by fifteen students and features over 140 different DJs. To view our current show and DJ roster, check out our [schedule](/schedule/).
 
 {{< alert icon="instagram" body="Be sure to [follow us on Instagram](https://www.instagram.com/kscuradio/) to stay up to date with our most recent activity!" >}}
