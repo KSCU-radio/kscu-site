@@ -37,7 +37,7 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Production Director:** Adi Ranganathan
 
-**Assoc. Production Director: **Karla Martinez
+**Assoc. Production Director:** Karla Martinez
 
 **Marketing Director:** Inyene Udoffia
 
@@ -45,7 +45,7 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Studio Director:** Cuitlahuac Ramirez
 
-**Creative Director: **Natasha Garcia
+**Creative Director:** Natasha Garcia
 
 **Business Director: **Sidney Deiss
 
