@@ -61,7 +61,7 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Web Director:** Grant Swanson
 
-**Faculty Advisor:** [Gordon Young](mailto:gyoung@scu.edu)
+**Faculty Advisor:** [Andrew Ishak](https://mail.google.com/mail/u/0/?fs=1\&tf=cm\&source=mailto\&to=aishak@scu.edu)
 
 [Site Credits](/credits/)
 
