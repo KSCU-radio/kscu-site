@@ -51,7 +51,7 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Programming Director:** Ava Bien
 
-**Community Music Director:** Events
+**Events Director:** Francesca Pezza
 
 **On-Campus Promotions**: Sully Misner
 
