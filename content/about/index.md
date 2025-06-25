@@ -25,7 +25,7 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 ## Station Staff
 
-![KSCU Staff Members](/uploads/IMG_3308.png "KSCU 2025-26 Staff")![KSCU Staff Members](<> "KSCU 2024-25 Staff")![KSCU Staff Members](<> "KSCU 2024-25 Staff")
+![KSCU Staff Members](/uploads/IMG_3308.png "KSCU 2025-26 Staff")![KSCU Staff Members](<> "KSCU 2024-25 Staff")
 
 **General Manager:** Colin Friedel
 
