@@ -47,9 +47,9 @@ KSCU is located in the basement of Benson Memorial Center at Santa Clara Univers
 
 **Creative Director:** Natasha Garcia
 
-**Business Director: **Sidney Deiss
-
 **Programming Director:** Ava Bien
+
+**Business Director:** Sidney Deiss
 
 **Events Director:** Francesca Pezza
 
